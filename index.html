@@ -9,13 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Elegant icons CSS -->
+	<link href="./assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+
     <!-- External CSS Style Sheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,13 +52,13 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
 
     <!-- Container Fluid for Hero Imgs -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 m-3 mx-auto">
         <!-- Carousel -->
         <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
@@ -82,18 +88,74 @@
     
 
     <!-- Main Container -->
-    <div class="container">
-
-            <!-- Jumbotron -->
-            <!-- <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                    </div>
-                </div> -->
-
+    <div class="container" id="pet-care-services-offered">      
         <div class="row">
-            
+            <div class="col">
+                <div class="card-deck mt-5 mb-5">
+                    <div class="row no-gutters">
+                    <!-- <div class="row"> -->
+
+                        <div class="col-lg-3 col-md-6 mb-4 col-sm-12 mb-4">
+                            <div class="card text-center">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <span id="dog-walking">
+                                    <i class="fas fa-dog"></i>
+                                </span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dog Walking</h5>
+                                    <p class="card-text">Boof ur givin me a spook doge stop it fren puggo aqua doggo boof shoober many pats, length boy maximum borkdrive fluffer stop it fren doge dat tungg tho long doggo. Corgo shibe ruff much ruin diet mlem sub woofer, doggo woofer blop. Thicc fluffer such treat you are doing me the shock, what a nice floof such treat.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 col-sm-12 mb-4">
+                            <div class="card text-center">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <span id="pet-sitting">
+                                    <i class="fas fa-cat"></i>
+                                </span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pet Sitting</h5>
+                                    <p class="card-text">Boof ur givin me a spook doge stop it fren puggo aqua doggo boof shoober many pats, length boy maximum borkdrive fluffer stop it fren doge dat tungg tho long doggo. Corgo shibe ruff much ruin diet mlem sub woofer, doggo woofer blop. Thicc fluffer such treat you are doing me the shock, what a nice floof such treat.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <div class="row"> -->
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <span id="overnight-pet-sitting">
+                                    <i class="fas fa-moon"></i>
+                                </span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pet Sleep Over</h5>
+                                    <p class="card-text">Boof ur givin me a spook doge stop it fren puggo aqua doggo boof shoober many pats, length boy maximum borkdrive fluffer stop it fren doge dat tungg tho long doggo. Corgo shibe ruff much ruin diet mlem sub woofer, doggo woofer blop. Thicc fluffer such treat you are doing me the shock, what a nice floof such treat.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card text-center">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <span id="potty-break">
+                                    <i class="fas fa-poop"></i>
+                                    <!-- <i class="fas fa-paw"></i> -->
+                                </span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Quick Potty Break</h5>
+                                    <p class="card-text">Boof ur givin me a spook doge stop it fren puggo aqua doggo boof shoober many pats, length boy maximum borkdrive fluffer stop it fren doge dat tungg tho long doggo. Corgo shibe ruff much ruin diet mlem sub woofer, doggo woofer blop. Thicc fluffer such treat you are doing me the shock, what a nice floof such treat.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
