@@ -15,8 +15,15 @@
     color: gray;
 }
 
+/* About Us Stylings */
+#about-us-img-left,
+#about-us-img-right {
+    max-height: 400px;
+}
 
-
+.bg-gradient-danger {
+    background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important;
+}
 
 /* Media Queries */
 

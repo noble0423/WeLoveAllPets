@@ -1,0 +1,24 @@
+{
+  "name": "weloveallpets",
+  "version": "1.0.0",
+  "description": "Enabling Custom Bootstrap SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build -- --production",
+    "build": "scss-powertools assets/scss/custom.scss assets/css/bootstrapscss.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noble0423/WeLoveAllPets.git"
+  },
+  "author": "Ryan Noble",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/noble0423/WeLoveAllPets/issues"
+  },
+  "homepage": "https://github.com/noble0423/WeLoveAllPets#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "scss-powertools": "^1.1.0"
+  }
+}
