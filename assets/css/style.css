@@ -1,8 +1,13 @@
-/* h1 {
-    color: red;
-} */
-
 /* Grid */
+
+/* Bootstrap Overrids */
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+}
 
 
 
@@ -25,13 +30,11 @@
     background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important;
 }
 
-/* Service Area Stylings */
-.shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
-}
 
-.shadow-sm {
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+/* Customer Reviews Stylings */
+.cust-review-img:hover {
+    /* background-color: red; */
+    opacity: 0.5;
 }
 
 /* Media Queries */
