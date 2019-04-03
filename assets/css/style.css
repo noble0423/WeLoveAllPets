@@ -9,8 +9,6 @@
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
 }
 
-
-
 /* Icons */
 #dog-walking,
 #pet-sitting,
@@ -18,7 +16,18 @@
 #potty-break {
     font-size: 5rem;
     color: gray;
+    transition: all .2s ease-in-out;
 }
+
+#dog-walking:hover,
+#pet-sitting:hover,
+#overnight-pet-sitting:hover,
+#potty-break:hover {
+    transform: scale(1.2); 
+}
+
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
 
 /* About Us Stylings */
 #about-us-img-left,
@@ -33,8 +42,11 @@
 
 /* Customer Reviews Stylings */
 .cust-review-img:hover {
-    /* background-color: red; */
-    opacity: 0.5;
+    opacity: 0.75;
+}
+
+.accordian {
+    display: inline-block;
 }
 
 /* Media Queries */

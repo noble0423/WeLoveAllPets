@@ -24,11 +24,11 @@
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5 p-4">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand" href="#">We Love All Pets</a>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -36,27 +36,27 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#about-us-row">About</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Pet Care Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#pet-care-services-offered">Most Popular</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
             </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -89,6 +89,7 @@
             </div>
         </div>
     
+    <div class="navbar-most-popular-services"></div>
 
     <!-- Pet Services Container -->
     <div class="container" id="pet-care-services-offered">      
@@ -210,10 +211,10 @@
             <div class="col-12">
                 <div class="card-deck mt-5 mb-5">
 
-                    <div class="accordian w-25" id="accordianCustDReview">
+                    <div class="accordian w-20" id="accordianCustDReview">
                         <div class="card">
                             <a class="cust-review-img collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <img src="./assets/images/customer-d.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/images/customer-d.jpg" class="card-img-top shadow-sm" alt="...">
                             </a>
 
                             <div id="collapseOne" class="collapse" data-parent="#accordianCustDReview">
@@ -232,10 +233,10 @@
                         </div>
                     </div>
 
-                    <div class="accordian w-25" id="accordianCustAReview">
+                    <div class="accordian w-20" id="accordianCustAReview">
                         <div class="card">
                             <a class="cust-review-img collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                <img src="./assets/images/customer-a.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/images/customer-a.jpg" class="card-img-top shadow-sm" alt="...">
                             </a>
                             
                             <div id="collapseTwo" class="collapse" data-parent="#accordianCustAReview">
@@ -254,10 +255,10 @@
                         </div>
                     </div>
 
-                    <div class="accordian w-25" id="accordianCustBReview">
+                    <div class="accordian w-20" id="accordianCustBReview">
                         <div class="card">
                             <a class="cust-review-img collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                <img src="./assets/images/customer-b.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/images/customer-b.jpg" class="card-img-top shadow-sm" alt="...">
                             </a>
                             
                             <div id="collapseThree" class="collapse" data-parent="#accordianCustBReview">
@@ -276,10 +277,10 @@
                         </div>
                     </div>
 
-                    <div class="accordian w-25" id="accordianCustEReview">
+                    <div class="accordian w-20" id="accordianCustEReview">
                         <div class="card">
                             <a class="cust-review-img collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                <img src="./assets/images/customer-e.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/images/customer-e.jpg" class="card-img-top shadow-sm" alt="...">
                             </a>
                             
                             <div id="collapseFour" class="collapse" data-parent="#accordianCustEReview">
@@ -298,10 +299,10 @@
                         </div>
                     </div>
 
-                    <div class="accordian w-25" id="accordianCustCReview">
+                    <div class="accordian w-20" id="accordianCustCReview">
                         <div class="card">
                             <a class="cust-review-img collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                <img src="./assets/images/customer-c.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/images/customer-c.jpg" class="card-img-top shadow-sm" alt="...">
                             </a>
                             
                             <div id="collapseFive" class="collapse" data-parent="#accordianCustCReview">
@@ -319,22 +320,15 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- <div class="card">
-                        <img src="./assets/images/customer-c.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
         </div>
-        
     </div>
 
+    <!-- Basic Footer-Fixed -->
+    <nav class="navbar sticky-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">We Love All Pets</a>
+    </nav>
 
 
     <!-- Bootstrap JavaScript Links -->
