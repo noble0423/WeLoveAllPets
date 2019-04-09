@@ -34,6 +34,10 @@
     color: black;
 }
 
+#services-offered-container {
+    min-height: 400px;
+}
+
 /* .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); } */
 
@@ -55,6 +59,34 @@
 
 .accordian {
     display: inline-block;
+}
+
+/* Book Now Stylings */
+#book-now-img:hover {
+    opacity: 0.75;
+}
+
+#dog-walking-hours {
+    /* border: 1px solid red; */
+    background: gray;
+    opacity: .95;
+    position: absolute;
+    right: -20px;
+    top: 200px;
+}
+
+#dog-walking-hours-image {
+    opacity: .8;
+    /* border: 1px solid green; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#dog-walking-hours-container {
+    /* border: 1px dotted purple; */
+    position: relative;
+    height: 70%;
 }
 
 /* Media Queries */
