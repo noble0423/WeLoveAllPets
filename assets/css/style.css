@@ -62,21 +62,34 @@
 }
 
 /* Book Now Stylings */
-#book-now-img:hover {
+/* #book-now-img:hover {
     opacity: 0.75;
+} */
+
+#book-now-img {
+    opacity: .95;
+}
+
+#book-now-btn {
+    /* min-width: 175px; */
+    transition: all .2s ease-in-out;
+}
+
+#book-now-btn:hover {
+    transform: scale(1.1);
 }
 
 #dog-walking-hours {
     /* border: 1px solid red; */
     background: gray;
-    opacity: .95;
+    opacity: .9;
     position: absolute;
     right: -20px;
     top: 200px;
 }
 
-#dog-walking-hours-image {
-    opacity: .8;
+#dog-walking-hours-image-container {
+    opacity: .9;
     /* border: 1px solid green; */
     position: absolute;
     top: 0;
@@ -89,6 +102,102 @@
     height: 70%;
 }
 
+#book-now-img {
+    position: relative;
+}
+
+#book-now-btn {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+/* Contact Us Stylings */
+#pet-care-houston-contact-info {
+    background-image: url("../images/dog-walking-houston-phone-number.jpg");
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .85;
+}
+
+.form-control{
+    background:rgba(255,255,255,0.8);
+}
+
+#email-btn {
+    opacity: 1 !important;
+    background-color: #e41428 !important;
+    color: white !important;
+}
+
+#email-btn {
+    /* min-width: 175px; */
+    transition: all .2s ease-in-out;
+}
+
+#email-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+#we-love-all-pets-footer {
+    margin-top: 100px !important;
+}
+
 /* Media Queries */
+/* Book Now Section */
+@media only screen and (min-width: 1500px) {
+    /* #dog-walking-hours-container {
+        background-color: purple;
+    } */
+
+    #dog-walking-hours-image {
+        min-width: 355px;
+        height: auto;
+    }
+
+    #dog-walking-hours {
+        max-height: 320px;
+        min-width: 355px;
+    }
+
+}
+
+@media only screen and (max-width: 1499px) and (min-width: 1255px) {
+    #dog-walking-hours-container {
+        /* background-color: #dc3545; */
+        margin-top: 5 !important;
+    }
+
+    #dog-walking-hours-image {
+        min-width: 355px;
+        height: auto;
+    }
+
+    #dog-walking-hours {
+        max-height: 320px;
+        min-width: 355px;
+    }
+}
+
+@media only screen and (max-width: 1254px) and (min-width: 992px) {
+    #dog-walking-hours-container {
+        /* background-color: green; */
+        margin-top: 5% !important;
+    }
+
+    #dog-walking-hours-image {
+        min-width: 300px;
+        height: auto;
+    }
+
+    #dog-walking-hours {
+        max-height: 320px;
+        min-width: 285px;
+        top: 100px;
+    }
+}
 
 
