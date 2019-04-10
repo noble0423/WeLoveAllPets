@@ -24,12 +24,14 @@
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5 p-4">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">We Love All Pets</a>
-        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5">
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <a class="navbar-brand ml-5" href="#">
+            <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black_navbar.png">
+        </a>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -44,7 +46,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#pet-care-services-offered">Most Popular</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#services-offered-container">All</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
                 </div>
@@ -440,9 +442,10 @@
     </div>
 
     <!-- Contact Us Section -->
-    <div class="container d-block">
+    <div class="container-fluid d-block">
         <div class="row">
-            <div class="col-12 mt-5" id="test">
+            <div class="col-2"></div>
+            <div class="col-lg-8 col-sm-12 mt-5" id="test">
                 <div class="shadow-sm pt-3" id="pet-care-houston-contact-info">
                     <h4 class="ml-3 mb-4 pt-4 d-inline">Contact Us: </h4><span class="ml-3">(832) 552-5914</span>
                     <form class="ml-3 mt-3">
@@ -477,12 +480,12 @@
                                 <!-- <div class="row"> -->
                                 <!-- <div class="col-1"></div> -->
                                     <!-- <div class="col-6"> -->
-                                        <button type="submit" class="btn btn-lg w-20 mt-3" id="email-btn">Send</button>
+                            <button type="submit" class="btn btn-lg w-20 mt-3" id="email-btn">Send</button>
                                     <!-- </div> -->
-                                </div>
-
-                            </div>
                         </div>
+
+                            <!-- </div>
+                        </div> -->
                     </form>
                     
                     <!-- <img src="./assets/images/dog-walking-houston-phone-number.jpg" class="img-fluid" id="pet-care-houston-contact-image" alt="dog walking houston contact info image"> -->
@@ -490,14 +493,16 @@
                     <!-- <img src="./assets/images/dog-walking-houston-contact-info.jpg" class="img-fluid" id="pet-care-houston-contact-image" alt="dog walking houston contact info image"> -->
                 </div>
             </div>
+            <div class="col-2"></div>
         </div>
     </div>
     
 
     <!-- Basic Footer-Fixed -->
     <!-- <div class="container"> -->
-        <nav class="navbar sticky-bottom navbar-light bg-light mt-5" id="we-love-all-pets-footer">
+        <nav class="navbar sticky-bottom navbar-light bg-light mt-5 p-4" id="we-love-all-pets-footer">
             <a class="navbar-brand" href="#">We Love All Pets</a>
+            <small class="mr-5">&copy; We Love All Pets Pet Care Service. All Rights Reserved. </small>
         </nav>
     <!-- </div> -->
 
