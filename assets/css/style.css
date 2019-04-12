@@ -13,6 +13,21 @@ html {
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2) !important;
 }
 
+.bg-transparent {
+    transition: 750ms ease;
+    background: transparent !important;
+}
+
+.bg-transparent.scrolled {
+    transition: 750ms ease;
+    background: #343a40 !important;
+}
+
+/* Nav Bar */
+:target {
+    padding-top: 130px;
+}
+
 /* Icons */
 /* Top Services */
 #dog-walking,

@@ -7903,6 +7903,10 @@ button.bg-dark:focus {
   margin-top: -3rem !important;
 }
 
+.mt-n6 {
+  margin-top: -6rem !important;
+}
+
 .mr-n5,
 .mx-n5 {
   margin-right: -3rem !important;
