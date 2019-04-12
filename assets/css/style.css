@@ -2,6 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.page-breaker-text {
+    font-family: 
+        /* 'Satisfy', cursive; */
+        'Kaushan Script', cursive;
+        /* 'Dancing Script', cursive; */
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
 /* Grid */
 
 /* Bootstrap Overrides */
@@ -19,13 +28,18 @@ html {
 }
 
 .bg-transparent.scrolled {
-    transition: 750ms ease;
+    transition: 750ms ease-in-out;
     background: #343a40 !important;
 }
 
 /* Nav Bar */
-:target {
+/* :target {
     padding-top: 130px;
+} */
+
+/* Hero Images */
+.carousel-item {
+    max-height: 1000px;
 }
 
 /* Icons */
@@ -64,6 +78,7 @@ html {
 #about-us-img-left,
 #about-us-img-right {
     max-height: 400px;
+    min-width: 450px;
 }
 
 .bg-gradient-danger {

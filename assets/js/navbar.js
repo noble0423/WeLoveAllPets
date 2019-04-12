@@ -1,6 +1,16 @@
 // Scroll Effect
+// let doneScrolling;
+
 $(window).scroll(function() {
-    $("nav").toggleClass("scrolled", $(this).scrollTop() > 980); 
+    // window.clearTimeout(doneScrolling);
+    $("nav").toggleClass("scrolled", $(this).scrollTop() > 855); 
+
+    // doneScrolling = setTimeout(function() {
+
+    //     // // Run the callback
+    //     // callback();
+    //     $("nav").toggleClass("scrolled");
+    // }, 4000);    
 });
 
 
@@ -38,15 +48,28 @@ $(window).scroll(function() {
 // Setup scrolling variable
 // let isScrolling;
 
-// const scrollStop = function(callback) {
-// 	// Make sure a valid callback was provided
-// 	if (!callback || typeof callback !== 'function') return;
+// const scrollStop = function() {
+	// Make sure a valid callback was provided
+	// if (!callback || typeof callback !== 'function') return;
+
+    // NAV BAR IS INITIALLY TRANSPARENT
+    // NEED A BOOLEAN = DONESCROLLING
+        // INITIALLY SET TO TRUE
+    // SCROLL EVENT LISTENER IS LISTENING
+
+            // SET A 1 SEC DELAY
+                // CHECK DONESCROLLING...IF DONESCROLLING === FALSE
+                    // SET DONESCROLLING BACK TO TRUE
 
 
+                     // IF USER IS SCROLLING:
+            // SET DONESCROLLING === FALSE
+                //  NAVBAR STAYS TRANSPRENT (DO NOT TOGGLE)
 
-// 	// Listen for scroll events
+
+	// Listen for scroll events
 // 	window.addEventListener('scroll', function (event) {
-
+//         console.log("scrolling");
 // 		// Clear our timeout throughout the scroll
 // 		window.clearTimeout(isScrolling);
 
@@ -54,22 +77,23 @@ $(window).scroll(function() {
 // 		isScrolling = setTimeout(function() {
 
 // 			// Run the callback
-// 			callback();
+//             $("nav").toggleClass("scrolled");
 
-// 		}, 66);
+// 		}, 2500);
 
 // 	}, false);
 
 // };
 
 // $(document).ready(function() {
-//     scrollStop(function () {
-//         console.log("Scrolling has stopped");
-//         isScrolling = setTimeout(function() {
-//             $("nav").toggleClass("scrolled");
-//         }, 66);
+//     scrollStop();
+//     // scrollStop(function () {
+//     //     console.log("Scrolling has stopped");
+//     //     isScrolling = setTimeout(function() {
+//     //         $("nav").toggleClass("scrolled");
+//     //     }, 66);
         
-//     });
+//     // });
 // });
 
 
