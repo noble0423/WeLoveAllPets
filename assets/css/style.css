@@ -2,6 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+    font-family: 
+        /* 'Staatliches', cursive; */
+        'Carrois Gothic SC', sans-serif;
+    /* letter-spacing: .1rem; */
+    
+}
+
+body {
+    font-family: 
+    /* 'Oswald', sans-serif; */
+    /* 'Fjalla One', sans-serif; */
+    /* 'Yanone Kaffeesatz', sans-serif; */
+    'Cuprum', sans-serif;
+    /* 'Carrois Gothic SC', sans-serif; */
+    /* letter-spacing: .1rem; */
+    font-size: 1.1rem;
+}
+
 .page-breaker-text {
     font-family: 
         /* 'Satisfy', cursive; */
