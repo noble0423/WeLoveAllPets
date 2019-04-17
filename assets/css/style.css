@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Fonts */
+
 h1,
 h2,
 h3,
@@ -39,6 +41,20 @@ body,
 
 .valued-customer-since {
     font-size: .75rem;
+}
+
+.modal-body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1rem;
+}
+
+.modal-price {
+    /* font-size: 1.3rem; */
+    text-align: right;
+}
+
+.modal-service-title {
+    text-decoration: underline;
 }
 
 /* Grid */
