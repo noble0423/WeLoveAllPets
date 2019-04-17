@@ -114,7 +114,7 @@ body,
 }
 
 #services-offered-container {
-    min-height: 400px;
+    /* min-height: 400px; */
 }
 
 /* .grow { transition: all .2s ease-in-out; }
@@ -140,6 +140,9 @@ body,
 .accordian {
     display: inline-block;
 }
+
+/* Services Stylings */
+
 
 /* Book Now Stylings */
 /* #book-now-img:hover {
