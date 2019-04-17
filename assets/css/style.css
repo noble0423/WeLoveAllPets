@@ -16,7 +16,8 @@ h6,
     
 }
 
-body {
+body,
+.valued-customer-since {
     font-family: 
     /* 'Oswald', sans-serif; */
     /* 'Fjalla One', sans-serif; */
@@ -34,6 +35,10 @@ body {
         /* 'Dancing Script', cursive; */
     font-size: 1.4rem;
     line-height: 3rem;
+}
+
+.valued-customer-since {
+    font-size: .75rem;
 }
 
 /* Grid */
