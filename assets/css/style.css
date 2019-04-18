@@ -99,26 +99,62 @@ body,
     transition: all .2s ease-in-out;
 }
 
+#all-pet-services-icon,
+#nature-calls-icon,
+#doggy-stroll-in-the-park-icon,
+#doggy-stride-and-strut-icon,
+#neighborhood-doggy-safari-icon,
+#pampered-pet-sleep-over-icon {
+    transition: all .2s ease-in-out;
+}
+
+#all-pet-services-icon:hover {
+    transform: scale(1.1); 
+}
+
 #dog-walking:hover,
 #pet-sitting:hover,
 #overnight-pet-sitting:hover,
-#potty-break:hover {
+#potty-break:hover,
+#nature-calls-icon:hover,
+#doggy-stroll-in-the-park-icon:hover,
+#doggy-stride-and-strut-icon:hover,
+#neighborhood-doggy-safari-icon:hover,
+#pampered-pet-sleep-over-icon:hover {
     transform: scale(1.2); 
 }
 
 /* All Services */
-#we-love-all-pets-services-and-pricing-all,
+/* #we-love-all-pets-services-and-pricing-all, */
 #dog-services {
     font-size: 5rem;
     color: black;
 }
 
-#services-offered-container {
-    /* min-height: 400px; */
+#services-image-right,
+#services-image-left {
+    min-width: 250px;
 }
 
-/* .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); } */
+.services-card-body {
+    overflow: auto;
+    /* min-height: 350px; */
+    max-height: 350px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 
 /* About Us Stylings */
 #about-us-img-left,
@@ -230,6 +266,27 @@ body,
 }
 
 /* Media Queries */
+/* Pet Care Services Section */
+@media only screen and (max-width: 767px) {
+    #services-image-left,
+    #services-image-right {
+        clear: both !important;
+        overflow: auto !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 65% !important;
+    }
+    
+    #services-image-left {
+        margin-bottom: 0 !important;
+    }
+
+    #services-image-right {
+        margin-top: 0 !important;
+    }
+}
+
 /* Book Now Section */
 @media only screen and (min-width: 1500px) {
     /* #dog-walking-hours-container {

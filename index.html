@@ -116,8 +116,8 @@
                 <div class="card-deck mb-6">
                     <div class="row no-gutters">
 
-                        <div class="wow zoomIn col-lg-3 col-md-6 mb-4 col-sm-12 mb-4">
-                            <div class="card text-center">
+                        <div class="col-lg-3 col-md-6 mb-4 col-sm-12 mb-4 wow zoomIn">
+                            <div class="card text-center shadow-sm">
                                 <span id="dog-walking">
                                     <i class="fas fa-dog"></i>
                                 </span>
@@ -128,8 +128,8 @@
                             </div>
                         </div>
 
-                        <div class="wow zoomIn delay-tenths col-lg-3 col-md-6 mb-4 col-sm-12 mb-4">
-                            <div class="card text-center">
+                        <div class="col-lg-3 col-md-6 mb-4 col-sm-12 mb-4 wow zoomIn delay-tenths">
+                            <div class="card text-center shadow-sm">
                                 <span id="pet-sitting">
                                     <i class="fas fa-cat"></i>
                                 </span>
@@ -140,8 +140,8 @@
                             </div>
                         </div>
 
-                        <div class="wow zoomIn delay-fifteenths col-lg-3 col-md-6 col-sm-12 mb-4">
-                            <div class="card text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 wow zoomIn delay-fifteenths">
+                            <div class="card text-center shadow-sm">
                                 <span id="overnight-pet-sitting">
                                     <i class="fas fa-moon"></i>
                                 </span>
@@ -152,8 +152,8 @@
                             </div>
                         </div>
 
-                        <div class="wow zoomIn delay-twentieths col-lg-3 col-md-6 col-sm-12">
-                            <div class="card text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12 wow zoomIn delay-twentieths">
+                            <div class="card text-center shadow-sm">
                                 <span id="potty-break">
                                     <i class="fas fa-poop"></i>
                                 </span>
@@ -208,7 +208,7 @@
             <div class="col-1"></div>
             <div class="col-10">
                 <!-- <h2 class="mb-3 text-center">Service Area</h2> -->
-                <img src="./assets/images/Service-Area-Gmaps-Image.jpg" class="wow pulse img-fluid shadow rounded " alt="">
+                <img src="./assets/images/Service-Area-Gmaps-Image.jpg" class="wow zoomIn img-fluid shadow-sm rounded " alt="">
             </div>
             <div class="col-1"></div>
         </div>
@@ -349,13 +349,21 @@
     <!-- Services Offered and Pricing -->
     <div class="container-fluid bg-gradient-danger shadow-sm mt-5 mb-5" id="services-offered-container">
         <div class="row">
-            <!-- <div class="col-2"></div> -->
-            <div class="col-12">
-                <div class="container text-center mt-4 mb-5">
-                    <span id="we-love-all-pets-services-and-pricing-all">
-                        <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black _Services.png" data-toggle="modal" data-target="#exampleModalCenter">
-                    </span>
-                    <p>VIEW ALL PET CARE SERVICES</p>
+            <!-- <div class="col-1"></div> -->
+            <div class="col-sm-12 col-md-4 col-xl-4 clearfix">
+                <img src="./assets/images/white-dog-and-dog-walker.jpg" class="img-fluid rounded shadow-sm w-70 mt-5 mb-5 mr-n5 float-md-right wow zoomIn" id="services-image-left">
+            </div>
+            <div class="d-none d-xl-block col-xl-1"></div>
+            <!-- <div class="col-1"></div> -->
+            <div class="col-sm-12 col-md-4 col-xl-2">
+                <div class="container text-center mt-4 mb-5 wow zoomIn">
+                    <div id="all-pet-services-icon">
+                        <!-- <span id="we-love-all-pets-services-and-pricing-all"> -->
+                            <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black _Services.png" data-toggle="modal" data-target="#exampleModalCenter">
+                            <p>VIEW ALL PET CARE SERVICES</p>
+                        <!-- </span> -->
+                    </div>
+
                 </div>
                     
                 <!-- Modal -->
@@ -409,70 +417,77 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card-deck mb-4">
-            <div class="col-xl-1"></div>
+            <div class="d-none d-xl-block col-xl-1"></div>
+            <!-- <div class="col-1"></div> -->
+            <div class="col-sm-12 col-md-4 col-xl-4 clearfix">
+                <img src="./assets/images/good-dog-golden-retriever.jpg" class="img-fluid rounded shadow-sm w-70 mt-5 mb-5 ml-n5 float-md-left wow zoomIn" id="services-image-right">
+            </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="services-accordian-one">
-                <div class="container text-center">
+            <!-- <div class="col-2"></div> -->
+        </div>
+        <div class="card-deck">
+            <div class="col-xl-1 mb-3"></div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 wow zoomIn" id="services-accordian-one">
+                <div class="container text-center" id="nature-calls-icon">
                     <img class="collapsed my-2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png">
-                    <p><small class="text-black-50">A QUICK "NATURE CALLS" MOMENT</small></p>
+                    <p><small class="text-black-50">QUICK "NATURE CALLS" MOMENT</small></p>
                 </div>
                 <div id="collapseOne" class="collapse" data-parent="#services-accordian-one">
-                    <div class="card-body rounded">
+                    <div class="card-body rounded services-card-body mb-4">
                         <p class="card-text text-justify">A short and sweet 10-minute outdoor break to stretch your pup's legs, as well as to provide some much needed potty relief. Ideal for new born pups and pups in the later stages of life. Oh, and lets not forget the occasional lazy pup. You know who you are!</p>
                         <p class="text-right">$17</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="services-accordian-two">
-                <div class="container text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 wow zoomIn delay-twentieths" id="services-accordian-two">
+                <div class="container text-center" id="doggy-stroll-in-the-park-icon">
                     <img class="collapsed my-2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" role="button" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png">
                     <p><small class="text-black-50">DOGGY STROLL IN THE PARK</small></p>
                 </div>
                 <div id="collapseTwo" class="collapse" data-parent="#services-accordian-two">
-                    <div class="card-body rounded">
+                    <div class="card-body rounded services-card-body mb-4">
                         <p class="card-text text-justify">This option is definitely our most popular…  A solid 20-minute walk to provide some much needed potty relief and, of course the best part—Exercise and Attention. Most certainly ideal for those pups that love to get out and enjoy a little fun in the sun.</p>
                         <p class="text-right">$22</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="services-accordian-three">
-                <div class="container text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 wow zoomIn delay-fortieths" id="services-accordian-three">
+                <div class="container text-center" id="doggy-stride-and-strut-icon">
                     <img class="collapsed my-2" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" role="button" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png">
                     <p><small class="text-black-50">DOGGY STRIDE AND STRUT</small></p>
                 </div>
                 <div id="collapseThree" class="collapse" data-parent="#services-accordian-three">
-                    <div class="card-body rounded">
+                    <div class="card-body rounded services-card-body mb-4">
                         <p class="card-text text-justify">The perfect combination of exercise and relaxation. This 40-minute walk starts by providing a fairly rigorous pace to give your pup a good amount of exercise. Then towards the end we slow it down to allow for a bit of a cool down and, of course, to "stop and smell the roses." Or trees and fire hydrants. No judgment. We all have our preferences!</p>
                         <p class="text-right">$27</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="services-accordian-four">
-                <div class="container text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 wow zoomIn delay-sixtieths" id="services-accordian-four">
+                <div class="container text-center" id="neighborhood-doggy-safari-icon">
                     <img class="collapsed my-2" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" role="button" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png">
                     <p><small class="text-black-50">NEIGHBORHOOD DOGGY SAFARI</small></p>
                 </div>
                 <div id="collapseFour" class="collapse" data-parent="#services-accordian-four">
-                    <div class="card-body rounded">
+                    <div class="card-body rounded services-card-body mb-4">
                         <p class="card-text text-justify">Your pup will have plenty of time to take in the sights, sounds, and smells of course, as we make our way about town during this 60-minute walk. Okay okay, the neighborhood. But you get what we’re saying. If you have a pup that is just bouncing off the walls with energy, or even a pup that gets extremely anxious and nervous at the mere sight of you going for the door knob, then this is the perfect option… We’ll make sure your pup is all mellowed out and exhausted by the time you get home from work. Good company, Stress Relief, and Exercise! What more could a pup ask for?</p>
                         <p class="text-right">$35</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="services-accordian-five">
-                <div class="container text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 wow zoomIn delay-eigthieths" id="services-accordian-five">
+                <div class="container text-center" id="pampered-pet-sleep-over-icon">
                     <img class="collapsed my-2" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" role="button" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png">
                     <p><small class="text-black-50">PAMPERED PET SLEEP-OVER</small></p>
                 </div>
                 <div id="collapseFive" class="collapse" data-parent="#services-accordian-five">
-                    <div class="card-body rounded">
-                        <p class="card-text text-justify">Our Over-Night Pet Care option provides you with the peace of mind in knowing that your pup will be cared for round the clock. Your pup will be catered to paw and foo… uh, paw! In fact, we dare say… your pup may not even miss you while you’re away</p>
+                    <div class="card-body rounded services-card-body mb-4">
+                        <p class="card-text text-justify">Our Over-Night Pet Care option provides you with the peace of mind in knowing that your pup will be cared for round the clock. Your pup will be catered to paw and foo… uh, paw! In fact, we dare say… your pup may not even miss you while you’re away.</p>
                         <ul>
                             <li>(2) “Doggie Strolls” (Early Morning and Evening)</li>
                             <li>(2) “Nature Calls” Moments (Mid Day and Bedtime)</li>
