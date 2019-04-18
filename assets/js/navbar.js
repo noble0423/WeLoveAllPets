@@ -4,6 +4,7 @@
 $(window).scroll(function() {
     // window.clearTimeout(doneScrolling);
     $("nav").toggleClass("scrolled", $(this).scrollTop() > 855); 
+    $(".dropdown-menu").toggleClass("scrolled", $(this).scrollTop() > 855); 
 
     // doneScrolling = setTimeout(function() {
 

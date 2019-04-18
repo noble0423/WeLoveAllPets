@@ -79,9 +79,19 @@ body,
 }
 
 /* Nav Bar */
-/* :target {
-    padding-top: 130px;
+/* .dropdown-menu.show {
+    background: transparent !important;
 } */
+
+a.dropdown-item {
+    /* color: #f8f9fa !important; */
+    color: #cbd3da !important;
+}
+
+.anchor:target {
+    padding-top: 50px;
+    /* border: 5px solid red; */
+}
 
 /* Hero Images */
 .carousel-item {
