@@ -275,6 +275,34 @@ a.dropdown-item {
     margin-top: 100px !important;
 }
 
+.social_facebook_circle,
+.social_instagram_circle,
+.social_linkedin_circle {
+    /* color: red; */
+    font-size: 2.5rem;
+    /* color: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
+}
+
+#we-love-all-pets-facebook-icon,
+#we-love-all-pets-instagram-icon,
+#we-love-all-pets-linkedin-icon {
+    transition: all .2s ease-in-out;
+}
+
+#we-love-all-pets-facebook-icon:hover,
+#we-love-all-pets-instagram-icon:hover,
+#we-love-all-pets-linkedin-icon:hover {
+    text-decoration: none;
+    transform: scale(1.2); 
+}
+
+/* .text {
+    background-image: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important;
+    color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+} */
+
 /* Media Queries */
 /* Pet Care Services Section */
 @media only screen and (max-width: 767px) {
