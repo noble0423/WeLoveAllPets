@@ -212,17 +212,17 @@ a.dropdown-item {
     /* border: 1px solid red; */
     background: gray;
     opacity: .9;
-    position: absolute;
+    /* position: absolute;
     right: -20px;
-    top: 200px;
+    top: 200px; */
 }
 
 #dog-walking-hours-image-container {
     opacity: .9;
     /* border: 1px solid green; */
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
 #dog-walking-hours-container {
@@ -232,13 +232,13 @@ a.dropdown-item {
 }
 
 #book-now-img {
-    position: relative;
+    /* position: relative; */
 }
 
 #book-now-btn {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 35%;
+    left: 35%; */
 }
 
 /* Contact Us Stylings */
@@ -326,10 +326,9 @@ a.dropdown-item {
 }
 
 /* Book Now Section */
-@media only screen and (min-width: 1500px) {
-    /* #dog-walking-hours-container {
-        background-color: purple;
-    } */
+/* @media only screen and (min-width: 1500px) {
+    #dog-walking-hours-container {
+    }
 
     #dog-walking-hours-image {
         min-width: 355px;
@@ -345,7 +344,6 @@ a.dropdown-item {
 
 @media only screen and (max-width: 1499px) and (min-width: 1255px) {
     #dog-walking-hours-container {
-        /* background-color: #dc3545; */
         margin-top: 5 !important;
     }
 
@@ -362,7 +360,6 @@ a.dropdown-item {
 
 @media only screen and (max-width: 1254px) and (min-width: 992px) {
     #dog-walking-hours-container {
-        /* background-color: green; */
         margin-top: 5% !important;
     }
 
@@ -376,7 +373,7 @@ a.dropdown-item {
         min-width: 285px;
         top: 100px;
     }
-}
+} */
 
 
 /* Footer */
