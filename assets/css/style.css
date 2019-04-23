@@ -192,7 +192,7 @@ a.dropdown-item {
 #book-now-img {
     z-index: -1;
     position: relative;
-    opacity: .95;
+    /* opacity: .95; */
 }
 
 #book-now-btn {
@@ -237,11 +237,13 @@ a.dropdown-item {
     color: white !important;
 }
 
-#email-btn {
+#email-btn,
+#book-now-btn {
     transition: all .2s ease-in-out;
 }
 
-#email-btn:hover {
+#email-btn:hover,
+#book-now-btn:hover {
     transform: scale(1.1);
 }
 
