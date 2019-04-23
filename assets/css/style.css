@@ -297,6 +297,7 @@ a.dropdown-item {
     #dog-walking-hours-container {
         margin-top: 125px !important;
     }
+}
 
 /* Footer */
 @media only screen and (max-width: 577px) {
@@ -305,4 +306,3 @@ a.dropdown-item {
         text-align: center;
     }
 }
-
