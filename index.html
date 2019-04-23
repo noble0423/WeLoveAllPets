@@ -35,10 +35,11 @@
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-light sticky-top mt-n6">
-            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent text-light sticky-top mt-n6">
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
         <a class="navbar-brand ml-5" href="#">
             <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_RedWhite_navbar.png">
         </a>
@@ -69,7 +70,7 @@
     </nav>
 
     <!-- Container Fluid for Hero Imgs -->
-    <div class="container-fluid mt-n5 mx-auto">
+    <div class="container-fluid mt-n5 mx-auto" id="hero-img-container">
         <!-- Carousel -->
         <div id="carouselExampleInterval" class="carousel slide carousel-fade ml-1 mr-1" data-ride="carousel">
                 <div class="carousel-inner shadow-sm">
@@ -367,17 +368,17 @@
             <div class="col-sm-12 col-md-4 px-0">
                 <div class="container text-center mt-5 mb-5 px-0 wow zoomIn" id="all-pet-services-icon-container">
                     <div id="all-pet-services-icon">
-                        <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black _Services.png" data-toggle="modal" data-target="#exampleModalCenter">
+                        <img src="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black _Services.png" data-toggle="modal" data-target="#ServicesModalCenter">
                         <p>VIEW ALL PET CARE SERVICES</p>
                     </div>
                 </div>
                     
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="ServicesModalCenter" tabindex="-1" role="dialog" aria-labelledby="ServicesModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">SERVICES</h5>
+                                <h5 class="modal-title">SERVICES</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
@@ -417,7 +418,7 @@
                                     </ul>  
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -533,11 +534,11 @@
                         <img src="./assets/images/dog-walking-houston-book-now-w-icon.jpeg" class="img-fluid rounded shadow-sm mb-n5 wow zoomIn" id="book-now-img" data-toggle="modal" data-target="#book-now-modal">
 
                         <!-- Modal -->
-                        <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="book-now-modal" tabindex="-1" role="dialog" aria-labelledby="BookNowModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Here we can list everything</h5>
+                                        <h5 class="modal-title" id="BookNowModalCenterTitle">Here we can list everything</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>
@@ -548,12 +549,12 @@
                                         Organic tote bag gastropub, paleo echo park taiyaki unicorn heirloom fixie wolf chia intelligentsia craft beer blue bottle pok pok. Irony shaman banh mi, synth master cleanse hexagon swag knausgaard YOLO poutine. Single-origin coffee food truck disrupt, art party marfa snackwave roof party seitan succulents tote bag air plant adaptogen cornhole helvetica. Raw denim messenger bag humblebrag quinoa, portland marfa small batch.
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-n5 mb-3 ml-4 w-30 shadow-sm wow pulse delay-1s" id="book-now-btn" data-toggle="modal" data-target="#book-now-modal">Book Now</button>
+                        <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-n5 mb-3 ml-4 w-30 shadow-sm wow slideInLeft" id="book-now-btn" data-toggle="modal" data-target="#book-now-modal">Book Now</button>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="container mt-5" id="dog-walking-hours-container">
@@ -622,9 +623,31 @@
                                     <textarea name="FormControlTextArea" rows="10" class="form-control" placeholder="Enter Message"></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-gradient-danger text-light btn-lg w-20 mt-3" id="email-btn">Send</button>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-gradient-danger text-light btn-lg w-20 mt-3" data-toggle="modal" data-target="#contact-us-modal">Send</button>
                         </div>
                     </form>
+                </div>
+
+                <!-- Modal -->    
+                <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="ContactUsModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ContactUsCenterTitle">Email Sent:</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Thank you very much for your email! One of our Friendly staff members will reach out to you shortly.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-2"></div>
@@ -654,6 +677,7 @@
                 <span><small class="text-light">&copy; We Love All Pets Pet Care Service. All Rights Reserved.</small></span>
             </div>
         </nav>
+
 
     <!-- Bootstrap JavaScript Links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
