@@ -39,9 +39,10 @@ body,
 .page-breaker-text {
     font-family: 
         /* 'Satisfy', cursive; */
-        'Kaushan Script', cursive;
+        /* 'Kaushan Script', cursive; */
+        'Caveat', cursive;
         /* 'Dancing Script', cursive; */
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     line-height: 3rem;
 }
 
@@ -83,11 +84,6 @@ body,
     transition: 750ms ease-in-out;
     background: #343a40 !important;
 }
-
-/* Nav Bar */
-/* .dropdown-menu.show {
-    background: transparent !important;
-} */
 
 a.dropdown-item {
     /* color: #f8f9fa !important; */
@@ -174,10 +170,11 @@ a.dropdown-item {
     min-width: 450px;
 }
 
-.bg-gradient-danger {
-    background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important;
+.bg-gradient-danger,
+.btn-gradient-danger {
+    /* background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
+    background: #dc3545 linear-gradient(140deg, #f70e24, #e66c6cd1) repeat-x !important;
 }
-
 
 /* Customer Reviews Stylings */
 .cust-review-img:hover {
@@ -198,13 +195,7 @@ a.dropdown-item {
     opacity: .95;
 }
 
-/* #book-now-img:hover {
-    opacity: 0.75;
-    border: 2px solid green;
-} */
-
 #book-now-btn {
-    /* min-width: 175px; */
     z-index: 1;
     position: relative;
     transition: all .2s ease-in-out;
@@ -215,52 +206,25 @@ a.dropdown-item {
 }
 
 #dog-walking-hours {
-    /* border: 1px solid red; */
     background: #343a40;
-    opacity: .9;
+    /* opacity: .9; */
     min-width: 285px;
-    /* position: absolute;
-    right: -20px;
-    top: 200px; */
-}
-
-#dog-walking-hours-image-container {
-    opacity: .9;
-    /* border: 1px solid green; */
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-}
-
-#dog-walking-hours-container {
-    /* border: 1px dotted purple; */
-    /* position: relative;
-    height: 70%; */
 }
 
 #dog-walking-hours-image {
     min-width: 325px;
     height: auto;
-}
-
-#book-now-img {
-    /* position: relative; */
-}
-
-#book-now-btn {
-    /* position: absolute;
-    bottom: 0;
-    left: 35%; */
+    /* opacity: .9; */
 }
 
 /* Contact Us Stylings */
 #pet-care-houston-contact-info {
     background-image: url("../images/bull-dog-walk.jpg");
+    opacity: .5;
     border-radius: 10px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .85;
 }
 
 .form-control{
@@ -274,7 +238,6 @@ a.dropdown-item {
 }
 
 #email-btn {
-    /* min-width: 175px; */
     transition: all .2s ease-in-out;
 }
 
@@ -290,7 +253,6 @@ a.dropdown-item {
 .social_facebook_circle,
 .social_instagram_circle,
 .social_linkedin_circle {
-    /* color: red; */
     font-size: 2.5rem;
     /* color: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
 }
@@ -333,17 +295,6 @@ a.dropdown-item {
     #dog-walking-hours-container {
         margin-top: 125px !important;
     }
-
-    /* #dog-walking-hours-image {
-        min-width: 355px;
-        height: auto;
-    }
-
-    #dog-walking-hours {
-        max-height: 320px;
-        min-width: 355px;
-    }
-} */
 
 /* Footer */
 @media only screen and (max-width: 577px) {
