@@ -285,6 +285,12 @@ a.dropdown-item {
 } */
 
 /* Media Queries */
+@media only screen and (max-width:768px) {
+    .page-breaker-text {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+}
 /* Nav Bar */ 
 @media only screen and (max-width: 768px) {
     #hero-img-container {
