@@ -30,7 +30,7 @@ body,
     font-size: 1.1rem;
 }
 
-#pet-care-houston-contact-info,
+#trustworthy-pet-care-houston-contact-info,
 #we-love-all-pets-footer,
 #dog-walking-hours {
     text-shadow: 1px 1px #e41428;
@@ -223,7 +223,7 @@ a.dropdown-item {
 }
 
 /* Contact Us Stylings */
-#pet-care-houston-contact-info {
+#trustworthy-pet-care-houston-contact-info {
     background-image: url("../images/bull-dog-walk.jpg");
     opacity: .5;
     border-radius: 10px;
