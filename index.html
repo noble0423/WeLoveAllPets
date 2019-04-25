@@ -31,6 +31,7 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="./assets/css/animate.css">
+
 </head>
 <body>
 
@@ -583,43 +584,46 @@
             <div class="col-lg-8 col-sm-12 my-6" id="test">
                 <div class="shadow-sm pt-3 text-light wow fadeInUp" id="trustworthy-pet-care-houston-contact-info">
                     <h4 class="ml-3 mb-4 pt-4 d-inline">Contact Us: </h4><span class="ml-3">(832) 552-5914</span>
-                    <form class="ml-3 mt-3">
+                    <form class="ml-3 mt-3" id="contact-us-form">
                         <div class="form-group pb-5">
-                            <div class="form-row">
+                            <div class="form-row wow fadeIn delay-halfs">
                                 <div class="col-3">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" id="c_firstname" name="c_firstname" placeholder="First Name">
                                 </div>
                                 <div class="col-3">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="c_lastname" name="c_lastname" placeholder="Last Name">
                                 </div>
                             </div>
                             <br>
-                            <div class="form-row ">
+                            <div class="form-row wow fadeIn delay-sixtieths">
                                 <div class="col-6">
-                                    <input type="email" class="form-control" placeholder="Email Address">
+                                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="Email Address">
                                 </div>
                             </div>
                             <br>
-                            <div class="form-row">
+                            <div class="form-row wow fadeIn delay-eigthieths">
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="Email Subject">
+                                    <input type="text" class="form-control" id="c_subject" name="c_subject" placeholder="Email Subject">
                                 </div>
                             </div>
                             <br>
-                            <div class="form-row">
+                            <div class="form-row wow fadeIn delay-1s">
                                 <div class="col-8">
-                                    <textarea name="FormControlTextArea" rows="10" class="form-control" placeholder="Enter Message"></textarea>
+                                    <textarea name="FormControlTextArea" rows="10" class="form-control" id-="c_message" name="c_message" placeholder="Enter Message"></textarea>
                                 </div>
                             </div>
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-gradient-danger text-light btn-lg w-20 mt-3" data-toggle="modal" data-target="#contact-us-modal">Send</button>
+                            <!-- <button type="button" class="btn btn-gradient-danger text-light btn-lg w-20 mt-3 wow fadeIn delay-1-twentieths" data-toggle="modal" data-target="#contact-us-modal">Send</button> -->
+
+                            <button type="button" class="btn btn-gradient-danger text-light btn-lg w-20 mt-3 wow fadeIn delay-1-twentieths" id="contact-us-form-submit">Send</button>
                         </div>
+                        <div class="email-ajax-response"></div>
                     </form>
                 </div>
 
                 <!-- Modal -->    
-                <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="ContactUsModalCenterTitle" aria-hidden="true">
+                <!-- <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="ContactUsModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" id="contact-certified-insured-bonded-pet-advocate">
                             <div class="modal-header">
@@ -636,7 +640,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-2"></div>
         </div>
@@ -675,8 +679,12 @@
     <!-- Extra Bootstrap JavaScript Page -->
     <script type="text/javascript" src="./assets/js/navbar.js"></script>
 
+    <!-- jQuery Core 3.4 - Uncompressed -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    
     <!-- External JavaScript Pages -->
-    <script type="text/javascript" src="./assets/js/app.js"></script> 
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="./assets/js/contact.js"></script> 
 
     <!-- WOW Animations -->
     <script src="./assets/js/wow.min.js"></script>
