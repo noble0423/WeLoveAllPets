@@ -28,9 +28,9 @@ $(document).ready(function() {
 
         else {
             $.ajax({
-                method: "POST",
+                type: "POST",
                 url: "assets/php/contactForm.php",
-                // dataType: "json",
+                dataType: "json",
                 data: {
                     c_email: c_email,
                     c_firstname: c_firstname,
