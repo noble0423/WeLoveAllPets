@@ -2,7 +2,7 @@
   "name": "weloveallpets",
   "version": "1.0.0",
   "description": "Enabling Custom Bootstrap SCSS",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "npm run build -- --production",
     "build": "scss-powertools assets/scss/custom.scss assets/css/bootstrapscss.css"
