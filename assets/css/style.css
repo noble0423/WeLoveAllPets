@@ -49,14 +49,22 @@ body,
     font-family: 
         /* 'Satisfy', cursive; */
         /* 'Kaushan Script', cursive; */
-        'Caveat', cursive;
+        /* 'Caveat', cursive; */
+        'Cuprum', sans-serif;
         /* 'Dancing Script', cursive; */
-    font-size: 1.9rem;
-    line-height: 3rem;
+    font-size: 1.7rem;
+    line-height: 3.4rem;
+    /* color: #343a40 !important; */
+    color: #6c757d;
+}
+
+.customerName {
+    color: black;
+    font-family: 'Caveat', cursive;
 }
 
 .valued-customer-since {
-    font-size: .75rem;
+    font-size: .95rem;
 }
 
 .modal-body {
@@ -104,13 +112,32 @@ a.dropdown-item {
     /* border: 5px solid red; */
 }
 
+/* Nav Bar */
+.nav-link {
+    color: #ffffff !important;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: red !important;
+    transform: scale(1.1); 
+}
+
 /* Hero Images */
 .carousel-item {
     max-height: 1000px;
 }
 
+.darken {
+    background: #000;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
 /* Icons */
-/* Top Services */
+/* Core Values */
 #dog-walking,
 #pet-sitting,
 #overnight-pet-sitting,
@@ -289,16 +316,22 @@ a.dropdown-item {
 } */
 
 /* Media Queries */
+@media only screen and (max-width:1200px) {
+    .page-breaker-text {
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+    }
+}
 @media only screen and (max-width:768px) {
     .page-breaker-text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 2.25rem;
     }
 }
 /* Nav Bar */ 
 @media only screen and (max-width: 768px) {
     #hero-img-container {
-        margin-top: 150px !important;
+        margin-top: 115px !important;
     }
     .bg-transparent {
         background: #343a40 !important;
