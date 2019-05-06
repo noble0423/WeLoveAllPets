@@ -119,7 +119,8 @@ a.dropdown-item {
 }
 
 .nav-link:hover {
-    color: red !important;
+    /* color: red !important; */
+    text-shadow: 2px 2px 2px #e41428;
     transform: scale(1.1); 
 }
 
@@ -148,11 +149,11 @@ a.dropdown-item {
 }
 
 #all-pet-services-icon,
-#nature-calls-icon,
-#doggy-stroll-in-the-park-icon,
-#doggy-stride-and-strut-icon,
-#neighborhood-doggy-safari-icon,
-#pampered-pet-sleep-over-icon {
+#dog-icon,
+#cat-icon,
+#small-animals-icon,
+#bird-icon,
+#reptile-icon {
     transition: all .2s ease-in-out;
 }
 
@@ -164,11 +165,11 @@ a.dropdown-item {
 #pet-sitting:hover,
 #overnight-pet-sitting:hover,
 #potty-break:hover,
-#nature-calls-icon:hover,
-#doggy-stroll-in-the-park-icon:hover,
-#doggy-stride-and-strut-icon:hover,
-#neighborhood-doggy-safari-icon:hover,
-#pampered-pet-sleep-over-icon:hover {
+#dog-icon:hover,
+#cat-icon:hover,
+#small-animals-icon:hover,
+#bird-icon:hover,
+#reptile-icon:hover {
     transform: scale(1.2); 
 }
 
