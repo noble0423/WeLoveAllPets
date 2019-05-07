@@ -3,19 +3,23 @@ html {
 }
 
 /* Fonts */
+h2 {
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Alegreya SC', serif;
+    letter-spacing: .15rem;
+    text-shadow: 1px 1px #343a40;
+}
 
 h1,
-h2,
 h3,
 h4,
 h5,
-h6,
+h6
 .nav-link {
     font-family: 
         /* 'Staatliches', cursive; */
         'Carrois Gothic SC', sans-serif;
     /* letter-spacing: .1rem; */
-    
 }
 
 body,
@@ -32,6 +36,7 @@ body,
 
 #about-us-row {
     color: white;
+    text-shadow: 1px 1px #343a40;
 }
 
 #trustworthy-pet-care-houston-contact-info,
@@ -73,12 +78,13 @@ body,
 }
 
 .modal-price {
-    /* font-size: 1.3rem; */
+    font-size: 1.3rem;
     text-align: right;
 }
 
 .modal-service-title {
     text-decoration: underline;
+    text-shadow: 0.5px 0.5px 1px grey;
 }
 
 /* Grid */
@@ -116,6 +122,7 @@ a.dropdown-item {
 .nav-link {
     color: #ffffff !important;
     transition: all .2s ease-in-out;
+    font-size: 1.5rem;
 }
 
 .nav-link:hover {
@@ -157,34 +164,69 @@ a.dropdown-item {
     transition: all .2s ease-in-out;
 }
 
-#all-pet-services-icon:hover {
+#all-pet-services-icon:hover,
+#dog-icon:hover,
+#cat-icon:hover,
+#small-animals-icon:hover,
+#bird-icon:hover,
+#reptile-icon:hover {
     transform: scale(1.1); 
 }
 
 #dog-walking:hover,
 #pet-sitting:hover,
 #overnight-pet-sitting:hover,
-#potty-break:hover,
-#dog-icon:hover,
-#cat-icon:hover,
-#small-animals-icon:hover,
-#bird-icon:hover,
-#reptile-icon:hover {
+#potty-break:hover {
     transform: scale(1.2); 
 }
 
 /* All Services */
-/* #we-love-all-pets-services-and-pricing-all, */
+#voodooHeading,
+.pet-services-icon-text {
+    text-shadow: 1px 1px #343a40; 
+}
+
+#voodooHeading {
+    font-size: 2.5rem !important;
+}
+
+.pet-services-icon-text {
+    font-weight: 900 !important;
+    letter-spacing: .1rem;
+}
+
 #dog-services {
     font-size: 5rem;
     color: black;
 }
 
-.services-card-body {
-    overflow: auto;
-    /* min-height: 350px; */
-    max-height: 350px;
+#dog-icon,
+#cat-icon,
+#small-animals-icon,
+#bird-icon,
+#reptile-icon {
+    /* border: 1px solid black; */
+    border: 2px solid white;
+    /* border: 1px solid gray; */
+    border-radius: 35% 12%;
+    background-color: rgba(300, 300, 300, 0.3);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    max-width: 240px;
+} 
+
+.whats-included-service-modal {
+    border-top: 1px solid gainsboro;
 }
+
+/* .whats-included-service-modal {
+    font-size: .5rem;
+} */
+
+/* .services-card-body {
+    overflow: auto;
+    min-height: 350px;
+    max-height: 350px;
+} */
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -211,6 +253,10 @@ a.dropdown-item {
 .btn-gradient-danger {
     /* background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
     background: #dc3545 linear-gradient(140deg, #f70e24, #e66c6cd1) repeat-x !important;
+}
+
+.btn-gradient-danger {
+    text-shadow: 1px 1px #343a40;
 }
 
 /* Customer Reviews Stylings */
@@ -298,14 +344,16 @@ a.dropdown-item {
 
 #we-love-all-pets-facebook-icon,
 #we-love-all-pets-instagram-icon,
-#we-love-all-pets-linkedin-icon {
+#we-love-all-pets-linkedin-icon,
+#footer-RMN-Web-Design-LLC {
     transition: all .2s ease-in-out;
 }
 
 #we-love-all-pets-facebook-icon:hover,
 #we-love-all-pets-instagram-icon:hover,
-#we-love-all-pets-linkedin-icon:hover {
-    text-decoration: none;
+#we-love-all-pets-linkedin-icon:hover,
+#footer-RMN-Web-Design-LLC:hover {
+    /* text-decoration: none; */
     transform: scale(1.2); 
 }
 
@@ -317,6 +365,20 @@ a.dropdown-item {
 } */
 
 /* Media Queries */
+/* Nav Bar */ 
+@media only screen and (max-width: 850px) {
+    .nav-link {
+        transform: none !important;
+    }
+    #hero-img-container {
+        margin-top: 100px !important;
+    }
+    .bg-transparent {
+        background: #343a40 !important;
+    }
+}
+
+/* Page Breaker Text */
 @media only screen and (max-width:1200px) {
     .page-breaker-text {
         font-size: 1.4rem;
@@ -329,15 +391,7 @@ a.dropdown-item {
         line-height: 2.25rem;
     }
 }
-/* Nav Bar */ 
-@media only screen and (max-width: 768px) {
-    #hero-img-container {
-        margin-top: 115px !important;
-    }
-    .bg-transparent {
-        background: #343a40 !important;
-    }
-}
+
 /* Pet Care Services Section */
 @media only screen and (max-width: 768px) {
     #services-image-left,
@@ -362,5 +416,14 @@ a.dropdown-item {
     #footer-brand,
     #footer-copyright {
         text-align: center;
+    }
+    #footer-brand {
+        margin: 15px 0;
+    }
+    #footer-RMN-Web-Design-LLC {
+        margin: 15px 0;
+    }
+    #footer-copyright {
+        margin-bottom: 15px;
     }
 }

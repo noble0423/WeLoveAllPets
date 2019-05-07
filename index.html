@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="./assets/images/Updated Logo and Thumbnail Icons/WLAP_logo_Black_navbar_favicon.png"/>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Dancing+Script:400,700|Kaushan+Script|Satisfy|Carrois+Gothic+SC|Cuprum|Fjalla+One|Oswald|Staatliches|Yanone+Kaffeesatz:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:900|Charm|Cinzel:900|Caveat|Dancing+Script:400,700|Kaushan+Script|Satisfy|Carrois+Gothic+SC|Cuprum|Fjalla+One|Oswald|Staatliches|Yanone+Kaffeesatz:300" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -36,7 +36,7 @@
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent sticky-top mt-n6 wow slideInDown">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent sticky-top mt-n6 wow slideInDown">
         <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -357,7 +357,7 @@
     <div class="container-fluid bg-gradient-danger shadow-sm mt-5 mb-4" id="pet-care-provider-services-container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-uppercase text-center text-white mt-5 wow fadeInDown">All of that Voodoo that we do to Serve You</h2>
+                <h2 class="text-uppercase text-center text-white mt-5 wow fadeInDown" id="voodooHeading">All of that Voodoo that we do to Serve You</h2>
             </div>
         </div>
         <div class="card-deck">
@@ -366,8 +366,8 @@
             <!-- Dog Services -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 my-5 wow zoomIn">
                 <div class="container text-center" id="dog-icon">
-                    <img src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png" data-toggle="modal" data-target="#DogServicesModalCenter">
-                    <p class="text-white mt-3" id="pet-care-services-dogs">DOGS</p>
+                    <img class="mt-3" src="assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Dog-services-icon.png" data-toggle="modal" data-target="#DogServicesModalCenter">
+                    <p class="text-white pet-services-icon-text mt-3" id="pet-care-services-dogs">DOGS</p>
                 </div>
             </div>
 
@@ -382,7 +382,7 @@
                             </button>
                         </div>
                         <div class="modal-body text-justify" id="daily-dog-walking-houston-inner-loop">
-                            <span class="text-uppercase modal-service-title" id="-quick-potty-break">A Quick “Nature Calls” Moment:</span> 
+                            <span class="text-uppercase modal-service-title" id="quick-potty-break">A Quick “Nature Calls” Moment:</span> 
                             <p>A short and sweet 10-minute outdoor break to stretch your pup's legs, as well as to provide some much needed potty relief. Ideal for newborn pups and pups in the later stages of life. Oh, and lets not forget the occasional lazy pup. You know who you are!</p>
                             <p class="modal-price mr-4"><em>$17</em></p>                                                                                                            
                             
@@ -404,20 +404,22 @@
                             
                             <br>
                             
-                            <p><em>What's included:</em></p>
-                            <ul>
-                                <li>(2) “Doggie Strolls” (early morning and evening).</li>
-                                <li>(2) “Nature Calls” Moments (mid day and bedtime).</li>
-                                <li>All meals prepared according to your instruction.</li>
-                                <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
-                            </ul>                                                               
-                            
-                            <span><em>Additional complimentary services:</em></span>
-                            <ul>
-                                <li>Watering plants.</li>
-                                <li>Mail and newspaper retrieval.</li>
-                                <li>Lights and curtains rotated regularly.</li>
-                            </ul>  
+                            <div class="whats-included-service-modal">
+                                <p class="mt-2"><em>What's included:</em></p>
+                                <ul>
+                                    <li>(2) “Doggie Strolls” (early morning and evening).</li>
+                                    <li>(2) “Nature Calls” Moments (mid day and bedtime).</li>
+                                    <li>All meals prepared according to your instruction.</li>
+                                    <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
+                                </ul>                                                               
+                                
+                                <span><em>Additional complimentary services:</em></span>
+                                <ul>
+                                    <li>Watering plants.</li>
+                                    <li>Mail and newspaper retrieval.</li>
+                                    <li>Lights and curtains rotated regularly.</li>
+                                </ul> 
+                            </div> 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
@@ -429,8 +431,8 @@
             <!-- Cat Services -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 my-5 wow zoomIn delay-twentieths">
                 <div class="container text-center" id="cat-icon">
-                    <img src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Cat-services-icon.png" data-toggle="modal" data-target="#CatServicesModalCenter">
-                    <p class="text-white mt-3" id="pet-care-services-cats">CATS</p>
+                    <img class="mt-3" src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Cat-services-icon.png" data-toggle="modal" data-target="#CatServicesModalCenter">
+                    <p class="text-white pet-services-icon-text mt-3" id="pet-care-services-cats">CATS</p>
                 </div>
             </div>
 
@@ -451,20 +453,22 @@
                             
                             <br>
                             
-                            <p><em>What's included:</em></p>
-                            <ul>
-                                <li>All meals prepared according to your instruction.</li>
-                                <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
-                                <li>Litter cleaned and refreshed regularly.</li>
-                            </ul>                                                               
-                            
-                            <span><em>Additional complimentary services:</em></span>
-                            <ul>
-                                <li>Watering plants.</li>
-                                <li>Mail and newspaper retrieval.</li>
-                                <li>Lights and curtains rotated regularly.</li>
-                                <li>Unconditional servitude to your Royal Feline.</li>
-                            </ul>  
+                            <div class="whats-included-service-modal">
+                                <p class="mt-2"><em>What's included:</em></p>
+                                <ul>
+                                    <li>All meals prepared according to your instruction.</li>
+                                    <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
+                                    <li>Litter cleaned and refreshed regularly.</li>
+                                </ul>                                                               
+                                
+                                <span><em>Additional complimentary services:</em></span>
+                                <ul>
+                                    <li>Watering plants.</li>
+                                    <li>Mail and newspaper retrieval.</li>
+                                    <li>Lights and curtains rotated regularly.</li>
+                                    <li>Unconditional servitude to your Royal Feline.</li>
+                                </ul> 
+                            </div> 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
@@ -476,8 +480,8 @@
             <!-- Other Small Animals Services -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 my-5 wow zoomIn delay-fortieths">
                 <div class="container text-center" id="small-animals-icon">
-                    <img src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Small-animals-services-icon.png" data-toggle="modal" data-target="#SmallAnimalServiceModalCenter">
-                    <p class="text-white mt-3" id="pet-care-services-small-animals">SMALL ANIMALS</p>
+                    <img class="mt-3" src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Small-animals-services-icon.png" data-toggle="modal" data-target="#SmallAnimalServiceModalCenter">
+                    <p class="text-white pet-services-icon-text mt-3" id="pet-care-services-small-animals">SMALL ANIMALS</p>
                 </div>
             </div>
 
@@ -493,26 +497,28 @@
                         </div>
                         <div class="modal-body text-justify" id="daily-dog-walking-houston-inner-loop">
                             <span class="text-uppercase modal-service-title" id="take-care-of-my-small-animals">Big Love for the Pocket Pals:</span> 
-                            <p>JNo creature is ever too small to be doted on. In fact, we firmly believe that the smaller they are the bigger the impact on the heart. We in-turn, want to return that very same impact on them. As such, we will ensure that all of “little things” in “their” lives get taken care with the utmost care.</p>
+                            <p>No creature is ever too small to be doted on. In fact, we firmly believe that the smaller they are the bigger the impact on the heart. We in-turn, want to return that very same impact on them. As such, we will ensure that all of “little things” in “their” lives get taken care with the utmost care.</p>
                             <p class="modal-price mr-4"><em>$17</em></p>                                                                              
                             
                             <br>
                             
-                            <p><em>What's included:</em></p>
-                            <ul>
-                                <li>All meals prepared according to your instruction.</li>
-                                <li>Water refreshed regularly.</li>
-                                <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
-                                <li>Cleaning and/or changing out bedding as needed.</li>
-                            </ul>                                                               
-                            
-                            <span><em>Additional complimentary services:</em></span>
-                            <ul>
-                                <li>Watering plants.</li>
-                                <li>Mail and newspaper retrieval.</li>
-                                <li>Lights and curtains rotated regularly.</li>
-                                <li>All the popsicle sticks they can handle.</li>
-                            </ul>  
+                            <div class="whats-included-service-modal">
+                                <p class="mt-2"><em>What's included:</em></p>
+                                <ul>
+                                    <li>All meals prepared according to your instruction.</li>
+                                    <li>Water refreshed regularly.</li>
+                                    <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
+                                    <li>Cleaning and/or changing out bedding as needed.</li>
+                                </ul>                                                               
+                                
+                                <span><em>Additional complimentary services:</em></span>
+                                <ul>
+                                    <li>Watering plants.</li>
+                                    <li>Mail and newspaper retrieval.</li>
+                                    <li>Lights and curtains rotated regularly.</li>
+                                    <li>All the popsicle sticks they can handle.</li>
+                                </ul>  
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
@@ -524,8 +530,8 @@
             <!-- Bird Services -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 my-5 wow zoomIn delay-sixtieths">
                 <div class="container text-center" id="bird-icon">
-                    <img src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Bird-services-icon.png" data-toggle="modal" data-target="#BirdsServiceModalCenter">
-                    <p class="text-white mt-3" id="pet-care-services-birds">BIRDS</p>
+                    <img class="mt-3" src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Bird-services-icon.png" data-toggle="modal" data-target="#BirdsServiceModalCenter">
+                    <p class="text-white pet-services-icon-text mt-3" id="pet-care-services-birds">BIRDS</p>
                 </div>
             </div>
 
@@ -546,21 +552,23 @@
                             
                             <br>
                             
-                            <p><em>What's included:</em></p>
-                            <ul>
-                                <li>All meals prepared according to your instruction.</li>
-                                <li>Water refreshed regularly.</li>
-                                <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
-                                <li>Cleaning and/or changing out bedding as needed.</li>
-                            </ul>                                                               
-                            
-                            <span><em>Additional complimentary services:</em></span>
-                            <ul>
-                                <li>Watering plants.</li>
-                                <li>Mail and newspaper retrieval.</li>
-                                <li>Lights and curtains rotated regularly.</li>
-                                <li>Head bobbing, mimicry, and whistling while we work.</li>
-                            </ul>  
+                            <div class="whats-included-service-modal">
+                                <p class="mt-2"><em>What's included:</em></p>
+                                <ul>
+                                    <li>All meals prepared according to your instruction.</li>
+                                    <li>Water refreshed regularly.</li>
+                                    <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
+                                    <li>Cleaning and/or changing out bedding as needed.</li>
+                                </ul>                                                               
+                                
+                                <span><em>Additional complimentary services:</em></span>
+                                <ul>
+                                    <li>Watering plants.</li>
+                                    <li>Mail and newspaper retrieval.</li>
+                                    <li>Lights and curtains rotated regularly.</li>
+                                    <li>Head bobbing, mimicry, and whistling while we work.</li>
+                                </ul>  
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
@@ -572,8 +580,8 @@
             <!-- Reptile Services -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 my-5 wow zoomIn delay-eigthieths">
                 <div class="container text-center" id="reptile-icon">
-                    <img src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/reptile-services-icon.png" data-toggle="modal" data-target="#ReptilesServiceModalCenter">
-                    <p class="text-white mt-3" id="pet-care-services-reptiles">REPTILES</p>
+                    <img class="mt-3" src="./assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/reptile-services-icon.png" data-toggle="modal" data-target="#ReptilesServiceModalCenter">
+                    <p class="text-white pet-services-icon-text mt-3" id="pet-care-services-reptiles">REPTILES</p>
                 </div>
             </div>
 
@@ -594,20 +602,22 @@
                             
                             <br>
                             
-                            <p><em>What's included:</em></p>
-                            <ul>
-                                <li>All meals prepared according to your instruction.</li>
-                                <li>Water refreshed regularly.</li>
-                                <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
-                                <li>Cleaning and/or changing out bedding as needed.</li>
-                            </ul>                                                               
-                            
-                            <span><em>Additional complimentary services:</em></span>
-                            <ul>
-                                <li>Watering plants.</li>
-                                <li>Mail and newspaper retrieval.</li>
-                                <li>Lights and curtains rotated regularly.</li>
-                            </ul>  
+                            <div class="whats-included-service-modal">
+                                <p class="mt-2"><em>What's included:</em></p>
+                                <ul>
+                                    <li>All meals prepared according to your instruction.</li>
+                                    <li>Water refreshed regularly.</li>
+                                    <li>Medication administered (if needed) per vet instruction unless otherwise specified.</li>
+                                    <li>Cleaning and/or changing out bedding as needed.</li>
+                                </ul>                                                               
+                                
+                                <span><em>Additional complimentary services:</em></span>
+                                <ul>
+                                    <li>Watering plants.</li>
+                                    <li>Mail and newspaper retrieval.</li>
+                                    <li>Lights and curtains rotated regularly.</li>
+                                </ul>  
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal">Close</button>
@@ -779,16 +789,16 @@
             </div>
 
             <div class="col-md-12 col-lg-4 text-center">
-                <a href="https://www.facebook.com/Weloveallpetspetcareservice/" target="_blank" class="mr-2" id="we-love-all-pets-facebook-icon">
-                    <span class="social_facebook_circle text-light"></span>
+                <a href="https://www.facebook.com/Weloveallpetspetcareservice/" target="_blank" class="mr-2 text-decoration-none">
+                    <span class="social_facebook_circle text-light d-inline-block" id="we-love-all-pets-facebook-icon"></span>
                 </a>
-                <a href="https://www.instagram.com/weloveallpetspetcareservice/?utm_source=ig_profile_share&igshid=e9s16wux5rxh" target="_blank" class="mx-2" id="we-love-all-pets-instagram-icon">
-                    <span class="social_instagram_circle text-light"></span>
+                <a href="https://www.instagram.com/weloveallpetspetcareservice/?utm_source=ig_profile_share&igshid=e9s16wux5rxh" target="_blank" class="mx-2 text-decoration-none">
+                    <span class="social_instagram_circle text-light d-inline-block" id="we-love-all-pets-instagram-icon"></span>
                 </a>
-                <a href="https://www.linkedin.com/company/we-love-all-pets/" target="_blank" class="ml-2" id="we-love-all-pets-linkedin-icon">
-                    <span class="social_linkedin_circle text-light"></span>
+                <a href="https://www.linkedin.com/company/we-love-all-pets/" target="_blank" class="ml-2 text-decoration-none">
+                    <span class="social_linkedin_circle text-light d-inline-block" id="we-love-all-pets-linkedin-icon"></span>
                 </a>
-                <p class="mb-0"><small class="text-light mb-0">Web Design by: RMN Web Design LLC</small></p>
+                <p class="mb-0" id="footer-RMN-Web-Design-LLC"><a class="text-decoration-none" href="http://ryanmnoble.com" target="_blank"><small class="text-light mb-0">Web Design by: RMN Web Design LLC</small></a></p>
             </div>
 
             <div class="text-sm-center col-md-12 text-md-center col-lg-4 text-lg-right" id="footer-copyright">
