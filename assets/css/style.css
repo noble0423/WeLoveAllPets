@@ -45,19 +45,28 @@ body,
     text-shadow: 1px 1px #e41428;
 }
 
-/* .modal-header,
-#services-modal-close-icon {
-    text-shadow: 0px 1px #ffffff;
-} */
+.word-on-street {
+    font-family: 
+        'Cuprum', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: .5px;
+    /* border-bottom: 3px solid red; */
+}
+
+.word-on-the-street-title {
+    border-bottom: 2px solid red;
+}
 
 .page-breaker-text {
     font-family: 
-        /* 'Satisfy', cursive; */
-        /* 'Kaushan Script', cursive; */
-        /* 'Caveat', cursive; */
         'Cuprum', sans-serif;
-        /* 'Dancing Script', cursive; */
+        /* 'Oswald', sans-serif; */
+        /* 'Fjalla One', sans-serif; */
+        /* 'Yanone Kaffeesatz', sans-serif; */
+        /* 'Carrois Gothic SC', sans-serif; */
     font-size: 1.7rem;
+    /* font-weight: lighter !important; */
     line-height: 3.4rem;
     /* color: #343a40 !important; */
     color: #6c757d;
@@ -66,7 +75,12 @@ body,
 .customerName {
     color: black;
     font-family: 'Caveat', cursive;
+    /* border-bottom: 3px solid red; */
 }
+
+/* .customer-name {
+    border-bottom: 3px solid red;
+} */
 
 .valued-customer-since {
     font-size: .95rem;
@@ -349,10 +363,13 @@ a.dropdown-item {
     transition: all .2s ease-in-out;
 }
 
+#footer-RMN-Web-Design-LLC:hover {
+    transform: scale(1.05);
+}
+
 #we-love-all-pets-facebook-icon:hover,
 #we-love-all-pets-instagram-icon:hover,
-#we-love-all-pets-linkedin-icon:hover,
-#footer-RMN-Web-Design-LLC:hover {
+#we-love-all-pets-linkedin-icon:hover {
     /* text-decoration: none; */
     transform: scale(1.2); 
 }
@@ -384,6 +401,9 @@ a.dropdown-item {
         font-size: 1.4rem;
         line-height: 2.7rem;
     }
+    /* .customerName {
+        font-size: 1.7rem !important;
+    } */
 }
 @media only screen and (max-width:768px) {
     .page-breaker-text {
