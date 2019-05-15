@@ -34,6 +34,12 @@ body,
     font-size: 1.1rem;
 }
 
+.about-us-carousel {
+    text-shadow: 1px 1px #343a40;
+    font-size: 1.3rem;
+    font-weight: bolder !important;
+}
+
 #about-us-row {
     color: white;
     text-shadow: 1px 1px #343a40;
@@ -156,7 +162,7 @@ a.dropdown-item {
 }
 
 .opacity {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* Icons */
@@ -423,6 +429,41 @@ a.dropdown-item {
     }
     .bg-transparent {
         background: #343a40 !important;
+    }
+}
+
+/* About Us Carousel */
+@media only screen and (max-width: 1575px) {
+    .about-us-carousel {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .about-us-carousel {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .about-us-carousel {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .carousel-caption {
+        /* bottom: -50px; */
+        bottom: -10%;
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+    .carousel-caption {
+        bottom: -12.5%;
+    }
+    .carousel-caption-title {
+        margin-bottom: 1.5rem !important;
     }
 }
 
