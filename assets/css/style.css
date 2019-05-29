@@ -36,8 +36,19 @@ body,
 
 .about-us-carousel {
     text-shadow: 1px 1px #343a40;
+    font-family: 'Happy Monkey', cursive;
     font-size: 1.3rem;
     font-weight: bolder !important;
+}
+
+.carousel-caption-title {
+    /* font-family: 'Happy Monkey', cursive; */
+    font-family: 'Pompiere', cursive;
+    /* font-family: 'Simonetta', cursive; */
+    /* font-family: 'Overlock SC', cursive; */
+    /* font-family: 'Allan', cursive; */
+    /* font-family: 'Oregano', cursive; */
+    /* font-family: 'Salsa', cursive; */
 }
 
 #about-us-row {
@@ -52,8 +63,7 @@ body,
 }
 
 .word-on-street {
-    font-family: 
-        'Cuprum', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-size: 1.2rem;
     font-weight: 900;
     letter-spacing: .5px;
@@ -454,7 +464,7 @@ a.dropdown-item {
 }
 
 /* About Us Carousel */
-@media only screen and (max-width: 1575px) {
+/* @media only screen and (max-width: 1575px) {
     .about-us-carousel {
         font-size: 1.25rem;
     }
@@ -486,7 +496,7 @@ a.dropdown-item {
     .carousel-caption-title {
         margin-bottom: 1.5rem !important;
     }
-}
+} */
 
 /* Page Breaker Text */
 @media only screen and (max-width:1200px) {
