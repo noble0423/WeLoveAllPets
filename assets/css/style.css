@@ -201,6 +201,25 @@ a.dropdown-item {
     transform: scale(1.2); 
 }
 
+/* About Us Stylings */
+#about-us-img-left,
+#about-us-img-right {
+    max-height: 400px;
+    min-width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.bg-gradient-danger,
+.btn-gradient-danger {
+    /* background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
+    background: #dc3545 linear-gradient(140deg, #f70e24, #e66c6cd1) repeat-x !important;
+}
+
+.btn-gradient-danger {
+    text-shadow: 1px 1px #343a40;
+}
+
 /* All Services */
 #voodooHeading,
 .pet-services-icon-text {
@@ -263,25 +282,6 @@ a.dropdown-item {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 } */
 
-/* About Us Stylings */
-#about-us-img-left,
-#about-us-img-right {
-    max-height: 400px;
-    min-width: 450px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-.bg-gradient-danger,
-.btn-gradient-danger {
-    /* background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
-    background: #dc3545 linear-gradient(140deg, #f70e24, #e66c6cd1) repeat-x !important;
-}
-
-.btn-gradient-danger {
-    text-shadow: 1px 1px #343a40;
-}
-
 /* Customer Reviews Stylings */
 .cust-review-img:hover {
     opacity: 0.75;
@@ -291,8 +291,28 @@ a.dropdown-item {
     display: inline-block;
 }
 
-/* Services Stylings */
+/* Modified Book Now Stylings */
+#book-pet-care-services-houston {
+    background-image: url("../images/adult-animal-canine-237692.jpg");
+    background-size: cover;
+}
 
+#square-appt-widget {
+    min-height: 500px;
+    min-width: 450px;
+    /* border: 2px solid red; */
+}
+
+.square-widget {
+    visibility: hidden;
+}
+
+.square-widget-visible {
+    visibility: visible;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important;
+}
 
 /* Book Now Stylings */
 /* #book-pet-care-appointment-houston-med-center {
@@ -302,11 +322,11 @@ a.dropdown-item {
     background-size: cover;
 } */
 
-#book-now-img {
+/* #book-now-img {
     z-index: -1;
     position: relative;
     opacity: .95;
-}
+} */
 
 .btn-gradient-danger {
     z-index: 1;
@@ -318,17 +338,6 @@ a.dropdown-item {
     transform: scale(1.1);
 }
 
-#dog-walking-hours {
-    /* background: #343a40; */
-    /* opacity: .9; */
-    min-width: 285px;
-}
-
-#dog-walking-hours-image {
-    min-width: 325px;
-    height: auto;
-    /* opacity: .9; */
-}
 
 /* Contact Us Stylings */
 #trustworthy-pet-care-houston-contact-info {
@@ -365,6 +374,16 @@ a.dropdown-item {
 #dog-walking-hours {
     border-radius: 10px;
     border: 2px solid white;
+}
+
+#dog-walking-hours {
+    min-width: 285px;
+}
+
+#dog-walking-hours-image {
+    min-width: 325px;
+    height: auto;
+    
 }
 
 /* #email-btn {
