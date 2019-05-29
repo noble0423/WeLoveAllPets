@@ -7670,6 +7670,16 @@ button.bg-dark:focus {
   margin-bottom: 6rem !important;
 }
 
+.mb-7,
+.my-7 {
+  margin-bottom: 7rem !important;
+}
+
+.mb-8,
+.my-8 {
+  margin-bottom: 8rem !important;
+}
+
 .ml-6,
 .mx-6 {
   margin-left: 6rem !important;

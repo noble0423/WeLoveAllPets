@@ -3,12 +3,7 @@ html {
 }
 
 /* Fonts */
-h2 {
-    /* font-family: 'Cinzel', serif; */
-    font-family: 'Alegreya SC', serif;
-    letter-spacing: .15rem;
-    text-shadow: 1px 1px #343a40;
-}
+
 
 h1,
 h3,
@@ -16,21 +11,13 @@ h4,
 h5,
 h6
 .nav-link {
-    font-family: 
-        /* 'Staatliches', cursive; */
-        'Carrois Gothic SC', sans-serif;
-    /* letter-spacing: .1rem; */
+    font-family: 'Carrois Gothic SC', sans-serif;
 }
 
-body,
-.valued-customer-since {
+.valued-customer-since,
+.card-para-font {
     font-family: 
-    /* 'Oswald', sans-serif; */
-    /* 'Fjalla One', sans-serif; */
-    /* 'Yanone Kaffeesatz', sans-serif; */
     'Cuprum', sans-serif;
-    /* 'Carrois Gothic SC', sans-serif; */
-    /* letter-spacing: .1rem; */
     font-size: 1.1rem;
 }
 
@@ -39,9 +26,11 @@ body,
     font-family: 'Happy Monkey', cursive;
     font-size: 1.3rem;
     font-weight: bolder !important;
+    letter-spacing: .04rem;
 }
 
-.carousel-caption-title {
+.carousel-caption-title,
+#about-us-title {
     /* font-family: 'Happy Monkey', cursive; */
     font-family: 'Pompiere', cursive;
     /* font-family: 'Simonetta', cursive; */
@@ -49,11 +38,27 @@ body,
     /* font-family: 'Allan', cursive; */
     /* font-family: 'Oregano', cursive; */
     /* font-family: 'Salsa', cursive; */
+    letter-spacing: .15rem;
+    text-shadow: 1px 1px #343a40;
 }
 
 #about-us-row {
     color: white;
-    text-shadow: 1px 1px #343a40;
+    text-shadow: 1.5px 1.5px 4px black;
+}
+
+#about-us-title {
+    color: white;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
+.about-us-section {
+    color: white;
+    text-shadow: 1.5px 1.5px 2px black;
+    /* text-shadow: 1px 1px #343a40; */
+    font-family: 'Cuprum', sans-serif;;
+    font-size: 1.4rem;
+    font-weight: bolder !important;
 }
 
 #trustworthy-pet-care-houston-contact-info,
@@ -151,6 +156,7 @@ a.dropdown-item {
 
 /* Nav Bar */
 .nav-link {
+    font-family: 'Cuprum', sans-serif;
     color: #ffffff !important;
     transition: all .2s ease-in-out;
     font-size: 1.5rem;
@@ -171,8 +177,16 @@ a.dropdown-item {
     background: #000;
 }
 
-.opacity {
+.opacity6 {
+    opacity: 0.6;
+} 
+
+.opacity7 {
     opacity: 0.7;
+}
+
+.opacity8 {
+    opacity: 0.8;
 }
 
 /* Icons */
@@ -227,6 +241,7 @@ a.dropdown-item {
 }
 
 .btn-gradient-danger {
+    font-family: 'Cuprum', sans-serif;
     text-shadow: 1px 1px #343a40;
 }
 
@@ -234,6 +249,7 @@ a.dropdown-item {
 #voodooHeading,
 .pet-services-icon-text {
     text-shadow: 1px 1px #343a40; 
+    font-family: 'Cuprum', sans-serif;
 }
 
 #voodooHeading {
@@ -268,30 +284,6 @@ a.dropdown-item {
     border-top: 1px solid gainsboro;
 }
 
-/* .whats-included-service-modal {
-    font-size: .5rem;
-} */
-
-/* .services-card-body {
-    overflow: auto;
-    min-height: 350px;
-    max-height: 350px;
-} */
-
-/* ::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-} */
-
 /* Customer Reviews Stylings */
 .cust-review-img:hover {
     opacity: 0.75;
@@ -325,19 +317,6 @@ a.dropdown-item {
 }
 
 /* Book Now Stylings */
-/* #book-pet-care-appointment-houston-med-center {
-    height: 1000px;
-    background-image: url("../images/dog-walking-houston-book-now.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-/* #book-now-img {
-    z-index: -1;
-    position: relative;
-    opacity: .95;
-} */
-
 .btn-gradient-danger {
     z-index: 1;
     /* position: relative; */
@@ -358,6 +337,11 @@ a.dropdown-item {
     /* opacity: .5; */
     border-radius: 10px;
     border: 2px solid white;
+}
+
+.contact-info,
+#contact-us-form {
+    font-family: 'Cuprum', sans-serif;
 }
 
 .form-control{
@@ -396,24 +380,9 @@ a.dropdown-item {
     
 }
 
-/* #email-btn {
-    opacity: 1 !important;
-    background-color: #e41428 !important;
-    color: white !important;
-} */
-
-/* #email-btn,
-#book-now-btn {
-    transition: all .2s ease-in-out;
-}
-
-#email-btn:hover,
-#book-now-btn:hover {
-    transform: scale(1.1);
-} */
-
 /* Footer */
 #we-love-all-pets-footer {
+    font-family: 'Cuprum', sans-serif;;
     margin-top: 175px !important;
 }
 
@@ -442,13 +411,6 @@ a.dropdown-item {
     transform: scale(1.2); 
 }
 
-/* .text {
-    background-image: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important;
-    color: transparent;
-    -webkit-background-clip: text;
-	background-clip: text;
-} */
-
 /* Media Queries */
 /* Nav Bar */ 
 @media only screen and (max-width: 850px) {
@@ -464,39 +426,64 @@ a.dropdown-item {
 }
 
 /* About Us Carousel */
-/* @media only screen and (max-width: 1575px) {
-    .about-us-carousel {
-        font-size: 1.25rem;
+/* Slide 1 */
+@media only screen and (max-width: 1697px) {
+    #slide-one-para {
+        margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1500px) {
-    .about-us-carousel {
-        font-size: 1.2rem;
+@media only screen and (max-width: 1322px) {
+    #slide-one-para {
+        margin-bottom: 2.1rem !important;
     }
 }
 
-@media only screen and (max-width: 1450px) {
-    .about-us-carousel {
-        font-size: 1.1rem;
+/* Slide 2 */
+@media only screen and (max-width: 1750px) {
+    #slide-two-para {
+        margin-bottom: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 1383px) {
+    #slide-two-para {
+        margin-bottom: 2.1rem !important;
+    }
+}
+
+/* Slide 3 */
+@media only screen and (max-width: 1303px) {
+    #slide-three-para {
+        margin-bottom: 6rem !important;
+    }
+}
+
+/* Slide 4 */
+@media only screen and (max-width: 1739px) {
+    #slide-four-para {
+        margin-bottom: 4rem !important;
     }
 }
 
 @media only screen and (max-width: 1375px) {
-    .carousel-caption {
-        /* bottom: -50px; */
-        bottom: -10%;
+    #slide-four-para {
+        margin-bottom: 2.1rem !important;
     }
 }
 
-@media only screen and (max-width: 1275px) {
-    .carousel-caption {
-        bottom: -12.5%;
+/* Slide 5 */
+@media only screen and (max-width: 1862px) {
+    #slide-five-para {
+        margin-bottom: 6rem !important;
     }
-    .carousel-caption-title {
-        margin-bottom: 1.5rem !important;
+}
+
+@media only screen and (max-width: 1402px) {
+    #slide-five-para {
+        margin-bottom: 4rem !important;
     }
-} */
+}
 
 /* Page Breaker Text */
 @media only screen and (max-width:1200px) {
