@@ -81,7 +81,8 @@ h6
 
 .page-breaker-text {
     font-family: 
-        'Cuprum', sans-serif;
+        /* 'Cuprum', sans-serif; */
+        'Happy Monkey', cursive;
         /* 'Oswald', sans-serif; */
         /* 'Fjalla One', sans-serif; */
         /* 'Yanone Kaffeesatz', sans-serif; */
@@ -191,6 +192,18 @@ a.dropdown-item {
 
 /* Icons */
 /* Core Values */
+.core-value-card {
+    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
+    /* position: relative; */
+}
+
+/* .cv-card-border {
+    position: absolute;
+    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
+    top: 50%;
+    bottom: 0;
+} */
+
 #dog-walking,
 #pet-sitting,
 #overnight-pet-sitting,
@@ -486,7 +499,7 @@ a.dropdown-item {
 }
 
 /* Page Breaker Text */
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width: 1200px) {
     .page-breaker-text {
         font-size: 1.4rem;
         line-height: 2.7rem;
@@ -495,10 +508,48 @@ a.dropdown-item {
         font-size: 1.7rem !important;
     } */
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .page-breaker-text {
         font-size: 1.25rem;
         line-height: 2.25rem;
+    }
+}
+
+/* Core Values Section */
+@media only screen and (max-width: 1500px) {
+    .core-value-card-body {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 993px) {
+    .card-para-font {
+        font-size: .95rem;
+    }
+    /* .core-value-card-body {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+    #core-value-deck {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    } */
+
+}
+
+@media only screen and (max-width: 992px) {
+    .box-shadow-sm-screens {
+        /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        background: #f8f9fa linear-gradient(135deg, #eaeaea, #ffffff) repeat-x !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #core-value-deck {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
