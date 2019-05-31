@@ -368,10 +368,14 @@ a.dropdown-item {
 #dog-walking-areas-serviced {
     border-radius: 10px;
     border: 2px solid white;
+    /* max-width: 700px; */
+    /* min-height: 300px; */
+    /* min-width: 300px; */
 }
 
 #pet-care-services-houston-map {
     transition: all .2s ease-in-out;
+    /* min-height: 275px; */
 }
 
 #pet-care-services-houston-map:hover {
@@ -381,16 +385,26 @@ a.dropdown-item {
 #dog-walking-hours {
     border-radius: 10px;
     border: 2px solid white;
+    min-width: 285px;
 }
 
 #dog-walking-hours {
-    min-width: 285px;
+    /* position: absolute;
+    left: 16%; */
 }
 
 #dog-walking-hours-image {
     min-width: 325px;
     height: auto;
     
+}
+
+#map-hours-col {
+    /* position: relative; */
+} 
+
+#hours-row-positioning {
+
 }
 
 /* Footer */
@@ -569,6 +583,117 @@ a.dropdown-item {
 @media only screen and (max-width: 991px) {
     #dog-walking-hours-container {
         margin-top: 250px !important;
+    }
+}
+
+/* Contact Us Section */
+@media only screen and (max-width: 1750px) {
+    #dog-walking-hours {
+        margin-left: 7.25rem !important;
+        /* margin-top: 3.1rem !important; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    #dog-walking-hours {
+        margin-left: 6.75rem !important;
+        /* margin-top: 4.3rem !important; */
+        padding-top: 1.5rem;
+        padding-bottom: 1.9em;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    #dog-walking-hours {
+        margin-left: 6rem !important;
+        /* margin-top: 1.8rem !important;  */
+        padding-top: 2.25rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #map-title {
+        margin-top: 2rem !important;
+        margin-bottom: 1.4rem !important;
+    }
+    #dog-walking-hours {
+        /* margin-top: 2.9rem !important; */
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #map-title {
+        /* margin-top: 2rem !important; */
+        margin-bottom: 2.7rem !important;
+    }
+    #dog-walking-hours {
+        margin-left: 5rem !important;
+        /* margin-top: 7.9rem !important; */
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    /* #map-title {
+        margin-bottom: .95rem !important;
+    } */
+    #dog-walking-hours {
+        margin-left: 6rem !important;
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
+    } 
+}
+
+@media only screen and (max-width: 1075px) {
+    /* #map-title {
+        margin-bottom: .95rem !important;
+    } */
+    #dog-walking-hours {
+        margin-left: 5rem !important;
+        padding-top: 2.25rem;
+        padding-bottom: 2.5rem;
+    } 
+}
+
+@media only screen and (max-width: 991px) {
+    #map-title {
+        margin-top: 2.5rem !important;
+        margin-bottom: 5rem !important;
+    }
+    #dog-walking-hours {
+        margin-left: 4.5rem !important;
+        /* padding-top: 2.25rem;
+        padding-bottom: 2.5rem; */
+    } 
+}
+
+@media only screen and (max-width: 842px) {
+    #dog-walking-hours {
+        margin-left: 3.75rem !important;
+        margin-top: 2.9rem !important;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-us-col {
+        margin-bottom: 0rem !important;
+    }
+    #map-hours-col {
+        margin-top: 0rem !important;
+    }
+    #map-title {
+        margin-bottom: 3rem !important;
+    }
+    #dog-walking-hours {
+        margin-left: 0rem !important;
+        /* margin-right: 1rem !important; */
+        margin-top: 0rem !important;
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
     }
 }
 
