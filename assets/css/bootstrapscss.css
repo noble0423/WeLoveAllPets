@@ -7984,14 +7984,6 @@ button.bg-dark:focus {
   margin-top: -3rem !important;
 }
 
-.mt-n6 {
-  margin-top: -6rem !important;
-}
-
-.mb-n10 {
-  margin-bottom: -15rem !important;
-}
-
 .mr-n5,
 .mx-n5 {
   margin-right: -3rem !important;
@@ -8005,6 +7997,59 @@ button.bg-dark:focus {
 .ml-n5,
 .mx-n5 {
   margin-left: -3rem !important;
+}
+
+.m-n6 {
+  margin: -6rem !important;
+}
+
+.mt-n6,
+.my-n6 {
+  margin-top: -6rem !important;
+}
+
+.mr-n6,
+.mx-n6 {
+  margin-right: -6rem !important;
+}
+
+.mb-n6,
+.my-n6 {
+  margin-bottom: -6rem !important;
+}
+
+.ml-n6,
+.mx-n6 {
+  margin-left: -6rem !important;
+}
+
+.m-n10 {
+  margin: -10rem !important;
+}
+
+.mt-n10,
+.my-n10 {
+  margin-top: -10rem !important;
+}
+
+.mr-n10,
+.mx-n10 {
+  margin-right: -10rem !important;
+}
+
+.mb-n10,
+.my-n10 {
+  margin-bottom: -10rem !important;
+}
+
+.ml-n10,
+.mx-n10 {
+  margin-left: -10rem !important;
+}
+
+
+.mb-n10 {
+  margin-bottom: -15rem !important;
 }
 
 .m-auto {

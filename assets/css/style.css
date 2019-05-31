@@ -259,14 +259,17 @@ a.dropdown-item {
 }
 
 /* All Services */
-#voodooHeading,
 .pet-services-icon-text {
     text-shadow: 1px 1px #343a40; 
     font-family: 'Cuprum', sans-serif;
+    font-size: 1.65rem;
 }
 
 #voodooHeading {
-    font-size: 2.5rem !important;
+    font-family: 
+        'Pompiere', cursive;
+        /* 'Cuprum', sans-serif; */
+    text-shadow: 1.5px 1.5px 3px black;
 }
 
 .pet-services-icon-text {
@@ -279,17 +282,21 @@ a.dropdown-item {
     color: black;
 }
 
+.icon-img-size {
+    width: 150px;
+}
+
 #dog-icon,
 #cat-icon,
 #small-animals-icon,
 #bird-icon,
 #reptile-icon {
     /* border: 1px solid black; */
-    border: 2px solid white;
+    /* border: 2px solid white; */
     /* border: 1px solid gray; */
-    border-radius: 35% 12%;
+    /* border-radius: 35% 12%;
     background-color: rgba(300, 300, 300, 0.3);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); */
     max-width: 240px;
 } 
 
@@ -343,11 +350,12 @@ a.dropdown-item {
 
 /* Contact Us Stylings */
 #trustworthy-pet-care-houston-contact-info {
-    /* background-image: url("../images/bull-dog-walk.jpg");
+    /* background-image: url("../images/cat-high-five.jpg"); */
+    background-image: url("../images/dog-laying-on-side.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; */
-    /* opacity: .5; */
+    background-repeat: no-repeat;
+    opacity: .5;
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -568,6 +576,20 @@ a.dropdown-item {
 }
 
 /* Pet Care Services Section */
+/* @media only screen and (min-width: 1200px) {
+    .col-1-resized {
+        flex: 0 0 2.5% !important;
+        max-width: 2.5% !important;
+    }
+    
+    .col-2-resized {
+        flex: 0 0 19% !important;
+        max-width: 19% !important;
+    }
+} */
+
+
+
 @media only screen and (max-width: 768px) {
     #services-image-left,
     #services-image-right {
