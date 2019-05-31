@@ -21,6 +21,19 @@ h6
     font-size: 1.1rem;
 }
 
+.card-para-font {
+    border-top: 2px solid rgb(156, 156, 156);
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.red-underline {
+    /* border-bottom: 2px solid red; */
+    /* border-top: 2px solid red; */
+}
+
 .about-us-carousel {
     text-shadow: 1px 1px #343a40;
     font-family: 'Happy Monkey', cursive;
