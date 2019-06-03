@@ -17,21 +17,19 @@ h6
 .valued-customer-since,
 .card-para-font {
     font-family: 
-    'Cuprum', sans-serif;
-    font-size: 1.1rem;
+    /* 'Cuprum', sans-serif; */
+    'Happy Monkey', cursive;
+    font-size: 1rem;
 }
 
 .card-para-font {
-    border-top: 2px solid rgb(156, 156, 156);
+    /* border-top: 2px solid rgb(156, 156, 156); */
+    border-top: 2px solid #e41429a6;
 }
 
 .card-title {
     font-weight: bolder;
-}
-
-.red-underline {
-    /* border-bottom: 2px solid red; */
-    /* border-top: 2px solid red; */
+    /* text-shadow: 1px 1px 3px #e41429a6; */
 }
 
 .about-us-carousel {
@@ -69,15 +67,21 @@ h6
     color: white;
     text-shadow: 1.5px 1.5px 2px black;
     /* text-shadow: 1px 1px #343a40; */
-    font-family: 'Cuprum', sans-serif;;
-    font-size: 1.4rem;
-    font-weight: bolder !important;
+    font-family: 
+        /* 'Cuprum', sans-serif; */
+        'Happy Monkey', cursive;
+    font-size: 1.2rem;
+    /* font-weight: bolder !important; */
 }
 
 #trustworthy-pet-care-houston-contact-info,
 #we-love-all-pets-footer,
 #dog-walking-hours {
     text-shadow: 1px 1px #e41428;
+}
+
+#we-love-all-pets-footer {
+    font-size: 1.35rem;
 }
 
 .word-on-street {
@@ -89,7 +93,7 @@ h6
 }
 
 .word-on-the-street-title {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #e41429a6;
 }
 
 .page-breaker-text {
@@ -122,8 +126,14 @@ h6
 }
 
 .modal-body {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 
+        /* 'Cuprum', sans-serif; */
+        'Happy Monkey', cursive;
     font-size: 1rem;
+}
+
+#map-modal-footer-title {
+    font-family: 'Happy Monkey', cursive;
 }
 
 .modal-price {
@@ -132,8 +142,15 @@ h6
 }
 
 .modal-service-title {
+    font-family: 'Cuprum', sans-serif;
     text-decoration: underline;
+    /* text-decoration-color: #e41429a6; */
     text-shadow: 0.5px 0.5px 1px grey;
+}
+
+.additional-modal-info-title {
+    /* font-family: 'Cuprum', sans-serif; */
+    font-weight: bolder;
 }
 
 /* Grid */
@@ -274,7 +291,8 @@ a.dropdown-item {
 /* All Services */
 .pet-services-icon-text {
     text-shadow: 1px 1px #343a40; 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Happy Monkey', cursive;
+        /* 'Cuprum', sans-serif; */
     font-size: 1.65rem;
 }
 
@@ -375,7 +393,9 @@ a.dropdown-item {
 
 .contact-info,
 #contact-us-form {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 
+        /* 'Cuprum', sans-serif; */
+        'Happy Monkey', cursive; 
 }
 
 .form-control{
@@ -407,6 +427,10 @@ a.dropdown-item {
     border-radius: 10px;
     border: 2px solid white;
     min-width: 285px;
+}
+
+.hours-text {
+    font-family: 'Happy Monkey', cursive; 
 }
 
 #dog-walking-hours {
@@ -487,6 +511,18 @@ a.dropdown-item {
     }
 }
 
+/* @media only screen and (min-width: 577px) and (max-width: 1199px) {
+    .no-skinny {
+        display: visible !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .no-skinny {
+        display: none !important;
+    }
+} */
+
 /* Slide 2 */
 @media only screen and (max-width: 1750px) {
     #slide-two-para {
@@ -558,7 +594,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 993px) {
+@media only screen and (max-width: 1250px) and (min-width: 1100px) {
     .card-para-font {
         font-size: .95rem;
     }
@@ -571,6 +607,12 @@ a.dropdown-item {
         margin-right: 1rem;
     } */
 
+}
+
+@media only screen and (max-width: 1099px) and (min-width: 993px) {
+    .card-para-font {
+        font-size: .85rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -588,8 +630,50 @@ a.dropdown-item {
     }
 }
 
+/* About Us Section (XS - MD Scrren Sizes only) */
+@media only screen and (max-width: 1044px) {
+    #about-us-title {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 933px) {
+    #about-us-title {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 793px) and (max-width: 842px) {
+    #about-us-title {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 686px) and (max-width: 780px) {
+    #about-us-img-right {
+        margin-left: 8rem !important;
+    }
+}
+
+@media only screen and (min-width: 595px) and (max-width: 792px) {
+    #about-us-title {
+        font-size: 2.5rem !important;
+    }
+    #about-us-img-left {
+        margin-right: 8rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 594px) {
+    #about-us-img-left,
+    #about-us-img-right {
+        min-width: 390px !important;
+        margin-bottom: 2rem !important;
+    }
+}
 /* Pet Care Services Section */
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .col-1-resized {
         flex: 0 0 2.5% !important;
         max-width: 2.5% !important;
@@ -597,13 +681,52 @@ a.dropdown-item {
     
     .col-2-resized {
         flex: 0 0 19% !important;
-        max-width: 19% !important;
+        max-width: 15% !important;
     }
-} */
+
+    #dog-col {
+        margin-right: 2rem !important;
+    }
+
+    #cat-col,
+    #bird-col,
+    #small-animal-col {
+        margin-right: 3rem !important;
+        margin-left: 3rem !important;
+    }
+
+    #reptile-col {
+        margin-left: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 1579px) {
+    #cat-col,
+    #bird-col,
+    #small-animal-col {
+        margin-right: 2.5rem !important;
+        margin-left: 2.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #dog-col {
+        margin-right: 1rem !important;
+    }
+
+    #cat-col,
+    #bird-col,
+    #small-animal-col {
+        margin-right: 2rem !important;
+        margin-left: 2rem !important;
+    }
+    #reptile-col {
+        margin-left: 1rem !important;
+    }
+}
 
 
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     #services-image-left,
     #services-image-right {
         max-width: 500px;
@@ -612,7 +735,7 @@ a.dropdown-item {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
-}
+} */
 
 /* Book Now Section */
 @media only screen and (max-width: 991px) {
