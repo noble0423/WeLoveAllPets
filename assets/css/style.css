@@ -3,8 +3,6 @@ html {
 }
 
 /* Fonts */
-
-
 h1,
 h3,
 h4,
@@ -65,7 +63,7 @@ h6
 
 .about-us-section {
     color: white;
-    text-shadow: 1.5px 1.5px 2px black;
+    text-shadow: 1.5px 1.5px 3px black;
     /* text-shadow: 1px 1px #343a40; */
     font-family: 
         /* 'Cuprum', sans-serif; */
@@ -220,6 +218,12 @@ a.dropdown-item {
     opacity: 0.8;
 }
 
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
 /* Icons */
 /* Core Values */
 .core-value-card {
@@ -290,10 +294,17 @@ a.dropdown-item {
 
 /* All Services */
 .pet-services-icon-text {
-    text-shadow: 1px 1px #343a40; 
+    text-shadow: 1.5px 1.5px 3px black; 
     font-family: 'Happy Monkey', cursive;
         /* 'Cuprum', sans-serif; */
     font-size: 1.65rem;
+    /* border-top: 2px solid rgb(170, 170, 170);
+    border-bottom: 2px solid rgb(170, 170, 170); */
+}
+
+.pet-services-span-border {
+    /* border-top: 2px solid rgb(170, 170, 170);
+    border-bottom: 2px solid rgb(170, 170, 170); */
 }
 
 #voodooHeading {
@@ -672,7 +683,41 @@ a.dropdown-item {
         margin-bottom: 2rem !important;
     }
 }
+
 /* Pet Care Services Section */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #voodooHeading {
+        margin-top: 0rem !important;
+    } 
+    .icon-img-size {
+        width: 115px;
+    }  
+}
+
+@media only screen and (max-width: 576px) {
+    /* .icon-img-size {
+        width: 90px;
+    }
+    .pet-services-icon-text {
+        font-size: 1.15rem !important;
+    } */
+}
+
+@media only screen and (max-width: 767px) {
+    #voodooHeading {
+        font-size: 3.5rem !important;
+    }
+    .card-deck {
+        padding-bottom: 3rem !important;
+    }
+    .icon-img-size{ 
+        width: 115px;
+    }
+    .pet-services-icon-text {
+        font-size: 1.25rem !important;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .col-1-resized {
         flex: 0 0 2.5% !important;
@@ -700,7 +745,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1579px) {
+@media only screen and (min-width: 1401px) and (max-width: 1579px) {
     #cat-col,
     #bird-col,
     #small-animal-col {
@@ -709,7 +754,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
     #dog-col {
         margin-right: 1rem !important;
     }
@@ -725,18 +770,6 @@ a.dropdown-item {
     }
 }
 
-
-/* @media only screen and (max-width: 768px) {
-    #services-image-left,
-    #services-image-right {
-        max-width: 500px;
-    }
-    #all-pet-services-icon-container {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-} */
-
 /* Book Now Section */
 @media only screen and (max-width: 991px) {
     #dog-walking-hours-container {
@@ -748,7 +781,6 @@ a.dropdown-item {
 @media only screen and (max-width: 1750px) {
     #dog-walking-hours {
         margin-left: 7.25rem !important;
-        /* margin-top: 3.1rem !important; */
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -757,7 +789,6 @@ a.dropdown-item {
 @media only screen and (max-width: 1650px) {
     #dog-walking-hours {
         margin-left: 6.75rem !important;
-        /* margin-top: 4.3rem !important; */
         padding-top: 1.5rem;
         padding-bottom: 1.9em;
     }
@@ -766,7 +797,6 @@ a.dropdown-item {
 @media only screen and (max-width: 1550px) {
     #dog-walking-hours {
         margin-left: 6rem !important;
-        /* margin-top: 1.8rem !important;  */
         padding-top: 2.25rem;
         padding-bottom: 2.5rem;
     }
@@ -777,26 +807,19 @@ a.dropdown-item {
         margin-top: 2rem !important;
         margin-bottom: 1.4rem !important;
     }
-    #dog-walking-hours {
-        /* margin-top: 2.9rem !important; */
-    }
 }
 
 @media only screen and (max-width: 1300px) {
     #map-title {
-        /* margin-top: 2rem !important; */
         margin-bottom: 2.7rem !important;
     }
     #dog-walking-hours {
         margin-left: 5rem !important;
-        /* margin-top: 7.9rem !important; */
+
     }
 }
 
 @media only screen and (max-width: 1199px) {
-    /* #map-title {
-        margin-bottom: .95rem !important;
-    } */
     #dog-walking-hours {
         margin-left: 6rem !important;
         padding-top: 1.25rem;
@@ -805,9 +828,6 @@ a.dropdown-item {
 }
 
 @media only screen and (max-width: 1075px) {
-    /* #map-title {
-        margin-bottom: .95rem !important;
-    } */
     #dog-walking-hours {
         margin-left: 5rem !important;
         padding-top: 2.25rem;
@@ -822,8 +842,6 @@ a.dropdown-item {
     }
     #dog-walking-hours {
         margin-left: 4.5rem !important;
-        /* padding-top: 2.25rem;
-        padding-bottom: 2.5rem; */
     } 
 }
 
@@ -848,7 +866,6 @@ a.dropdown-item {
     }
     #dog-walking-hours {
         margin-left: 0rem !important;
-        /* margin-right: 1rem !important; */
         margin-top: 0rem !important;
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
