@@ -183,6 +183,14 @@ a.dropdown-item {
 }
 
 /* Nav Bar */
+#safari-negative-margin {
+    /* display: block; */
+    /* position: relative; */
+    /* margin-top: -96px; */
+    /* display: block;
+    vertical-align: top; */
+}
+
 .nav-link {
     font-family: 'Cuprum', sans-serif;
     color: #ffffff !important;
@@ -377,13 +385,20 @@ a.dropdown-item {
 }
 
 #square-appt-widget {
-    min-height: 500px;
-    min-width: 450px;
+    /* min-height: 500px;
+    min-width: 450px; */
     /* border: 2px solid red; */
+    /* display: none; */
+    /* border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important; */
 }
 
 .square-widget {
     visibility: hidden;
+    min-height: 250px;
+    min-width: 225px;
+    transition: min-width 1s, min-height 1s;
 }
 
 .square-widget-visible {
@@ -391,6 +406,8 @@ a.dropdown-item {
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important;
+    min-height: 500px;
+    min-width: 450px;
 }
 
 /* Book Now Stylings */
@@ -458,10 +475,10 @@ a.dropdown-item {
     font-family: 'Happy Monkey', cursive; 
 }
 
-#dog-walking-hours {
-    /* position: absolute;
-    left: 16%; */
-}
+/* #dog-walking-hours {
+    position: absolute;
+    left: 16%;
+} */
 
 #dog-walking-hours-image {
     min-width: 325px;
@@ -469,13 +486,13 @@ a.dropdown-item {
     
 }
 
-#map-hours-col {
-    /* position: relative; */
+/* #map-hours-col {
+    position: relative;
 } 
 
 #hours-row-positioning {
 
-}
+} */
 
 /* Footer */
 #we-love-all-pets-footer {
@@ -623,15 +640,6 @@ a.dropdown-item {
     .card-para-font {
         font-size: .95rem;
     }
-    /* .core-value-card-body {
-        margin-left: 0rem !important;
-        margin-right: 0rem !important;
-    }
-    #core-value-deck {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    } */
-
 }
 
 @media only screen and (max-width: 1136px) and (min-width: 992px) {
@@ -642,7 +650,6 @@ a.dropdown-item {
 
 @media only screen and (max-width: 991px) {
     .box-shadow-sm-screens {
-        /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
         background: #f8f9fa linear-gradient(135deg, #f3f3f3, #ffffff) repeat-x !important;
     }
@@ -819,23 +826,36 @@ a.dropdown-item {
 }
 
 /* Book Now Section */
-/* @media only screen and (max-width: 991px) {
-    #dog-walking-hours-container {
-        margin-top: 250px !important;
+@media only screen and (min-width: 1400px) {
+    #square-appt-widget {
+        padding: 0 4rem !important;
     }
-} */
+}
+@media only screen and (max-width: 991px) {
+    #book-pet-care-services-houston {
+        background-position: 60% 45%;
+    }
+    #book-now-title {
+        margin-left: 5.5rem !important;
+        margin-right: 5.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 827px) {
+    #book-now-title {
+        margin-left: 2.5rem !important;
+        margin-right: 2.5rem !important;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     #book-now-title {
         font-size: 3.5rem !important;
     }
-}
-
-/* @media only screen and (max-width: 1333px) {
-    #book-now-btn {
-        width: 60% !important;
+    #book-pet-care-services-houston {
+        background-position: 80% 45%;
     }
-} */
+}
 
 /* Contact Us Section */
 @media only screen and (max-width: 1750px) {
