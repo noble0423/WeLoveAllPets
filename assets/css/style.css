@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Fonts */
 h1,
 h3,
 h4,
@@ -48,7 +47,7 @@ h6
     /* font-family: 'Oregano', cursive; */
     /* font-family: 'Salsa', cursive; */
     letter-spacing: .15rem;
-    text-shadow: 1px 1px #343a40;
+    text-shadow: 2px 2px 3px #343a40;
 }
 
 #about-us-row {
@@ -225,19 +224,6 @@ a.dropdown-item {
 }
 
 /* Icons */
-/* Core Values */
-.core-value-card {
-    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
-    /* position: relative; */
-}
-
-/* .cv-card-border {
-    position: absolute;
-    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
-    top: 50%;
-    bottom: 0;
-} */
-
 #dog-walking,
 #pet-sitting,
 #overnight-pet-sitting,
@@ -271,6 +257,22 @@ a.dropdown-item {
 #potty-break:hover {
     transform: scale(1.2); 
 }
+
+/* Core Values */
+.core-value-card {
+    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
+    /* position: relative; */
+}
+
+/* .cv-card-border {
+    position: absolute;
+    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
+    top: 50%;
+    bottom: 0;
+} */
+/* .border-top-cv {
+    border-top: 2px solid #e41429a6; 
+} */
 
 /* About Us Stylings */
 #about-us-img-left,
@@ -357,8 +359,21 @@ a.dropdown-item {
 
 /* Modified Book Now Stylings */
 #book-pet-care-services-houston {
-    background-image: url("../images/adult-animal-canine-237692.jpg");
+    background-image:
+        /* url("../images/adult-animal-canine-237692.jpg"); */
+        /* url("../images/book-now-beagle-pup-upclose.jpg"); */
+        /* url("../images/book-now-cat-and-dog.jpg"); */
+        /* url("../images/book-now-dog-head-pat.jpg"); */
+        url("../images/book-now-girl-and-dog.jpg");
+        /* url("../images/book-now-girl-dog-tablet.jpg"); */
+        /* url("../images/book-now-girl-w-dalmation-2.jpg"); */
+        /* url("../images/book-now-girl-w-dalmation.jpg"); */
+        /* url("../images/book-now-hands-and-paw.jpg"); */
     background-size: cover;
+}
+
+#book-now-title {
+    text-shadow: 2px 2px 3px #343a40;
 }
 
 #square-appt-widget {
@@ -388,7 +403,6 @@ a.dropdown-item {
 .btn-gradient-danger:hover {
     transform: scale(1.1);
 }
-
 
 /* Contact Us Stylings */
 #trustworthy-pet-care-houston-contact-info {
@@ -510,13 +524,13 @@ a.dropdown-item {
 
 /* About Us Carousel */
 /* Slide 1 */
-@media only screen and (max-width: 1697px) {
+@media only screen and (max-width: 1682px) {
     #slide-one-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1322px) {
+@media only screen and (max-width: 1307px) {
     #slide-one-para {
         margin-bottom: 2.1rem !important;
     }
@@ -535,46 +549,46 @@ a.dropdown-item {
 } */
 
 /* Slide 2 */
-@media only screen and (max-width: 1750px) {
+@media only screen and (max-width: 1735px) {
     #slide-two-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1383px) {
+@media only screen and (max-width: 1368px) {
     #slide-two-para {
         margin-bottom: 2.1rem !important;
     }
 }
 
 /* Slide 3 */
-@media only screen and (max-width: 1303px) {
+@media only screen and (max-width: 1593px) {
     #slide-three-para {
         margin-bottom: 6rem !important;
     }
 }
 
-/* Slide 4 */
-@media only screen and (max-width: 1739px) {
-    #slide-four-para {
+@media only screen and (max-width: 1289px) {
+    #slide-three-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1375px) {
+/* Slide 4 */
+@media only screen and (max-width: 1419px) {
     #slide-four-para {
-        margin-bottom: 2.1rem !important;
+        margin-bottom: 6rem !important;
     }
 }
 
 /* Slide 5 */
-@media only screen and (max-width: 1862px) {
+@media only screen and (max-width: 1854px) {
     #slide-five-para {
         margin-bottom: 6rem !important;
     }
 }
 
-@media only screen and (max-width: 1402px) {
+@media only screen and (max-width: 1387px) {
     #slide-five-para {
         margin-bottom: 4rem !important;
     }
@@ -590,7 +604,7 @@ a.dropdown-item {
         font-size: 1.7rem !important;
     } */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .page-breaker-text {
         font-size: 1.25rem;
         line-height: 2.25rem;
@@ -605,7 +619,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 1100px) {
+@media only screen and (max-width: 1250px) and (min-width: 1137px) {
     .card-para-font {
         font-size: .95rem;
     }
@@ -620,24 +634,58 @@ a.dropdown-item {
 
 }
 
-@media only screen and (max-width: 1099px) and (min-width: 993px) {
+@media only screen and (max-width: 1136px) and (min-width: 992px) {
     .card-para-font {
         font-size: .85rem;
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .box-shadow-sm-screens {
         /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-        background: #f8f9fa linear-gradient(135deg, #eaeaea, #ffffff) repeat-x !important;
+        background: #f8f9fa linear-gradient(135deg, #f3f3f3, #ffffff) repeat-x !important;
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     #core-value-deck {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1509px) {
+    #core-value-title-2,
+    #core-value-title-3,
+    #core-value-title-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 1261px) {
+    #core-value-title-1,
+    #core-value-title-2,
+    #core-value-title-3,
+    #core-value-title-4 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1136px) {
+    #core-value-title-1,
+    #core-value-title-2,
+    #core-value-title-3,
+    #core-value-title-4 {
+        font-size: 1.05rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 914px) {
+    #core-value-title-2 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
     }
 }
 
@@ -654,19 +702,19 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 793px) and (max-width: 842px) {
+@media only screen and (min-width: 778px) and (max-width: 842px) {
     #about-us-title {
         font-size: 2.5rem !important;
     }
 }
 
-@media only screen and (min-width: 686px) and (max-width: 780px) {
+@media only screen and (min-width: 671px) and (max-width: 759px) {
     #about-us-img-right {
-        margin-left: 8rem !important;
+        margin-left: 8.5rem !important;
     }
 }
 
-@media only screen and (min-width: 595px) and (max-width: 792px) {
+@media only screen and (min-width: 580px) and (max-width: 777px) {
     #about-us-title {
         font-size: 2.5rem !important;
     }
@@ -676,10 +724,10 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 594px) {
+@media only screen and (max-width: 552px) {
     #about-us-img-left,
     #about-us-img-right {
-        min-width: 390px !important;
+        min-width: 405px !important;
         margin-bottom: 2rem !important;
     }
 }
@@ -745,7 +793,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1401px) and (max-width: 1579px) {
+@media only screen and (min-width: 1386px) and (max-width: 1564px) {
     #cat-col,
     #bird-col,
     #small-animal-col {
@@ -754,7 +802,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1387px) {
     #dog-col {
         margin-right: 1rem !important;
     }
@@ -771,11 +819,23 @@ a.dropdown-item {
 }
 
 /* Book Now Section */
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     #dog-walking-hours-container {
         margin-top: 250px !important;
     }
+} */
+
+@media only screen and (max-width: 767px) {
+    #book-now-title {
+        font-size: 3.5rem !important;
+    }
 }
+
+/* @media only screen and (max-width: 1333px) {
+    #book-now-btn {
+        width: 60% !important;
+    }
+} */
 
 /* Contact Us Section */
 @media only screen and (max-width: 1750px) {
@@ -786,7 +846,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 1635px) {
     #dog-walking-hours {
         margin-left: 6.75rem !important;
         padding-top: 1.5rem;
@@ -794,7 +854,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1535px) {
     #dog-walking-hours {
         margin-left: 6rem !important;
         padding-top: 2.25rem;
@@ -845,12 +905,21 @@ a.dropdown-item {
     } 
 }
 
-@media only screen and (max-width: 842px) {
+@media only screen and (max-width: 855px) {
     #dog-walking-hours {
         margin-left: 3.75rem !important;
-        margin-top: 2.9rem !important;
-        padding-top: 3rem;
-        padding-bottom: 4rem;
+        margin-top: 1.4rem !important;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 827px) {
+    #dog-walking-hours {
+        /* margin-left: 3.75rem !important; */
+        margin-top: 3.25rem !important;
+        /* padding-top: 2rem;
+        padding-bottom: 3rem; */
     }
 }
 
