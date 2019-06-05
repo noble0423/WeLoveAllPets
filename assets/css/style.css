@@ -185,7 +185,8 @@ a.dropdown-item {
 /* Nav Bar */
 #safari-negative-margin {
     /* display: block; */
-    /* position: relative; */
+    position: fixed;
+    top: 0;
     /* margin-top: -96px; */
     /* display: block;
     vertical-align: top; */
@@ -205,6 +206,10 @@ a.dropdown-item {
 }
 
 /* Hero Images */
+#hero-img-container {
+    position: relative;;
+}
+
 .carousel-item {
     max-height: 1000px;
 }
