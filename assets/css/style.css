@@ -11,6 +11,11 @@ h6
     font-family: 'Carrois Gothic SC', sans-serif;
 }
 
+#navbar-collapse-title {
+    font-family: 'Pompiere', cursive;
+    text-shadow: 2px 2px 3px #343a40;
+}
+
 .valued-customer-since,
 .card-para-font {
     font-family: 
@@ -48,6 +53,11 @@ h6
     /* font-family: 'Salsa', cursive; */
     letter-spacing: .15rem;
     text-shadow: 2px 2px 3px #343a40;
+}
+
+.carousel-subtitle-sm-screens {
+    font-family: 'Happy Monkey', cursive;
+    text-shadow: 1px 1px #343a40;
 }
 
 #about-us-row {
@@ -545,6 +555,31 @@ a.dropdown-item {
 }
 
 /* About Us Carousel */
+@media only screen and (max-width: 600px) {
+    .carousel-title-sm-screens {
+        font-size: 3rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .carousel-subtitle-sm-screens {
+        margin-bottom: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+    .carousel-subtitle-sm-screens {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .carousel-caption-title {
+        font-size: 3.75rem !important;
+    }
+    .about-us-carousel {
+        font-size: 1.1rem !important;
+    }
+}
+
 /* Slide 1 */
 @media only screen and (max-width: 1682px) {
     #slide-one-para {
@@ -552,23 +587,17 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1307px) {
+@media only screen and (min-width: 1119px) and (max-width: 1307px) {
     #slide-one-para {
         margin-bottom: 2.1rem !important;
     }
 }
 
-/* @media only screen and (min-width: 577px) and (max-width: 1199px) {
-    .no-skinny {
-        display: visible !important;
+@media only screen and (max-width: 1118px) {
+    #slide-one-para {
+        margin-bottom: .61rem !important;
     }
 }
-
-@media only screen and (min-width: 1200px) {
-    .no-skinny {
-        display: none !important;
-    }
-} */
 
 /* Slide 2 */
 @media only screen and (max-width: 1735px) {
@@ -577,29 +606,55 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1368px) {
+@media only screen and (min-width: 1171px) and (max-width: 1368px) {
     #slide-two-para {
         margin-bottom: 2.1rem !important;
     }
 }
 
-/* Slide 3 */
-@media only screen and (max-width: 1593px) {
-    #slide-three-para {
-        margin-bottom: 6rem !important;
+@media only screen and (min-width:999px) and (max-width: 1170px) {
+    #slide-two-para {
+        margin-bottom: .6rem !important;
     }
 }
 
-@media only screen and (max-width: 1289px) {
+@media only screen and (min-width: 992px) and (max-width: 998px) {
+    #slide-two-para {
+        font-size: 1rem !important;
+        margin-bottom: 1.3rem !important;
+    }
+}
+
+
+/* Slide 3 */
+@media only screen and (max-width: 1593px) {
     #slide-three-para {
         margin-bottom: 4rem !important;
     }
 }
 
+@media only screen and (min-width: 1103px) and (max-width: 1288px) {
+    #slide-three-para {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 1102px) {
+    #slide-three-para {
+        margin-bottom: .4rem !important;
+    }
+}
+
 /* Slide 4 */
-@media only screen and (max-width: 1419px) {
+@media only screen and (min-width: 1200px) and (max-width: 1419px) {
     #slide-four-para {
         margin-bottom: 6rem !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #slide-four-para {
+        margin-bottom: 3.55rem !important;
     }
 }
 
@@ -610,9 +665,21 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 1387px) {
+@media only screen and (min-width: 1200px) and (max-width: 1387px) {
     #slide-five-para {
         margin-bottom: 4rem !important;
+    }
+}
+
+@media only screen and (min-width: 1188px) and (max-width: 1199px) {
+    #slide-five-para {
+        margin-bottom: 3.55rem !important;
+    }
+}
+
+@media only screen and (max-width: 1187px) {
+    #slide-five-para {
+        margin-bottom: 2rem !important;
     }
 }
 
