@@ -565,18 +565,21 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 601px) and (max-width: 1199px) {
     .carousel-subtitle-sm-screens {
         font-size: 1.5rem !important;
     }
-}
+} */
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
     .carousel-caption-title {
         font-size: 3.75rem !important;
     }
     .about-us-carousel {
         font-size: 1.1rem !important;
+    }
+    .carousel-subtitle-sm-screens {
+        font-size: 1.5rem !important;
     }
 }
 
