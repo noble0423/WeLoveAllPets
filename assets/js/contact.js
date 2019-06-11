@@ -14,54 +14,54 @@ $(document).ready(function() {
     // };
 
     // Contact form ajax
-    // $("#contact-us-form-submit").click(function(event) {
+    $("#contact-us-form-submit").click(function(event) {
 
-    //     event.preventDefault();
+        event.preventDefault();
 
-    //     console.log("clicked");
+        console.log("clicked");
 
-    //     var c_firstname = $("#c_firstname").val();
-    //     var c_lastname = $("#c_lastname").val();
-    //     var c_email = $("#c_email").val();
-    //     var c_subject = $("#c_subject").val();
-    //     var c_message = $("#c_message").val();
-    //     var responseMessage = $("#contact-us-form .email-ajax-response");
+        var c_firstname = $("#c_firstname").val();
+        var c_lastname = $("#c_lastname").val();
+        var c_email = $("#c_email").val();
+        var c_subject = $("#c_subject").val();
+        var c_message = $("#c_message").val();
+        var responseMessage = $("#contact-us-form .email-ajax-response");
 
-    //     if (( c_firstname === "" || c_lastname === "" || c_email === "" || c_subject === "" || c_message === "") || (!isValidEmailAddress(c_email) )) {
-    //         responseMessage.fadeIn(500);
-    //         responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
-    //     }
+        if (( c_firstname === "" || c_lastname === "" || c_email === "" || c_subject === "" || c_message === "") || (!isValidEmailAddress(c_email) )) {
+            responseMessage.fadeIn(500);
+            responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+        }
 
-    //     else {
-    //         $.ajax({
-    //             type: "POST",
-    //             url: "assets/php/contactForm.php",
-    //             dataType: "json",
-    //             data: {
-    //                 c_email: c_email,
-    //                 c_firstname: c_firstname,
-    //                 c_lastname: c_lastname,
-    //                 c_subject: c_subject,
-    //                 c_message: c_message
-    //             },
-    //             beforeSend: function(result) {
-    //                 $("#contact-us-form button").empty();
-    //                 $("#contact-us-form button").append('<i class="fa fa-cog fa-spin"></i> Wait...');
-    //             },
-    //             success: function(result) {
-    //                 if(result.sendstatus == 1) {
-    //                     $("#contact-us-form .ajax-hidden").fadeOut(500);
-    //                     responseMessage.html(result.message).fadeIn(500);
-    //                 } else {
-    //                     $("#contact-us-form button").empty();
-    //                     $("#contact-us-form button").append('<i class="fa fa-retweet"></i> Try again.');
-    //                     responseMessage.html(result.message).fadeIn(1000);
-    //                 }
-    //             }
-    //         });
-    //     }
+        else {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/contactForm.php",
+                dataType: "json",
+                data: {
+                    c_email: c_email,
+                    c_firstname: c_firstname,
+                    c_lastname: c_lastname,
+                    c_subject: c_subject,
+                    c_message: c_message
+                },
+                beforeSend: function(result) {
+                    $("#contact-us-form button").empty();
+                    $("#contact-us-form button").append('<i class="fa fa-cog fa-spin"></i> Wait...');
+                },
+                success: function(result) {
+                    if(result.sendstatus == 1) {
+                        $("#contact-us-form .ajax-hidden").fadeOut(500);
+                        responseMessage.html(result.message).fadeIn(500);
+                    } else {
+                        $("#contact-us-form button").empty();
+                        $("#contact-us-form button").append('<i class="fa fa-retweet"></i> Try again.');
+                        responseMessage.html(result.message).fadeIn(1000);
+                    }
+                }
+            });
+        }
 
-    //     return false;
+        return false;
 
-    // });
+    });
 });
