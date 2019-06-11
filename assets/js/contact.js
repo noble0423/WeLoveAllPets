@@ -14,7 +14,7 @@ $(document).ready(function() {
     };
 
     // Contact form ajax
-    $("#contact-send-button").click(function(event) {
+    $("#contact-us-form-submit").click(function(event) {
 
         event.preventDefault();
 
