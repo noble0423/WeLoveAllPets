@@ -282,6 +282,14 @@ a.dropdown-item {
 }
 
 /* Core Values */
+#core-value-title-1,
+#core-value-title-2,
+#core-value-title-3,
+#core-value-title-4 {
+    color: #6c757d;
+    text-shadow: 1px 1px 2px black;
+}
+
 .core-value-card {
     border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
     /* position: relative; */
@@ -723,6 +731,24 @@ a.dropdown-item {
     }
 }
 
+@media only screen and (min-width: 914px) and (max-width: 992px) {
+    .card-para-font {
+        font-size: 1.015rem;
+    }
+}
+
+@media only screen and (min-width: 847px) and (max-width: 913px) {
+    .card-para-font {
+        font-size: .925rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 846px) {
+    .card-para-font {
+        font-size: .82rem;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .box-shadow-sm-screens {
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
@@ -737,8 +763,43 @@ a.dropdown-item {
     }
 }
 
+@media only screen and (min-width: 1501px) and (max-width: 1611px) {
+    #core-value-title-2 {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}
+
+@media only screen and (min-width: 1324px) and (max-width: 1500px) {
+    #core-value-title-2 {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+}
+
+@media only screen and (min-width: 1262px) and (max-width: 1323px) {
+    #core-value-title-2 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 1146px ) and (max-width: 1261px) {
+    #core-value-title-2 {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 1145px) {
+    #core-value-title-2 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
 @media only screen and (max-width: 1509px) {
-    #core-value-title-2,
+    /* #core-value-title-2, */
     #core-value-title-3,
     #core-value-title-4 {
         padding-left: 1rem !important;
@@ -764,10 +825,17 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 914px) {
+@media only screen and (min-width: 860px) and (max-width: 914px) {
     #core-value-title-2 {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 859px) {
+    #core-value-title-2 {
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
     }
 }
 
