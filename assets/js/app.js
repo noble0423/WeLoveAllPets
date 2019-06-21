@@ -1,9 +1,15 @@
 // VARIABLES
 // =================================================================================================
 const customerReviewCard = $("#customer-review-one");
-const countStartNum = 15;
+let countStartNum = 5;
+
 
 const reviewsArray = [{
+    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners) ...',
+    icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
+    name: 'Catherine W.',
+    area: ' from The Museum District'
+    }, {
     review: 'We’re really happy that we found We Love All Pets! We had never used a pet sitting service before but have used them multiple times now, and will definitely be using them again.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 2.png',
     name: 'Julie and Brad T.',
@@ -39,11 +45,6 @@ const reviewsArray = [{
     name: 'Marc E.',
     area: ' from Museum District'
 }, {
-    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners) ...',
-    icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
-    name: 'Catherine W.',
-    area: ' from The Museum District'
-}, {
     review: `My husband and I seriously lucked out when we found Gabe with We Love All Pets! Not only is he the nicest guy (literally THE NICEST), he is extremely knowledgeable about dogs (and I'm sure cats too) and every dog seems to love him.`,
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 2.png',
     name: 'Kelly B.D.',
@@ -65,18 +66,83 @@ const reviewsArray = [{
 
 // APP LOGIC
 // =================================================================================================
-$(document).ready(function(){
-
     // Customer Reviews - Scrolling
     // Testing the Array of Objects w/ a for loop
-    for (let i = 0; i < reviewsArray.length; i++) {
-        console.log(`review ${i}: ${reviewsArray[i].review}`);
-        console.log(`name ${i}: ${reviewsArray[i].name}`);
-        console.log(`area ${i}: ${reviewsArray[i].area}`);
-        console.log("**************************************************************************");
+    // for (let i = 0; i < reviewsArray.length; i++) {
+    //     console.log(`review ${i}: ${reviewsArray[i].review}`);
+    //     console.log(`name ${i}: ${reviewsArray[i].name}`);
+    //     console.log(`area ${i}: ${reviewsArray[i].area}`);
+    //     console.log("**************************************************************************");
+    // }
+
+    // Testing to see if we can get 1st review array to switch out once
+    // console.log(`countStartNum: ${countStartNum}`);
+    // countStartNum++;
+    // console.log(`countStartNum updated: ${countStartNum}`);
+
+    // Variable to hold our setInterval
+    let timer;
+    
+    const reviewsRotation = {
+
+        reviews: reviewsArray,
+        currentReview: 0,
+        counter: countStartNum,
+
+        countdown: function() {
+            reviewsRotation.counter--;
+            console.log(`time remaining ${reviewsRotation.counter}`);
+
+            if (reviewsRotation.counter === 0) {
+                console.log("15 secs have passed, should see a new Customer Review on the screen");
+                reviewsRotation.timeUp();
+            }
+        },
+
+        loadReviewInfo: function() {
+
+            timer = setInterval(reviewsRotation.countdown, 1000);
+
+            console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
+
+            // Grab the HTML elements on index.html and switch out info according to the currentReview
+            $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
+        },
+
+        nextReview: function() {
+            reviewsRotation.counter = countStartNum;
+            reviewsRotation.currentReview++;
+            reviewsRotation.loadReviewInfo();
+        },
+
+        timeUp: function() {
+            clearInterval(timer);
+
+            if (reviewsRotation.currentReview === reviewsArray.length -1) {
+                reviewsRotation.reset();
+            }
+            else {
+                reviewsRotation.nextReview();
+            }
+        },
+
+        reset: function() {
+            this.currentReview = 0;
+            this.counter = countStartNum;
+            this.loadReviewInfo();
+        }
+
+
     }
 
-    // 
+
+
+// MAIN PROCESS
+// =================================================================================================
+$(document).ready(function(){
+
+    // reviewsRotation.reset();
+
 
     // Square Widget Visibility
     $("#book-now-btn").click(function(){
