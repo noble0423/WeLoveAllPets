@@ -25,7 +25,7 @@ const reviewsArray = [{
     name: 'Michelle D.',
     area: ' from River Oaks'
 }, {
-    review: 'You can’t go wrong with the team at We Love All Pets. Without a doubt, it is apparent that their primary concern is the wellbeing of your pet.  Our two Danes, Loki and Thor, absolutely love them.',
+    review: 'You can’t go wrong with the team at We Love All Pets. Without a doubt, it is apparent that their primary concern is the well-being of your pet.  Our two Danes, Loki and Thor, absolutely love them.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Man 2.png',
     name: 'James and Lily F.',
     area: ' from Rice Village'
@@ -93,10 +93,24 @@ const reviewsArray = [{
             reviewsRotation.counter--;
             console.log(`time remaining ${reviewsRotation.counter}`);
 
-            if (reviewsRotation.counter === 0) {
+            if (reviewsRotation.counter === 1) {
+                reviewsRotation.fadeOutText();
+            }
+
+            else if (reviewsRotation.counter === 0) {
                 console.log("15 secs have passed, should see a new Customer Review on the screen");
                 reviewsRotation.timeUp();
             }
+        },
+
+        fadeInText: function() {
+            $("#customer-review-one-text").fadeIn("slow");
+            $("#customer-review-one-name").fadeIn("slow");
+        },
+
+        fadeOutText: function() {
+            $("#customer-review-one-text").fadeOut(1000);
+            $("#customer-review-one-name").fadeOut(1000);
         },
 
         loadReviewInfo: function() {
@@ -105,8 +119,23 @@ const reviewsArray = [{
 
             console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
 
-            // Grab the HTML elements on index.html and switch out info according to the currentReview
-            $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
+            reviewsRotation.fadeInText();
+
+            $("#customer-review-one-text").empty();
+            $("#customer-review-one-name").empty();
+            
+            let newReview = $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
+            let newName = $("#customer-review-one-name").text(`${reviewsArray[this.currentReview].name}`);
+
+            let newAreaSpan = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-one-area")
+                .text(`${reviewsArray[this.currentReview].area}`);
+
+            newName.append(newAreaSpan);
+            
+            $("#customer-review-one-text").append(newReview);
+            $("#customer-review-one-name").append(newName);
         },
 
         nextReview: function() {
@@ -141,7 +170,7 @@ const reviewsArray = [{
 // =================================================================================================
 $(document).ready(function(){
 
-    // reviewsRotation.reset();
+    reviewsRotation.reset();
 
 
     // Square Widget Visibility

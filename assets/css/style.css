@@ -380,13 +380,15 @@ a.dropdown-item {
 }
 
 /* Customer Reviews Stylings */
-.cust-review-img:hover {
+
+
+/* .cust-review-img:hover {
     opacity: 0.75;
 }
 
 .accordian {
     display: inline-block;
-}
+} */
 
 /* Modified Book Now Stylings */
 #book-pet-care-services-houston {
