@@ -1,11 +1,12 @@
 // VARIABLES
 // =================================================================================================
+
 const customerReviewCard = $("#customer-review-one");
 let countStartNum = 10;
 
 
 const reviewsArray = [{
-    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners) ...',
+    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
     name: 'Catherine W.',
     area: ' from The Museum District'
@@ -15,7 +16,7 @@ const reviewsArray = [{
     name: 'Kelly B.D.',
     area: ' from Museum District'
 }, {
-    review: 'Gabriel Kelley has built his company, We Love All Pets into an organization with a solid reputation for premium service. He and his personnel provide a rich giving atmosphere for our pets anytime we need them ...',
+    review: 'Gabriel Kelley has built his company, We Love All Pets into an organization with a solid reputation for premium service. He and his personnel provide a rich giving atmosphere for our pets anytime we need them.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Man 1.png',
     name: 'John K.',
     area: ' from The Heights'
@@ -48,7 +49,7 @@ const reviewsArray = [{
     review: 'We Love All Pets has been a Lifesaver time and time again. We’ve used Gabriel’s and his team for a few years now and have never been worried about our pup, Cheerio, while in their care.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
     name: 'Laura T.',
-    area: ' West University Place'
+    area: ' from West University Place'
 }, {
     review: 'As a nervous dog mom of a high-needs rescue dog, I always feel safe with them watching and caring for Murray.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 2.png',
@@ -66,333 +67,320 @@ const reviewsArray = [{
 
 // APP LOGIC
 // =================================================================================================
-    // Customer Reviews - Scrolling
-    // Testing the Array of Objects w/ a for loop
-    // for (let i = 0; i < reviewsArray.length; i++) {
-    //     console.log(`review ${i}: ${reviewsArray[i].review}`);
-    //     console.log(`name ${i}: ${reviewsArray[i].name}`);
-    //     console.log(`area ${i}: ${reviewsArray[i].area}`);
-    //     console.log("**************************************************************************");
-    // }
 
-    // Testing to see if we can get 1st review array to switch out once
-    // console.log(`countStartNum: ${countStartNum}`);
-    // countStartNum++;
-    // console.log(`countStartNum updated: ${countStartNum}`);
+// Variable to hold our setInterval
+let timer;
 
-    // Variable to hold our setInterval
-    let timer;
-    
-    const reviewsRotation = {
+const reviewsRotation = {
 
-        reviews: reviewsArray,
-        currentReview: 0,
-        counter: countStartNum,
+    reviews: reviewsArray,
+    currentReview: 0,
+    counter: countStartNum,
 
-        countdown: function() {
-            reviewsRotation.counter--;
-            console.log(`time remaining ${reviewsRotation.counter}`);
+    countdown: function() {
+        reviewsRotation.counter--;
+        console.log(`time remaining ${reviewsRotation.counter}`);
 
-            if (reviewsRotation.counter === 1) {
-                reviewsRotation.fadeOutText();
-            }
-
-            else if (reviewsRotation.counter === 0) {
-                // console.log("15 secs have passed, should see a new Customer Review on the screen");
-                reviewsRotation.timeUp();
-            }
-        },
-
-        fadeInText: function() {
-            // Customer Review One
-            $("#customer-review-one-text").fadeIn("slow");
-            $("#customer-review-one-name").fadeIn("slow");
-            $("#customer-review-one-image").fadeIn("slow");
-            $("#customer-review-one-dash").fadeIn("slow");
-
-            // Customer Review Two
-            $("#customer-review-two-text").fadeIn("slow");
-            $("#customer-review-two-name").fadeIn("slow");
-            $("#customer-review-two-image").fadeIn("slow");
-            $("#customer-review-two-dash").fadeIn("slow");
-
-            // Customer Review Three
-            $("#customer-review-three-text").fadeIn("slow");
-            $("#customer-review-three-name").fadeIn("slow");
-            $("#customer-review-three-image").fadeIn("slow");
-            $("#customer-review-three-dash").fadeIn("slow");
-
-            // Customer Review Four
-            $("#customer-review-four-text").fadeIn("slow");
-            $("#customer-review-four-name").fadeIn("slow");
-            $("#customer-review-four-image").fadeIn("slow");
-            $("#customer-review-four-dash").fadeIn("slow");
-        },
-
-        fadeOutText: function() {
-            // Customer Review One
-            $("#customer-review-one-text").fadeOut(1000);
-            $("#customer-review-one-name").fadeOut(1000);
-            $("#customer-review-one-image").fadeOut(1000);
-            $("#customer-review-one-dash").fadeOut(1000);
-
-            // Customer Review Two 
-            $("#customer-review-two-text").fadeOut(1000);
-            $("#customer-review-two-name").fadeOut(1000);
-            $("#customer-review-two-image").fadeOut(1000);
-            $("#customer-review-two-dash").fadeOut(1000);
-
-            // Customer Review Three 
-            $("#customer-review-three-text").fadeOut(1000);
-            $("#customer-review-three-name").fadeOut(1000);
-            $("#customer-review-three-image").fadeOut(1000);
-            $("#customer-review-three-dash").fadeOut(1000);
-
-            // Customer Review Four 
-            $("#customer-review-four-text").fadeOut(1000);
-            $("#customer-review-four-name").fadeOut(1000);
-            $("#customer-review-four-image").fadeOut(1000);
-            $("#customer-review-four-dash").fadeOut(1000);
-        },
-
-        loadReviewInfo: function() {
-
-            timer = setInterval(reviewsRotation.countdown, 1000);
-
-            console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
-
-            reviewsRotation.fadeInText();
-
-            // Customer Review One
-            $("#customer-review-one-text").empty();
-            $("#customer-review-one-name").empty();
-            
-            let newReviewOne = $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
-            let newNameOne = $("#customer-review-one-name").text(`${reviewsArray[this.currentReview].name}`);
-
-            $("#customer-review-one-image").attr("src", `${reviewsArray[this.currentReview].icon}`);
-
-            let newAreaSpanOne = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-one-area")
-                .text(`${reviewsArray[this.currentReview].area}`);
-
-            newNameOne.append(newAreaSpanOne);
-            
-            $("#customer-review-one-text").append(newReviewOne);
-            $("#customer-review-one-name").append(newNameOne);
-
-            // Customer Review Two
-            if (reviewsRotation.currentReview === 10) {
-                reviewsRotation.currentReview = -1;
-            }
-            
-            $("#customer-review-two-text").empty();
-            $("#customer-review-two-name").empty();
-
-            console.log("Review Two CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewTwo = $("#customer-review-two-text").text(`" ${reviewsArray[this.currentReview +1].review} "`);
-            let newNameTwo = $("#customer-review-two-name").text(`${reviewsArray[this.currentReview +1].name}`);
-
-            $("#customer-review-two-image").attr("src", `${reviewsArray[this.currentReview +1].icon}`);
-
-            let newAreaSpanTwo = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-two-area")
-                .text(`${reviewsArray[this.currentReview +1].area}`);
-
-            newNameTwo.append(newAreaSpanTwo);
-            
-            $("#customer-review-two-text").append(newReviewTwo);
-            $("#customer-review-two-name").append(newNameTwo);
-
-            // Conditional Code for Customer Review Three and Four
-            if (reviewsRotation.currentReview === 8) {
-                
-                // Customer Review Four
-                $("#customer-review-four-text").empty();
-                $("#customer-review-four-name").empty();
-
-                console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
-                let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
-
-                $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
-
-                let newAreaSpanFour = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-four-area")
-                    .text(`${reviewsArray[this.currentReview -8].area}`);
-
-                newNameFour.append(newAreaSpanFour);
-                
-                $("#customer-review-four-text").append(newReviewFour);
-                $("#customer-review-four-name").append(newNameFour);
-            }
-
-            else if (reviewsRotation.currentReview === 9) {
-
-                // Customer Review Three
-                $("#customer-review-three-text").empty();
-                $("#customer-review-three-name").empty();
-    
-                console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview -9].review} "`);
-                let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview -9].name}`);
-    
-                $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview -9].icon}`);
-    
-                let newAreaSpanThree = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-three-area")
-                    .text(`${reviewsArray[this.currentReview -9].area}`);
-    
-                newNameThree.append(newAreaSpanThree);
-                
-                $("#customer-review-three-text").append(newReviewThree);
-                $("#customer-review-three-name").append(newNameThree); 
-
-                // Customer Review Four
-                $("#customer-review-four-text").empty();
-                $("#customer-review-four-name").empty();
-
-                console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
-                let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
-
-                $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
-
-                let newAreaSpanFour = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-four-area")
-                    .text(`${reviewsArray[this.currentReview -8].area}`);
-
-                newNameFour.append(newAreaSpanFour);
-                
-                $("#customer-review-four-text").append(newReviewFour);
-                $("#customer-review-four-name").append(newNameFour);
-            }
-
-            else if (reviewsRotation.currentReview === -1) {
-
-                // Customer Review Three
-                $("#customer-review-three-text").empty();
-                $("#customer-review-three-name").empty();
-    
-                console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
-                let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
-    
-                $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
-    
-                let newAreaSpanThree = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-three-area")
-                    .text(`${reviewsArray[this.currentReview +2].area}`);
-    
-                newNameThree.append(newAreaSpanThree);
-                
-                $("#customer-review-three-text").append(newReviewThree);
-                $("#customer-review-three-name").append(newNameThree); 
-
-                // Customer Review Four
-                $("#customer-review-four-text").empty();
-                $("#customer-review-four-name").empty();
-
-                console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
-                let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
-
-                $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
-
-                let newAreaSpanFour = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-four-area")
-                    .text(`${reviewsArray[this.currentReview +3].area}`);
-
-                newNameFour.append(newAreaSpanFour);
-                
-                $("#customer-review-four-text").append(newReviewFour);
-                $("#customer-review-four-name").append(newNameFour);
-            }
-            
-            else {
-
-                // Customer Review Three
-                $("#customer-review-three-text").empty();
-                $("#customer-review-three-name").empty();
-
-                console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
-                let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
-
-                $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
-
-                let newAreaSpanThree = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-three-area")
-                    .text(`${reviewsArray[this.currentReview +2].area}`);
-
-                newNameThree.append(newAreaSpanThree);
-                
-                $("#customer-review-three-text").append(newReviewThree);
-                $("#customer-review-three-name").append(newNameThree);
-
-                // Custromer Review Four
-                $("#customer-review-four-text").empty();
-                $("#customer-review-four-name").empty();
-
-                console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-                
-                let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
-                let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
-
-                $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
-
-                let newAreaSpanFour = $("<span>")
-                    .addClass("valued-customer-since text-right text-muted ml-2")
-                    .attr("id", "customer-review-four-area")
-                    .text(`${reviewsArray[this.currentReview +3].area}`);
-
-                newNameFour.append(newAreaSpanFour);
-                
-                $("#customer-review-four-text").append(newReviewFour);
-                $("#customer-review-four-name").append(newNameFour);
-            }
-        },
-
-        nextReview: function() {
-            reviewsRotation.counter = countStartNum;
-            reviewsRotation.currentReview++;
-            reviewsRotation.loadReviewInfo();
-        },
-
-        timeUp: function() {
-            clearInterval(timer);
-
-            if (reviewsRotation.currentReview === reviewsArray.length -1) {
-                reviewsRotation.reset();
-            }
-            else {
-                reviewsRotation.nextReview();
-            }
-        },
-
-        reset: function() {
-            this.currentReview = 0;
-            this.counter = countStartNum;
-            this.loadReviewInfo();
+        if (reviewsRotation.counter === 1) {
+            reviewsRotation.fadeOutText();
         }
 
+        else if (reviewsRotation.counter === 0) {
+            // console.log("15 secs have passed, should see a new Customer Review on the screen");
+            reviewsRotation.timeUp();
+        }
+    },
 
+    fadeInText: function() {
+        // Customer Review One
+        $("#customer-review-one-text").fadeIn("slow");
+        $("#customer-review-one-name").fadeIn("slow");
+        $("#customer-review-one-image").fadeIn("slow");
+        $("#customer-review-one-dash").fadeIn("slow");
+
+        // Customer Review Two
+        $("#customer-review-two-text").fadeIn("slow");
+        $("#customer-review-two-name").fadeIn("slow");
+        $("#customer-review-two-image").fadeIn("slow");
+        $("#customer-review-two-dash").fadeIn("slow");
+
+        // Customer Review Three
+        $("#customer-review-three-text").fadeIn("slow");
+        $("#customer-review-three-name").fadeIn("slow");
+        $("#customer-review-three-image").fadeIn("slow");
+        $("#customer-review-three-dash").fadeIn("slow");
+
+        // Customer Review Four
+        $("#customer-review-four-text").fadeIn("slow");
+        $("#customer-review-four-name").fadeIn("slow");
+        $("#customer-review-four-image").fadeIn("slow");
+        $("#customer-review-four-dash").fadeIn("slow");
+    },
+
+    fadeOutText: function() {
+        // Customer Review One
+        $("#customer-review-one-text").fadeOut(1000);
+        $("#customer-review-one-name").fadeOut(1000);
+        $("#customer-review-one-image").fadeOut(1000);
+        $("#customer-review-one-dash").fadeOut(1000);
+
+        // Customer Review Two 
+        $("#customer-review-two-text").fadeOut(1000);
+        $("#customer-review-two-name").fadeOut(1000);
+        $("#customer-review-two-image").fadeOut(1000);
+        $("#customer-review-two-dash").fadeOut(1000);
+
+        // Customer Review Three 
+        $("#customer-review-three-text").fadeOut(1000);
+        $("#customer-review-three-name").fadeOut(1000);
+        $("#customer-review-three-image").fadeOut(1000);
+        $("#customer-review-three-dash").fadeOut(1000);
+
+        // Customer Review Four 
+        $("#customer-review-four-text").fadeOut(1000);
+        $("#customer-review-four-name").fadeOut(1000);
+        $("#customer-review-four-image").fadeOut(1000);
+        $("#customer-review-four-dash").fadeOut(1000);
+    },
+
+    loadReviewInfo: function() {
+
+        timer = setInterval(reviewsRotation.countdown, 1000);
+
+        console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
+
+        reviewsRotation.fadeInText();
+
+        // Customer Review One
+        $("#customer-review-one-text").empty();
+        $("#customer-review-one-name").empty();
+        
+        let newReviewOne = $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
+        let newNameOne = $("#customer-review-one-name").text(`${reviewsArray[this.currentReview].name}`);
+
+        $("#customer-review-one-image").attr("src", `${reviewsArray[this.currentReview].icon}`);
+
+        let newAreaSpanOne = $("<span>")
+            .addClass("valued-customer-since text-right text-muted ml-2")
+            .attr("id", "customer-review-one-area")
+            .text(`${reviewsArray[this.currentReview].area}`);
+
+        newNameOne.append(newAreaSpanOne);
+        
+        $("#customer-review-one-text").append(newReviewOne);
+        $("#customer-review-one-name").append(newNameOne);
+
+        // Customer Review Two
+        if (reviewsRotation.currentReview === 10) {
+            reviewsRotation.currentReview = -1;
+        }
+        
+        $("#customer-review-two-text").empty();
+        $("#customer-review-two-name").empty();
+
+        console.log("Review Two CurrentReview", reviewsRotation.currentReview);
+        
+        let newReviewTwo = $("#customer-review-two-text").text(`" ${reviewsArray[this.currentReview +1].review} "`);
+        let newNameTwo = $("#customer-review-two-name").text(`${reviewsArray[this.currentReview +1].name}`);
+
+        $("#customer-review-two-image").attr("src", `${reviewsArray[this.currentReview +1].icon}`);
+
+        let newAreaSpanTwo = $("<span>")
+            .addClass("valued-customer-since text-right text-muted ml-2")
+            .attr("id", "customer-review-two-area")
+            .text(`${reviewsArray[this.currentReview +1].area}`);
+
+        newNameTwo.append(newAreaSpanTwo);
+        
+        $("#customer-review-two-text").append(newReviewTwo);
+        $("#customer-review-two-name").append(newNameTwo);
+
+        // Conditional Code for Customer Review Three and Four
+        if (reviewsRotation.currentReview === 8) {
+            
+            // Customer Review Four
+            $("#customer-review-four-text").empty();
+            $("#customer-review-four-name").empty();
+
+            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
+            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
+
+            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
+
+            let newAreaSpanFour = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-four-area")
+                .text(`${reviewsArray[this.currentReview -8].area}`);
+
+            newNameFour.append(newAreaSpanFour);
+            
+            $("#customer-review-four-text").append(newReviewFour);
+            $("#customer-review-four-name").append(newNameFour);
+        }
+
+        else if (reviewsRotation.currentReview === 9) {
+
+            // Customer Review Three
+            $("#customer-review-three-text").empty();
+            $("#customer-review-three-name").empty();
+
+            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview -9].review} "`);
+            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview -9].name}`);
+
+            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview -9].icon}`);
+
+            let newAreaSpanThree = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-three-area")
+                .text(`${reviewsArray[this.currentReview -9].area}`);
+
+            newNameThree.append(newAreaSpanThree);
+            
+            $("#customer-review-three-text").append(newReviewThree);
+            $("#customer-review-three-name").append(newNameThree); 
+
+            // Customer Review Four
+            $("#customer-review-four-text").empty();
+            $("#customer-review-four-name").empty();
+
+            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
+            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
+
+            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
+
+            let newAreaSpanFour = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-four-area")
+                .text(`${reviewsArray[this.currentReview -8].area}`);
+
+            newNameFour.append(newAreaSpanFour);
+            
+            $("#customer-review-four-text").append(newReviewFour);
+            $("#customer-review-four-name").append(newNameFour);
+        }
+
+        else if (reviewsRotation.currentReview === -1) {
+
+            // Customer Review Three
+            $("#customer-review-three-text").empty();
+            $("#customer-review-three-name").empty();
+
+            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
+            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
+
+            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
+
+            let newAreaSpanThree = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-three-area")
+                .text(`${reviewsArray[this.currentReview +2].area}`);
+
+            newNameThree.append(newAreaSpanThree);
+            
+            $("#customer-review-three-text").append(newReviewThree);
+            $("#customer-review-three-name").append(newNameThree); 
+
+            // Customer Review Four
+            $("#customer-review-four-text").empty();
+            $("#customer-review-four-name").empty();
+
+            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
+            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
+
+            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
+
+            let newAreaSpanFour = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-four-area")
+                .text(`${reviewsArray[this.currentReview +3].area}`);
+
+            newNameFour.append(newAreaSpanFour);
+            
+            $("#customer-review-four-text").append(newReviewFour);
+            $("#customer-review-four-name").append(newNameFour);
+        }
+        
+        else {
+
+            // Customer Review Three
+            $("#customer-review-three-text").empty();
+            $("#customer-review-three-name").empty();
+
+            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
+            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
+
+            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
+
+            let newAreaSpanThree = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-three-area")
+                .text(`${reviewsArray[this.currentReview +2].area}`);
+
+            newNameThree.append(newAreaSpanThree);
+            
+            $("#customer-review-three-text").append(newReviewThree);
+            $("#customer-review-three-name").append(newNameThree);
+
+            // Custromer Review Four
+            $("#customer-review-four-text").empty();
+            $("#customer-review-four-name").empty();
+
+            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            
+            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
+            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
+
+            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
+
+            let newAreaSpanFour = $("<span>")
+                .addClass("valued-customer-since text-right text-muted ml-2")
+                .attr("id", "customer-review-four-area")
+                .text(`${reviewsArray[this.currentReview +3].area}`);
+
+            newNameFour.append(newAreaSpanFour);
+            
+            $("#customer-review-four-text").append(newReviewFour);
+            $("#customer-review-four-name").append(newNameFour);
+        }
+    },
+
+    nextReview: function() {
+        reviewsRotation.counter = countStartNum;
+        reviewsRotation.currentReview++;
+        reviewsRotation.loadReviewInfo();
+    },
+
+    timeUp: function() {
+        clearInterval(timer);
+
+        if (reviewsRotation.currentReview === reviewsArray.length -1) {
+            reviewsRotation.reset();
+        }
+        else {
+            reviewsRotation.nextReview();
+        }
+    },
+
+    reset: function() {
+        this.currentReview = 0;
+        this.counter = countStartNum;
+        this.loadReviewInfo();
     }
+
+
+};
 
 
 

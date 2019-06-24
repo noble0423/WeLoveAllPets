@@ -160,6 +160,19 @@ h6
     font-weight: bolder;
 }
 
+.full-reviews-text {
+    font-family: 'Happy Monkey', cursive;
+    color: #6c757d;
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+.reviews-page-customer-name {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: black;
+}
+
 /* Grid */
 
 /* Bootstrap Overrides */
@@ -564,7 +577,7 @@ a.dropdown-item {
     }
 }
 
-/* About Us Carousel */
+/* Both Carousels */
 @media only screen and (max-width: 600px) {
     .carousel-title-sm-screens {
         font-size: 3rem !important;
@@ -574,12 +587,6 @@ a.dropdown-item {
         margin-bottom: 3rem !important;
     }
 }
-
-/* @media only screen and (min-width: 601px) and (max-width: 1199px) {
-    .carousel-subtitle-sm-screens {
-        font-size: 1.5rem !important;
-    }
-} */
 
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
     .carousel-caption-title {
@@ -593,6 +600,7 @@ a.dropdown-item {
     }
 }
 
+/* About Us Carousel */
 /* Slide 1 */
 @media only screen and (max-width: 1682px) {
     #slide-one-para {
@@ -612,6 +620,7 @@ a.dropdown-item {
     }
 }
 
+/* About Us Carousel */
 /* Slide 2 */
 @media only screen and (max-width: 1735px) {
     #slide-two-para {
@@ -638,7 +647,7 @@ a.dropdown-item {
     }
 }
 
-
+/* About Us Carousel */
 /* Slide 3 */
 @media only screen and (max-width: 1593px) {
     #slide-three-para {
@@ -658,6 +667,7 @@ a.dropdown-item {
     }
 }
 
+/* About Us Carousel */
 /* Slide 4 */
 @media only screen and (min-width: 1200px) and (max-width: 1419px) {
     #slide-four-para {
@@ -671,6 +681,7 @@ a.dropdown-item {
     }
 }
 
+/* About Us Carousel */
 /* Slide 5 */
 @media only screen and (max-width: 1854px) {
     #slide-five-para {
@@ -693,6 +704,50 @@ a.dropdown-item {
 @media only screen and (max-width: 1187px) {
     #slide-five-para {
         margin-bottom: 2rem !important;
+    }
+}
+
+/* Customer Reviews Carousel */
+/* Slide 1 */
+@media only screen and (max-width: 1570px) {
+    #rotating-reviews-one {
+        margin-bottom: 4rem !important;
+    }
+}
+
+/* Customer Reviews Carousel */
+/* Slide 2 */
+@media only screen and (min-width: 1200px) and (max-width: 1220px) {
+    #rotating-reviews-two {
+        margin-bottom: 4rem !important;
+    }
+}
+
+@media only screen and (min-width: 1044px) and (max-width: 1199px) {
+    #rotating-reviews-two {
+        margin-bottom: 5.6rem !important;
+    }
+}
+
+@media only screen and (max-width: 1043px) {
+    #rotating-reviews-two {
+        margin-bottom: 4rem !important;
+    }
+}
+
+/* Customer Reviews Carousel */
+/* Slide 3 */
+@media only screen and (max-width: 1553px) {
+    #rotating-reviews-three {
+        margin-bottom: 4rem !important;
+    }
+}
+
+/* Customer Reviews Carousel */
+/* Slide 4 */
+@media only screen and (max-width: 1421px) {
+    #rotating-reviews-four {
+        margin-bottom: 4rem !important;
     }
 }
 
