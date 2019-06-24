@@ -19,22 +19,20 @@ h6
 .valued-customer-since,
 .card-para-font {
     font-family: 
-    /* 'Cuprum', sans-serif; */
-    'Happy Monkey', cursive;
+        'Happy Monkey', cursive;
     font-size: 1rem;
 }
 
 .card-para-font {
-    /* border-top: 2px solid rgb(156, 156, 156); */
     border-top: 2px solid #e41429a6;
 }
 
 .card-title {
     font-weight: bolder;
-    /* text-shadow: 1px 1px 3px #e41429a6; */
 }
 
-.about-us-carousel {
+.about-us-carousel,
+.customer-reviews-carousel {
     text-shadow: 1px 1px #343a40;
     font-family: 'Happy Monkey', cursive;
     font-size: 1.3rem;
@@ -44,13 +42,7 @@ h6
 
 .carousel-caption-title,
 #about-us-title {
-    /* font-family: 'Happy Monkey', cursive; */
     font-family: 'Pompiere', cursive;
-    /* font-family: 'Simonetta', cursive; */
-    /* font-family: 'Overlock SC', cursive; */
-    /* font-family: 'Allan', cursive; */
-    /* font-family: 'Oregano', cursive; */
-    /* font-family: 'Salsa', cursive; */
     letter-spacing: .15rem;
     text-shadow: 2px 2px 3px #343a40;
 }
@@ -73,12 +65,9 @@ h6
 .about-us-section {
     color: white;
     text-shadow: 1.5px 1.5px 3px black;
-    /* text-shadow: 1px 1px #343a40; */
     font-family: 
-        /* 'Cuprum', sans-serif; */
         'Happy Monkey', cursive;
     font-size: 1.2rem;
-    /* font-weight: bolder !important; */
 }
 
 #trustworthy-pet-care-houston-contact-info,
@@ -96,7 +85,6 @@ h6
     font-size: 1.2rem;
     font-weight: 900;
     letter-spacing: .5px;
-    /* border-bottom: 3px solid red; */
 }
 
 .word-on-the-street-title {
@@ -105,28 +93,16 @@ h6
 
 .page-breaker-text {
     font-family: 
-        /* 'Cuprum', sans-serif; */
         'Happy Monkey', cursive;
-        /* 'Oswald', sans-serif; */
-        /* 'Fjalla One', sans-serif; */
-        /* 'Yanone Kaffeesatz', sans-serif; */
-        /* 'Carrois Gothic SC', sans-serif; */
     font-size: 1.7rem;
-    /* font-weight: lighter !important; */
     line-height: 3.4rem;
-    /* color: #343a40 !important; */
     color: #6c757d;
 }
 
 .customerName {
     color: black;
     font-family: 'Caveat', cursive;
-    /* border-bottom: 3px solid red; */
 }
-
-/* .customer-name {
-    border-bottom: 3px solid red;
-} */
 
 .valued-customer-since {
     font-size: .95rem;
@@ -134,7 +110,6 @@ h6
 
 .modal-body {
     font-family: 
-        /* 'Cuprum', sans-serif; */
         'Happy Monkey', cursive;
     font-size: 1rem;
 }
@@ -151,12 +126,10 @@ h6
 .modal-service-title {
     font-family: 'Cuprum', sans-serif;
     text-decoration: underline;
-    /* text-decoration-color: #e41429a6; */
     text-shadow: 0.5px 0.5px 1px grey;
 }
 
 .additional-modal-info-title {
-    /* font-family: 'Cuprum', sans-serif; */
     font-weight: bolder;
 }
 
@@ -191,28 +164,21 @@ h6
 
 .bg-transparent.scrolled {
     transition: 750ms ease-in-out;
-    /* background: #343a40 !important; */
     background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x !important;
 }
 
 a.dropdown-item {
-    /* color: #f8f9fa !important; */
     color: #cbd3da !important;
 }
 
 .anchor:target {
     padding-top: 50px;
-    /* border: 5px solid red; */
 }
 
 /* Nav Bar */
 #safari-negative-margin {
-    /* display: block; */
     position: fixed;
     top: 0;
-    /* margin-top: -96px; */
-    /* display: block;
-    vertical-align: top; */
 }
 
 .nav-link {
@@ -223,7 +189,6 @@ a.dropdown-item {
 }
 
 .nav-link:hover {
-    /* color: red !important; */
     text-shadow: 2px 2px 2px #e41428;
     transform: scale(1.1); 
 }
@@ -305,18 +270,7 @@ a.dropdown-item {
 
 .core-value-card {
     border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
-    /* position: relative; */
 }
-
-/* .cv-card-border {
-    position: absolute;
-    border-right: 2px solid rgba(172, 172, 172, 0.4) !important;
-    top: 50%;
-    bottom: 0;
-} */
-/* .border-top-cv {
-    border-top: 2px solid #e41429a6; 
-} */
 
 /* About Us Stylings */
 #about-us-img-left,
@@ -329,7 +283,6 @@ a.dropdown-item {
 
 .bg-gradient-danger,
 .btn-gradient-danger {
-    /* background: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
     background: #dc3545 linear-gradient(140deg, #f70e24, #e66c6cd1) repeat-x !important;
 }
 
@@ -342,21 +295,12 @@ a.dropdown-item {
 .pet-services-icon-text {
     text-shadow: 1.5px 1.5px 3px black; 
     font-family: 'Happy Monkey', cursive;
-        /* 'Cuprum', sans-serif; */
     font-size: 1.65rem;
-    /* border-top: 2px solid rgb(170, 170, 170);
-    border-bottom: 2px solid rgb(170, 170, 170); */
-}
-
-.pet-services-span-border {
-    /* border-top: 2px solid rgb(170, 170, 170);
-    border-bottom: 2px solid rgb(170, 170, 170); */
 }
 
 #voodooHeading {
     font-family: 
         'Pompiere', cursive;
-        /* 'Cuprum', sans-serif; */
     text-shadow: 1.5px 1.5px 3px black;
 }
 
@@ -379,12 +323,6 @@ a.dropdown-item {
 #small-animals-icon,
 #bird-icon,
 #reptile-icon {
-    /* border: 1px solid black; */
-    /* border: 2px solid white; */
-    /* border: 1px solid gray; */
-    /* border-radius: 35% 12%;
-    background-color: rgba(300, 300, 300, 0.3);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); */
     max-width: 240px;
 } 
 
@@ -392,44 +330,15 @@ a.dropdown-item {
     border-top: 1px solid gainsboro;
 }
 
-/* Customer Reviews Stylings */
-
-
-/* .cust-review-img:hover {
-    opacity: 0.75;
-}
-
-.accordian {
-    display: inline-block;
-} */
-
 /* Modified Book Now Stylings */
 #book-pet-care-services-houston {
     background-image:
-        /* url("../images/adult-animal-canine-237692.jpg"); */
-        /* url("../images/book-now-beagle-pup-upclose.jpg"); */
-        /* url("../images/book-now-cat-and-dog.jpg"); */
-        /* url("../images/book-now-dog-head-pat.jpg"); */
         url("../images/book-now-girl-and-dog.jpg");
-        /* url("../images/book-now-girl-dog-tablet.jpg"); */
-        /* url("../images/book-now-girl-w-dalmation-2.jpg"); */
-        /* url("../images/book-now-girl-w-dalmation.jpg"); */
-        /* url("../images/book-now-hands-and-paw.jpg"); */
     background-size: cover;
 }
 
 #book-now-title {
     text-shadow: 2px 2px 3px #343a40;
-}
-
-#square-appt-widget {
-    /* min-height: 500px;
-    min-width: 450px; */
-    /* border: 2px solid red; */
-    /* display: none; */
-    /* border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important; */
 }
 
 .square-widget {
@@ -451,7 +360,6 @@ a.dropdown-item {
 /* Book Now Stylings */
 .btn-gradient-danger {
     z-index: 1;
-    /* position: relative; */
     transition: all .2s ease-in-out;
 }
 
@@ -461,7 +369,6 @@ a.dropdown-item {
 
 /* Contact Us Stylings */
 #trustworthy-pet-care-houston-contact-info {
-    /* background-image: url("../images/cat-high-five.jpg"); */
     background-image: url("../images/dog-laying-on-side.jpg");
     background-position: center;
     background-size: cover;
@@ -474,7 +381,6 @@ a.dropdown-item {
 .contact-info,
 #contact-us-form {
     font-family: 
-        /* 'Cuprum', sans-serif; */
         'Happy Monkey', cursive; 
 }
 
@@ -489,14 +395,10 @@ a.dropdown-item {
 #dog-walking-areas-serviced {
     border-radius: 10px;
     border: 2px solid white;
-    /* max-width: 700px; */
-    /* min-height: 300px; */
-    /* min-width: 300px; */
 }
 
 #pet-care-services-houston-map {
     transition: all .2s ease-in-out;
-    /* min-height: 275px; */
 }
 
 #pet-care-services-houston-map:hover {
@@ -513,24 +415,11 @@ a.dropdown-item {
     font-family: 'Happy Monkey', cursive; 
 }
 
-/* #dog-walking-hours {
-    position: absolute;
-    left: 16%;
-} */
-
 #dog-walking-hours-image {
     min-width: 325px;
     height: auto;
     
 }
-
-/* #map-hours-col {
-    position: relative;
-} 
-
-#hours-row-positioning {
-
-} */
 
 /* Footer */
 #we-love-all-pets-footer {
@@ -542,7 +431,6 @@ a.dropdown-item {
 .social_instagram_circle,
 .social_linkedin_circle {
     font-size: 2.5rem;
-    /* color: #dc3545 linear-gradient(150deg, #f90920, #ffc107d1) repeat-x !important; */
 }
 
 #we-love-all-pets-facebook-icon,
@@ -559,7 +447,6 @@ a.dropdown-item {
 #we-love-all-pets-facebook-icon:hover,
 #we-love-all-pets-instagram-icon:hover,
 #we-love-all-pets-linkedin-icon:hover {
-    /* text-decoration: none; */
     transform: scale(1.2); 
 }
 
@@ -569,7 +456,8 @@ a.dropdown-item {
     .nav-link {
         transform: none !important;
     }
-    #hero-img-container {
+    #hero-img-container,
+    #customer-reviews-hero-img-container {
         margin-top: 100px !important;
     }
     .bg-transparent {
@@ -751,15 +639,26 @@ a.dropdown-item {
     }
 }
 
+/* Carousel Caption Font */
+@media only screen and (max-width: 767px) {
+    .full-reviews-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .reviews-page-customer-name {
+        font-size: 1.5rem;
+    }
+    .cust-review-area {
+        font-size: .65rem !important;
+    }
+}
+
 /* Page Breaker Text */
 @media only screen and (max-width: 1200px) {
     .page-breaker-text {
         font-size: 1.4rem;
         line-height: 2.7rem;
     }
-    /* .customerName {
-        font-size: 1.7rem !important;
-    } */
 }
 @media only screen and (max-width: 767px) {
     .page-breaker-text {
@@ -856,7 +755,6 @@ a.dropdown-item {
 }
 
 @media only screen and (max-width: 1509px) {
-    /* #core-value-title-2, */
     #core-value-title-3,
     #core-value-title-4 {
         padding-left: 1rem !important;
@@ -947,15 +845,6 @@ a.dropdown-item {
     .icon-img-size {
         width: 115px;
     }  
-}
-
-@media only screen and (max-width: 576px) {
-    /* .icon-img-size {
-        width: 90px;
-    }
-    .pet-services-icon-text {
-        font-size: 1.15rem !important;
-    } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -1136,10 +1025,7 @@ a.dropdown-item {
 
 @media only screen and (max-width: 827px) {
     #dog-walking-hours {
-        /* margin-left: 3.75rem !important; */
         margin-top: 3.25rem !important;
-        /* padding-top: 2rem;
-        padding-bottom: 3rem; */
     }
 }
 
