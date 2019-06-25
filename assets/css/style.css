@@ -87,8 +87,22 @@ h6
     letter-spacing: .5px;
 }
 
+.word-on-street-red-background {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: .5px;
+    color: white !important;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
 .word-on-the-street-title {
     border-bottom: 2px solid #e41429a6;
+}
+
+.word-on-the-street-title-red-background {
+    border-bottom: 2px solid white;
+    text-shadow: 1.5px 1.5px 3px black;
 }
 
 .page-breaker-text {
@@ -140,10 +154,25 @@ h6
     line-height: 2rem;
 }
 
+.full-reviews-text-red-background {
+    font-family: 'Happy Monkey', cursive;
+    color: white !important;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
 .reviews-page-customer-name {
     font-family: 'Caveat', cursive;
     font-size: 2rem;
     color: black;
+}
+
+.reviews-page-customer-name-red-background {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: white !important;
+    text-shadow: 1.5px 1.5px 3px black;
 }
 
 /* Grid */
@@ -1048,6 +1077,11 @@ a.dropdown-item {
 }
 
 /* Footer */
+@media only screen and (max-width: 1243px) {
+    #footer-copyright {
+        margin-top: 1.75rem;
+    }
+}
 @media only screen and (max-width: 577px) {
     #footer-brand,
     #footer-copyright {
