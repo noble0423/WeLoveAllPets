@@ -86,7 +86,6 @@ const reviewsRotation = {
         }
 
         else if (reviewsRotation.counter === 0) {
-            // console.log("15 secs have passed, should see a new Customer Review on the screen");
             reviewsRotation.timeUp();
         }
     },
@@ -147,7 +146,7 @@ const reviewsRotation = {
 
         timer = setInterval(reviewsRotation.countdown, 1000);
 
-        console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
+        // console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
 
         reviewsRotation.fadeInText();
 
@@ -178,7 +177,7 @@ const reviewsRotation = {
         $("#customer-review-two-text").empty();
         $("#customer-review-two-name").empty();
 
-        console.log("Review Two CurrentReview", reviewsRotation.currentReview);
+        // console.log("Review Two CurrentReview", reviewsRotation.currentReview);
         
         let newReviewTwo = $("#customer-review-two-text").text(`" ${reviewsArray[this.currentReview +1].review} "`);
         let newNameTwo = $("#customer-review-two-name").text(`${reviewsArray[this.currentReview +1].name}`);
@@ -202,7 +201,7 @@ const reviewsRotation = {
             $("#customer-review-four-text").empty();
             $("#customer-review-four-name").empty();
 
-            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
             
             let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
             let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
@@ -226,7 +225,7 @@ const reviewsRotation = {
             $("#customer-review-three-text").empty();
             $("#customer-review-three-name").empty();
 
-            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
             
             let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview -9].review} "`);
             let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview -9].name}`);
@@ -247,7 +246,7 @@ const reviewsRotation = {
             $("#customer-review-four-text").empty();
             $("#customer-review-four-name").empty();
 
-            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
             
             let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
             let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
@@ -271,7 +270,7 @@ const reviewsRotation = {
             $("#customer-review-three-text").empty();
             $("#customer-review-three-name").empty();
 
-            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
             
             let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
             let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
@@ -292,7 +291,7 @@ const reviewsRotation = {
             $("#customer-review-four-text").empty();
             $("#customer-review-four-name").empty();
 
-            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
             
             let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
             let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
@@ -316,7 +315,7 @@ const reviewsRotation = {
             $("#customer-review-three-text").empty();
             $("#customer-review-three-name").empty();
 
-            console.log("Review Three CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
             
             let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
             let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
@@ -333,11 +332,11 @@ const reviewsRotation = {
             $("#customer-review-three-text").append(newReviewThree);
             $("#customer-review-three-name").append(newNameThree);
 
-            // Custromer Review Four
+            // Customer Review Four
             $("#customer-review-four-text").empty();
             $("#customer-review-four-name").empty();
 
-            console.log("Review Four CurrentReview", reviewsRotation.currentReview);
+            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
             
             let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
             let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
@@ -388,13 +387,11 @@ const reviewsRotation = {
 // =================================================================================================
 $(document).ready(function(){
 
+    // Start Rotating Quotes on index.html
     reviewsRotation.reset();
-
 
     // Square Widget Visibility
     $("#book-now-btn").click(function(){
-        // console.log("clicked");
-        // $(".square-widget").fadeToggle();
         $(".square-widget").toggleClass("square-widget-visible");
     });
 });
