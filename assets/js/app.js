@@ -6,7 +6,7 @@ let countStartNum = 10;
 
 
 const reviewsArray = [{
-    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners.',
+    review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners).',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
     name: 'Catherine W.',
     area: ' from The Museum District'
