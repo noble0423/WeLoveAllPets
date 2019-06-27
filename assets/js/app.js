@@ -146,212 +146,182 @@ const reviewsRotation = {
 
         timer = setInterval(reviewsRotation.countdown, 1000);
 
-        // console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
-
         reviewsRotation.fadeInText();
 
         // Customer Review One
-        $("#customer-review-one-text").empty();
-        $("#customer-review-one-name").empty();
         
-        let newReviewOne = $("#customer-review-one-text").text(`" ${reviewsArray[this.currentReview].review} "`);
-        let newNameOne = $("#customer-review-one-name").text(`${reviewsArray[this.currentReview].name}`);
+        // console.log(`loadReviewInfo() hit. currentReview: ${reviewsRotation.currentReview}`)
 
-        $("#customer-review-one-image").attr("src", `${reviewsArray[this.currentReview].icon}`);
+        $("#customer-review-one").empty();
 
-        let newAreaSpanOne = $("<span>")
-            .addClass("valued-customer-since text-right text-muted ml-2")
-            .attr("id", "customer-review-one-area")
-            .text(`${reviewsArray[this.currentReview].area}`);
+        let newCustomerOneReview = $("#customer-review-one")
+            .html(
+                `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-one-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
 
-        newNameOne.append(newAreaSpanOne);
-        
-        $("#customer-review-one-text").append(newReviewOne);
-        $("#customer-review-one-name").append(newNameOne);
+                <p class="page-breaker-text mx-5 mt-3" id="customer-review-one-text">"${reviewsArray[this.currentReview].review}"</p>
+
+                <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-one-image" src="${reviewsArray[this.currentReview].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-one-dash"> - </span><span class="customerName" id="customer-review-one-name">${reviewsArray[this.currentReview].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-one-area">${reviewsArray[this.currentReview].area}</span></small></span></p>`);
+
+        $("#customer-review-one").append(newCustomerOneReview);
 
         // Customer Review Two
         if (reviewsRotation.currentReview === 10) {
             reviewsRotation.currentReview = -1;
         }
-        
-        $("#customer-review-two-text").empty();
-        $("#customer-review-two-name").empty();
 
         // console.log("Review Two CurrentReview", reviewsRotation.currentReview);
-        
-        let newReviewTwo = $("#customer-review-two-text").text(`" ${reviewsArray[this.currentReview +1].review} "`);
-        let newNameTwo = $("#customer-review-two-name").text(`${reviewsArray[this.currentReview +1].name}`);
 
-        $("#customer-review-two-image").attr("src", `${reviewsArray[this.currentReview +1].icon}`);
+        $("#customer-review-two").empty();
 
-        let newAreaSpanTwo = $("<span>")
-            .addClass("valued-customer-since text-right text-muted ml-2")
-            .attr("id", "customer-review-two-area")
-            .text(`${reviewsArray[this.currentReview +1].area}`);
+        let newCustomerTwoReview = $("#customer-review-two")
+            .html(
+                `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-two-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
 
-        newNameTwo.append(newAreaSpanTwo);
-        
-        $("#customer-review-two-text").append(newReviewTwo);
-        $("#customer-review-two-name").append(newNameTwo);
+                <p class="page-breaker-text mx-5 mt-3" id="customer-review-two-text">"${reviewsArray[this.currentReview +1].review}"</p>
+
+                <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-two-image" src="${reviewsArray[this.currentReview +1].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-two-dash"> - </span><span class="customerName" id="customer-review-two-name">${reviewsArray[this.currentReview +1].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-two-area">${reviewsArray[this.currentReview +1].area}</span></small></span></p>`);
+
+        $("#customer-review-two").append(newCustomerTwoReview);
 
         // Conditional Code for Customer Review Three and Four
         if (reviewsRotation.currentReview === 8) {
+
+            // Customer Review 3
+
+            // console.log("if === 8 stmt hit: Review Three CurrentReview", reviewsRotation.currentReview);
+
+            $("#customer-review-three").empty();
+    
+            let newCustomerThreeReview = $("#customer-review-three")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-three-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-three-text">"${reviewsArray[this.currentReview +2].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-three-image" src="${reviewsArray[this.currentReview +2].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-three-dash"> - </span><span class="customerName" id="customer-review-three-name">${reviewsArray[this.currentReview +2].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-three-area">${reviewsArray[this.currentReview +2].area}</span></small></span></p>`);
+    
+            $("#customer-review-three").append(newCustomerThreeReview);
             
             // Customer Review Four
-            $("#customer-review-four-text").empty();
-            $("#customer-review-four-name").empty();
 
-            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
-            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
+            // console.log("if === 8 stmt hit:  Review Four CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
-
-            let newAreaSpanFour = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-four-area")
-                .text(`${reviewsArray[this.currentReview -8].area}`);
-
-            newNameFour.append(newAreaSpanFour);
-            
-            $("#customer-review-four-text").append(newReviewFour);
-            $("#customer-review-four-name").append(newNameFour);
+            $("#customer-review-four").empty();
+    
+            let newCustomerFourReview = $("#customer-review-four")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-four-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-four-text">"${reviewsArray[this.currentReview -8].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-four-image" src="${reviewsArray[this.currentReview -8].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-four-dash"> - </span><span class="customerName" id="customer-review-four-name">${reviewsArray[this.currentReview -8].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-four-area">${reviewsArray[this.currentReview -8].area}</span></small></span></p>`);
+    
+            $("#customer-review-four").append(newCustomerFourReview);
         }
 
         else if (reviewsRotation.currentReview === 9) {
 
             // Customer Review Three
-            $("#customer-review-three-text").empty();
-            $("#customer-review-three-name").empty();
 
-            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview -9].review} "`);
-            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview -9].name}`);
+            // console.log("else/if === 9 stmt hit - Review Three CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview -9].icon}`);
-
-            let newAreaSpanThree = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-three-area")
-                .text(`${reviewsArray[this.currentReview -9].area}`);
-
-            newNameThree.append(newAreaSpanThree);
-            
-            $("#customer-review-three-text").append(newReviewThree);
-            $("#customer-review-three-name").append(newNameThree); 
+            $("#customer-review-three").empty();
+    
+            let newCustomerThreeReview = $("#customer-review-three")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-three-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-three-text">"${reviewsArray[this.currentReview -9].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-three-image" src="${reviewsArray[this.currentReview -9].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-three-dash"> - </span><span class="customerName" id="customer-review-three-name">${reviewsArray[this.currentReview -9].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-three-area">${reviewsArray[this.currentReview -9].area}</span></small></span></p>`);
+    
+            $("#customer-review-three").append(newCustomerThreeReview);
 
             // Customer Review Four
-            $("#customer-review-four-text").empty();
-            $("#customer-review-four-name").empty();
 
-            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview -8].review} "`);
-            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview -8].name}`);
+            // console.log("else/if === 9 stmt hit - Review Four CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview -8].icon}`);
-
-            let newAreaSpanFour = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-four-area")
-                .text(`${reviewsArray[this.currentReview -8].area}`);
-
-            newNameFour.append(newAreaSpanFour);
-            
-            $("#customer-review-four-text").append(newReviewFour);
-            $("#customer-review-four-name").append(newNameFour);
+            $("#customer-review-four").empty();
+    
+            let newCustomerFourReview = $("#customer-review-four")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-four-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-four-text">"${reviewsArray[this.currentReview -8].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-four-image" src="${reviewsArray[this.currentReview -8].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-four-dash"> - </span><span class="customerName" id="customer-review-four-name">${reviewsArray[this.currentReview -8].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-four-area">${reviewsArray[this.currentReview -8].area}</span></small></span></p>`);
+    
+            $("#customer-review-four").append(newCustomerFourReview);
         }
 
         else if (reviewsRotation.currentReview === -1) {
 
             // Customer Review Three
-            $("#customer-review-three-text").empty();
-            $("#customer-review-three-name").empty();
 
-            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
-            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
+            // console.log("else/if === -1 stmt hit - Review Three CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
-
-            let newAreaSpanThree = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-three-area")
-                .text(`${reviewsArray[this.currentReview +2].area}`);
-
-            newNameThree.append(newAreaSpanThree);
-            
-            $("#customer-review-three-text").append(newReviewThree);
-            $("#customer-review-three-name").append(newNameThree); 
+            $("#customer-review-three").empty();
+    
+            let newCustomerThreeReview = $("#customer-review-three")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-three-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-three-text">"${reviewsArray[this.currentReview +2].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-three-image" src="${reviewsArray[this.currentReview +2].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-three-dash"> - </span><span class="customerName" id="customer-review-three-name">${reviewsArray[this.currentReview +2].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-three-area">${reviewsArray[this.currentReview +2].area}</span></small></span></p>`);
+    
+            $("#customer-review-three").append(newCustomerThreeReview);
 
             // Customer Review Four
-            $("#customer-review-four-text").empty();
-            $("#customer-review-four-name").empty();
 
-            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
-            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
+            // console.log("else/if === -1 stmt hit - Review Four CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
-
-            let newAreaSpanFour = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-four-area")
-                .text(`${reviewsArray[this.currentReview +3].area}`);
-
-            newNameFour.append(newAreaSpanFour);
-            
-            $("#customer-review-four-text").append(newReviewFour);
-            $("#customer-review-four-name").append(newNameFour);
+            $("#customer-review-four").empty();
+    
+            let newCustomerFourReview = $("#customer-review-four")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-four-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-four-text">"${reviewsArray[this.currentReview +3].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-four-image" src="${reviewsArray[this.currentReview +3].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-four-dash"> - </span><span class="customerName" id="customer-review-four-name">${reviewsArray[this.currentReview +3].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-four-area">${reviewsArray[this.currentReview +3].area}</span></small></span></p>`);
+    
+            $("#customer-review-four").append(newCustomerFourReview);
         }
         
         else {
 
             // Customer Review Three
-            $("#customer-review-three-text").empty();
-            $("#customer-review-three-name").empty();
 
-            // console.log("Review Three CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewThree = $("#customer-review-three-text").text(`" ${reviewsArray[this.currentReview +2].review} "`);
-            let newNameThree = $("#customer-review-three-name").text(`${reviewsArray[this.currentReview +2].name}`);
+            // console.log("else stmt hit - Review Three CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-three-image").attr("src", `${reviewsArray[this.currentReview +2].icon}`);
-
-            let newAreaSpanThree = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-three-area")
-                .text(`${reviewsArray[this.currentReview +2].area}`);
-
-            newNameThree.append(newAreaSpanThree);
-            
-            $("#customer-review-three-text").append(newReviewThree);
-            $("#customer-review-three-name").append(newNameThree);
+            $("#customer-review-three").empty();
+    
+            let newCustomerThreeReview = $("#customer-review-three")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-three-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-three-text">"${reviewsArray[this.currentReview +2].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-three-image" src="${reviewsArray[this.currentReview +2].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-three-dash"> - </span><span class="customerName" id="customer-review-three-name">${reviewsArray[this.currentReview +2].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-three-area">${reviewsArray[this.currentReview +2].area}</span></small></span></p>`);
+    
+            $("#customer-review-three").append(newCustomerThreeReview);
 
             // Customer Review Four
-            $("#customer-review-four-text").empty();
-            $("#customer-review-four-name").empty();
 
-            // console.log("Review Four CurrentReview", reviewsRotation.currentReview);
-            
-            let newReviewFour = $("#customer-review-four-text").text(`" ${reviewsArray[this.currentReview +3].review} "`);
-            let newNameFour = $("#customer-review-four-name").text(`${reviewsArray[this.currentReview +3].name}`);
+            // console.log("else stmt hit - Review Four CurrentReview", reviewsRotation.currentReview);
 
-            $("#customer-review-four-image").attr("src", `${reviewsArray[this.currentReview +3].icon}`);
-
-            let newAreaSpanFour = $("<span>")
-                .addClass("valued-customer-since text-right text-muted ml-2")
-                .attr("id", "customer-review-four-area")
-                .text(`${reviewsArray[this.currentReview +3].area}`);
-
-            newNameFour.append(newAreaSpanFour);
-            
-            $("#customer-review-four-text").append(newReviewFour);
-            $("#customer-review-four-name").append(newNameFour);
+            $("#customer-review-four").empty();
+    
+            let newCustomerFourReview = $("#customer-review-four")
+                .html(
+                    `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-four-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+    
+                    <p class="page-breaker-text mx-5 mt-3" id="customer-review-four-text">"${reviewsArray[this.currentReview +3].review}"</p>
+    
+                    <p class="page-breaker-text mt-n2 mr-5 text-right"><img id="customer-review-four-image" src="${reviewsArray[this.currentReview +3].icon}" alt="Highly-rated customer review icon - Pet Care Houston"><span id="customer-review-four-dash"> - </span><span class="customerName" id="customer-review-four-name">${reviewsArray[this.currentReview +3].name}<small><span class="valued-customer-since text-right text-muted ml-2" id="customer-review-four-area">${reviewsArray[this.currentReview +3].area}</span></small></span></p>`);
+    
+            $("#customer-review-four").append(newCustomerFourReview);
         }
     },
 
