@@ -156,7 +156,7 @@ const reviewsRotation = {
 
         let newCustomerOneReview = $("#customer-review-one")
             .html(
-                `<p class="text-uppercase ml-3 text-dark word-on-street" id="customer-review-one-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
+                `<p class="text-uppercase ml-3 text-dark word-on-street wow bounceInLeft" id="customer-review-one-title"><i class="far fa-comment fa-lg mr-2"></i><span class="word-on-the-street-title">The Word on the Street</span></p>
 
                 <p class="page-breaker-text mx-5 mt-3" id="customer-review-one-text">"${reviewsArray[this.currentReview].review}"</p>
 
