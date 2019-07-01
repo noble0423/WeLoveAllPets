@@ -362,6 +362,9 @@ $(document).ready(function(){
 
     // Square Widget Visibility
     $("#book-now-btn").click(function(){
+        $("#widget-btn-text").text(function (unPushed, pushed) {
+            return pushed === "Check Availability" ? "Close Appt Window" : "Check Availability";
+        });
         $(".square-widget").toggleClass("square-widget-visible");
     });
 });
