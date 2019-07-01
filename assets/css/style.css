@@ -481,6 +481,13 @@ a.dropdown-item {
     transform: scale(1.2); 
 }
 
+#footer-social-text,
+#footer-contact-text,
+#footer-website-text {
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
 /* Media Queries */
 /* Nav Bar */ 
 @media only screen and (max-width: 850px) {
@@ -860,7 +867,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 552px) {
+@media only screen and (min-width: 500px) and (max-width: 537px) {
     #about-us-img-left,
     #about-us-img-right {
         min-width: 405px !important;
@@ -868,7 +875,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 500px) {
+@media only screen and (min-width: 450px) and (max-width: 499px) {
     #about-us-img-right,
     #about-us-img-left {
         min-width: 355px !important;
@@ -895,7 +902,15 @@ a.dropdown-item {
 @media only screen and (min-width: 250px) and (max-width: 349px) {
     #about-us-img-right,
     #about-us-img-left {
-        min-width: 175px !important;
+        min-width: 200px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 249px) {
+    #about-us-img-right,
+    #about-us-img-left {
+        min-width: 150px !important;
         margin-bottom: 2rem !important;
     }
 }
@@ -1033,10 +1048,6 @@ a.dropdown-item {
 }
 
 @media only screen and (max-width: 334px){
-    /* #book-now-title {
-        margin-left: 0rem !important;
-        margin-right: 0rem !important;
-    } */
     .short-text {
         display: inline-block;
     }
@@ -1143,6 +1154,46 @@ a.dropdown-item {
         margin-top: 0rem !important;
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
+    }
+}
+
+@media only screen and (min-width: 317px) and (max-width: 341px) {
+    #dog-walking-hours {
+        margin-left: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 293px) and (max-width: 316px) {
+    #dog-walking-hours {
+        margin-left: .5rem !important;
+    }
+}
+
+@media only screen and (max-width: 292px) {
+    #dog-walking-hours {
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .email-span {
+        margin-left: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #email-section-contact-info {
+        margin-left: .5rem !important;
+    }
+}
+
+@media only screen and (max-width: 252px) {
+    .contact-sm-screens {
+        font-size: .85rem !important;
+    }
+    #contact-send-button {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 }
 
