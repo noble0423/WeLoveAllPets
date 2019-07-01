@@ -528,66 +528,65 @@ a.dropdown-item {
 
 /* About Us Carousel */
 /* Slide 1 */
-@media only screen and (max-width: 1682px) {
+@media only screen and (min-width: 1547px) and (max-width: 1697px) {
     #slide-one-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1119px) and (max-width: 1307px) {
+@media only screen and (min-width: 1323px) and (max-width: 1546px) {
     #slide-one-para {
-        margin-bottom: 2.1rem !important;
+        margin-bottom: 3.9rem !important;
     }
 }
 
-@media only screen and (max-width: 1118px) {
+@media only screen and (min-width: 1134px) and (max-width: 1322px) {
     #slide-one-para {
-        margin-bottom: .61rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 1133px) {
+    #slide-one-para {
+        margin-bottom: 0rem !important;
     }
 }
 
 /* About Us Carousel */
 /* Slide 2 */
-@media only screen and (max-width: 1735px) {
+@media only screen and (max-width: 1750px) {
     #slide-two-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1171px) and (max-width: 1368px) {
+@media only screen and (min-width: 1186px) and (max-width: 1383px) {
     #slide-two-para {
         margin-bottom: 2.1rem !important;
     }
 }
 
-@media only screen and (min-width:999px) and (max-width: 1170px) {
+@media only screen and (min-width:992px) and (max-width: 1185px) {
     #slide-two-para {
         margin-bottom: .6rem !important;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 998px) {
-    #slide-two-para {
-        font-size: 1rem !important;
-        margin-bottom: 1.3rem !important;
-    }
-}
-
 /* About Us Carousel */
 /* Slide 3 */
-@media only screen and (max-width: 1593px) {
+@media only screen and (max-width: 1608px) {
     #slide-three-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1103px) and (max-width: 1288px) {
+@media only screen and (min-width: 1118px) and (max-width: 1303px) {
     #slide-three-para {
         margin-bottom: 2rem !important;
     }
 }
 
-@media only screen and (max-width: 1102px) {
+@media only screen and (max-width: 1117px) {
     #slide-three-para {
         margin-bottom: .4rem !important;
     }
@@ -595,7 +594,7 @@ a.dropdown-item {
 
 /* About Us Carousel */
 /* Slide 4 */
-@media only screen and (min-width: 1200px) and (max-width: 1419px) {
+@media only screen and (min-width: 1200px) and (max-width: 1434px) {
     #slide-four-para {
         margin-bottom: 6rem !important;
     }
@@ -609,25 +608,19 @@ a.dropdown-item {
 
 /* About Us Carousel */
 /* Slide 5 */
-@media only screen and (max-width: 1854px) {
+@media only screen and (min-width: 1403px) and (max-width: 1869px) {
     #slide-five-para {
         margin-bottom: 6rem !important;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1387px) {
+@media only screen and (min-width: 1199px) and (max-width: 1402px) {
     #slide-five-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1188px) and (max-width: 1199px) {
-    #slide-five-para {
-        margin-bottom: 3.55rem !important;
-    }
-}
-
-@media only screen and (max-width: 1187px) {
+@media only screen and (max-width: 1198px) {
     #slide-five-para {
         margin-bottom: 2rem !important;
     }
@@ -635,27 +628,21 @@ a.dropdown-item {
 
 /* Customer Reviews Carousel */
 /* Slide 1 */
-@media only screen and (max-width: 1570px) {
+@media only screen and (min-width: 1056px) and (max-width: 1585px) {
     #rotating-reviews-one {
         margin-bottom: 4rem !important;
     }
 }
 
+@media only screen and (max-width: 1055px) {
+    #rotating-reviews-one {
+        margin-bottom: 2rem !important;
+    }
+}
+
 /* Customer Reviews Carousel */
 /* Slide 2 */
-@media only screen and (min-width: 1200px) and (max-width: 1220px) {
-    #rotating-reviews-two {
-        margin-bottom: 4rem !important;
-    }
-}
-
-@media only screen and (min-width: 1044px) and (max-width: 1199px) {
-    #rotating-reviews-two {
-        margin-bottom: 5.6rem !important;
-    }
-}
-
-@media only screen and (max-width: 1043px) {
+@media only screen and (max-width: 1235px) {
     #rotating-reviews-two {
         margin-bottom: 4rem !important;
     }
@@ -663,15 +650,21 @@ a.dropdown-item {
 
 /* Customer Reviews Carousel */
 /* Slide 3 */
-@media only screen and (max-width: 1553px) {
+@media only screen and (min-width: 1033px) and (max-width: 1568px) {
     #rotating-reviews-three {
         margin-bottom: 4rem !important;
     }
 }
 
+@media only screen and (max-width: 1032px) {
+    #rotating-reviews-three {
+        margin-bottom: 2rem !important;
+    }
+}
+
 /* Customer Reviews Carousel */
 /* Slide 4 */
-@media only screen and (max-width: 1421px) {
+@media only screen and (max-width: 1436px) {
     #rotating-reviews-four {
         margin-bottom: 4rem !important;
     }
@@ -706,40 +699,40 @@ a.dropdown-item {
 }
 
 /* Core Values Section */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1515px) {
     .core-value-card-body {
         padding-left: 0rem !important;
         padding-right: 0rem !important;
     }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 1137px) {
+@media only screen and (max-width: 1265px) and (min-width: 1152px) {
     .card-para-font {
         font-size: .95rem;
     }
 }
 
-@media only screen and (max-width: 1136px) and (min-width: 992px) {
+@media only screen and (max-width: 1151px) and (min-width: 992px) {
     .card-para-font {
         font-size: .85rem;
     }
 }
 
-@media only screen and (min-width: 914px) and (max-width: 992px) {
+@media only screen and (min-width: 929px) and (max-width: 991px) {
     .card-para-font {
         font-size: 1.015rem;
     }
 }
 
-@media only screen and (min-width: 847px) and (max-width: 913px) {
+@media only screen and (min-width: 862px) and (max-width: 928px) {
     .card-para-font {
         font-size: .925rem;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 846px) {
+@media only screen and (min-width: 768px) and (max-width: 861px) {
     .card-para-font {
-        font-size: .82rem;
+        font-size: .8rem;
     }
 }
 
@@ -757,35 +750,42 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1501px) and (max-width: 1611px) {
+@media only screen and (min-width: 1888px) {
+    #core-value-title-2 {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+    }
+}
+
+@media only screen and (min-width: 1516px) and (max-width: 1626px) {
     #core-value-title-2 {
         padding-left: 4rem !important;
         padding-right: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1324px) and (max-width: 1500px) {
+@media only screen and (min-width: 1339px) and (max-width: 1515px) {
     #core-value-title-2 {
         padding-left: 5rem !important;
         padding-right: 5rem !important;
     }
 }
 
-@media only screen and (min-width: 1262px) and (max-width: 1323px) {
+@media only screen and (min-width: 1262px) and (max-width: 1338px) {
     #core-value-title-2 {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
 }
 
-@media only screen and (min-width: 1146px ) and (max-width: 1261px) {
+@media only screen and (min-width: 1161px ) and (max-width: 1261px) {
     #core-value-title-2 {
         padding-left: 4rem !important;
         padding-right: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1145px) {
+@media only screen and (max-width: 1160px) {
     #core-value-title-2 {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
@@ -818,17 +818,24 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 860px) and (max-width: 914px) {
+@media only screen and (min-width: 875px) and (max-width: 914px) {
     #core-value-title-2 {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 859px) {
+@media only screen and (min-width: 830px) and (max-width: 874px) {
     #core-value-title-2 {
         padding-left: 7rem !important;
         padding-right: 7rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 829px) {
+    #core-value-title-2 {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
     }
 }
 
@@ -1008,7 +1015,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 827px) {
+@media only screen and (min-width: 768px) and (max-width: 842px) {
     #book-now-title {
         margin-left: 2.5rem !important;
         margin-right: 2.5rem !important;
