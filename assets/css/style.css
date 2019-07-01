@@ -906,7 +906,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 250px) and (max-width: 349px) {
+@media only screen and (min-width: 265px) and (max-width: 349px) {
     #about-us-img-right,
     #about-us-img-left {
         min-width: 200px !important;
@@ -914,7 +914,7 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 249px) {
+@media only screen and (max-width: 264px) {
     #about-us-img-right,
     #about-us-img-left {
         min-width: 150px !important;
