@@ -973,6 +973,15 @@ a.dropdown-item {
     }
 }
 
+@media only screen and (max-width: 452px) {
+    #book-now-btn {
+        margin-bottom: 2rem !important;
+    }
+    #book-overnight-btn {
+        margin-top: 0rem !important;
+    }
+}
+
 /* Contact Us Section */
 @media only screen and (max-width: 1750px) {
     #dog-walking-hours {
