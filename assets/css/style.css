@@ -377,7 +377,7 @@ a.dropdown-item {
 
 .square-widget-visible {
     visibility: visible;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 2px solid white;
     box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important;
     min-height: 500px;
@@ -392,6 +392,10 @@ a.dropdown-item {
 
 .btn-gradient-danger:hover {
     transform: scale(1.1);
+}
+
+.short-text {
+    display: none;
 }
 
 /* Contact Us Stylings */
@@ -856,10 +860,42 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (max-width: 552px) {
+@media only screen and (min-width: 501px) and (max-width: 552px) {
     #about-us-img-left,
     #about-us-img-right {
         min-width: 405px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+    #about-us-img-right,
+    #about-us-img-left {
+        min-width: 355px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+    #about-us-img-right,
+    #about-us-img-left {
+        min-width: 300px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+    #about-us-img-right,
+    #about-us-img-left {
+        min-width: 250px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 349px) {
+    #about-us-img-right,
+    #about-us-img-left {
+        min-width: 175px !important;
         margin-bottom: 2rem !important;
     }
 }
@@ -973,12 +1009,39 @@ a.dropdown-item {
     }
 }
 
+@media only screen and (max-width: 463px) {
+    .square-widget-visible {
+        max-width: 100% !important;
+        min-width: 50% !important;
+    }
+}
+
 @media only screen and (max-width: 452px) {
     #book-now-btn {
         margin-bottom: 2rem !important;
     }
     #book-overnight-btn {
         margin-top: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #book-now-title {
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 334px){
+    /* #book-now-title {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    } */
+    .short-text {
+        display: inline-block;
+    }
+    .long-text {
+        display: none;
     }
 }
 
