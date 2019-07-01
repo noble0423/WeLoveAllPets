@@ -536,19 +536,25 @@ a.dropdown-item {
 
 @media only screen and (min-width: 1323px) and (max-width: 1546px) {
     #slide-one-para {
-        margin-bottom: 3.9rem !important;
+        margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1134px) and (max-width: 1322px) {
+@media only screen and (min-width: 1200px) and (max-width: 1322px) {
     #slide-one-para {
-        margin-bottom: 1.5rem !important;
+        margin-bottom: 2rem !important;
     }
 }
 
-@media only screen and (max-width: 1133px) {
+@media only screen and (min-width: 1134px) and (max-width: 1199px) {
     #slide-one-para {
-        margin-bottom: 0rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1133px) {
+    #slide-one-para {
+        margin-bottom: .3rem !important;
     }
 }
 
@@ -560,15 +566,21 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1186px) and (max-width: 1383px) {
+@media only screen and (min-width: 1200px) and (max-width: 1383px) {
     #slide-two-para {
-        margin-bottom: 2.1rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 1186px) and (max-width: 1199px) {
+    #slide-two-para {
+        margin-bottom: 2rem !important;
     }
 }
 
 @media only screen and (min-width:992px) and (max-width: 1185px) {
     #slide-two-para {
-        margin-bottom: .6rem !important;
+        margin-bottom: .4rem !important;
     }
 }
 
@@ -580,13 +592,19 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1118px) and (max-width: 1303px) {
+@media only screen and (min-width: 1200px) and (max-width: 1303px) {
     #slide-three-para {
         margin-bottom: 2rem !important;
     }
 }
 
-@media only screen and (max-width: 1117px) {
+@media only screen and (min-width: 1118px) and (max-width: 1199px) {
+    #slide-three-para {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1117px) {
     #slide-three-para {
         margin-bottom: .4rem !important;
     }
@@ -594,6 +612,11 @@ a.dropdown-item {
 
 /* About Us Carousel */
 /* Slide 4 */
+@media only screen and (min-width: 1435px) {
+    #slide-four-para {
+        margin-bottom: 7.85rem !important;
+    }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1434px) {
     #slide-four-para {
         margin-bottom: 6rem !important;
@@ -614,13 +637,13 @@ a.dropdown-item {
     }
 }
 
-@media only screen and (min-width: 1199px) and (max-width: 1402px) {
+@media only screen and (min-width: 1200px) and (max-width: 1402px) {
     #slide-five-para {
         margin-bottom: 4rem !important;
     }
 }
 
-@media only screen and (max-width: 1198px) {
+@media only screen and (max-width: 1199px) {
     #slide-five-para {
         margin-bottom: 2rem !important;
     }
