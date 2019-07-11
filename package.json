@@ -19,6 +19,7 @@
   "homepage": "https://github.com/noble0423/WeLoveAllPets#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "lodash.mergewith": "^4.6.2",
     "scss-powertools": "^1.1.0"
   }
 }
