@@ -147,6 +147,10 @@ h6
     font-weight: bolder;
 }
 
+.insured-and-bonded-text {
+    font-family: 'Happy Monkey', cursive;
+}
+
 .full-reviews-text {
     font-family: 'Happy Monkey', cursive;
     color: #6c757d;
@@ -261,12 +265,20 @@ a.dropdown-item {
     transition: all .2s ease-in-out;
 }
 
+#dog-walking:hover,
+#pet-sitting:hover,
+#overnight-pet-sitting:hover,
+#potty-break:hover {
+    transform: scale(1.2); 
+}
+
 #all-pet-services-icon,
 #dog-icon,
 #cat-icon,
 #small-animals-icon,
 #bird-icon,
-#reptile-icon {
+#reptile-icon,
+#PSI-Logo {
     transition: all .2s ease-in-out;
 }
 
@@ -275,15 +287,9 @@ a.dropdown-item {
 #cat-icon:hover,
 #small-animals-icon:hover,
 #bird-icon:hover,
-#reptile-icon:hover {
+#reptile-icon:hover,
+#PSI-Logo:hover {
     transform: scale(1.1); 
-}
-
-#dog-walking:hover,
-#pet-sitting:hover,
-#overnight-pet-sitting:hover,
-#potty-break:hover {
-    transform: scale(1.2); 
 }
 
 /* Core Values */
@@ -455,7 +461,7 @@ a.dropdown-item {
 /* Footer */
 #we-love-all-pets-footer {
     font-family: 'Cuprum', sans-serif;;
-    margin-top: 175px !important;
+    /* margin-top: 175px !important; */
 }
 
 .social_facebook_circle,
