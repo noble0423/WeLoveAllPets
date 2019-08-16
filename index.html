@@ -692,39 +692,38 @@
                 <div class="shadow-sm text-light pt-4 wow fadeInUp" id="trustworthy-pet-care-houston-contact-info">
                     <h4 class="mb-3 ml-5 ml-md-3">Drop us a Line or Give Us a Call!</h4>
                     <form class="ml-md-3 mt-5" id="contact-us-form">
-                        <div class="ajax-hidden">
-                            <div class="form-group">
-                                <div class="form-row wow fadeIn delay-halfs">
-                                    <div class="col-lg-4 mb-lg-0 mb-4 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                        <input type="text" class="form-control" id="c_firstname" name="c_firstname" placeholder="First Name" required>
-                                    </div>
-                                    <div class="col-lg-4 mb-lg-0 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                        <input type="text" class="form-control" id="c_lastname" name="c_lastname" placeholder="Last Name">
-                                    </div>
+                        <div class="form-group">
+                            <div class="form-row wow fadeIn delay-halfs">
+                                <div class="col-lg-4 mb-lg-0 mb-4 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                    <input type="text" class="form-control" id="c_firstname" name="c_firstname" placeholder="First Name" required>
                                 </div>
-                                <br>
-                                <div class="form-row wow fadeIn delay-sixtieths">
-                                    <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                        <input type="email" class="form-control" id="c_email" name="c_email" placeholder="Email Address" required>
-                                    </div>
+                                <div class="col-lg-4 mb-lg-0 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                    <input type="text" class="form-control" id="c_lastname" name="c_lastname" placeholder="Last Name">
                                 </div>
-                                <br>
-                                <div class="form-row wow fadeIn delay-eigthieths">
-                                    <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                        <input type="text" class="form-control" id="c_subject" name="c_subject" placeholder="Email Subject" required>
-                                    </div>
+                            </div>
+                            <br>
+                            <div class="form-row wow fadeIn delay-sixtieths">
+                                <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="Email Address" required>
                                 </div>
-                                <br>
-                                <div class="form-row wow fadeIn delay-1s">
-                                    <div class="col-lg-11 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                        <textarea name="FormControlTextArea" rows="10" class="form-control" id="c_message" name="c_message" placeholder="Enter Message" required></textarea>
-                                    </div>
+                            </div>
+                            <br>
+                            <div class="form-row wow fadeIn delay-eigthieths">
+                                <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                    <input type="text" class="form-control" id="c_subject" name="c_subject" placeholder="Email Subject" required>
                                 </div>
-    
-                                <!-- Button trigger modal -->
-                                <!-- <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-3 ml-5 px-5 ml-md-0 wow fadeIn delay-1-twentieths" data-toggle="modal" data-target="#contact-us-modal" id="contact-send-button"><i class="fas fa-paper-plane mr-3"></i>Send</button> -->
+                            </div>
+                            <br>
+                            <div class="form-row wow fadeIn delay-1s">
+                                <div class="col-lg-11 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                    <textarea name="FormControlTextArea" rows="10" class="form-control" id="c_message" name="c_message" placeholder="Enter Message" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="ajax-hidden">
                                 <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-3 ml-5 px-5 ml-md-0 wow fadeIn delay-1-twentieths" id="contact-send-button"><i class="fas fa-paper-plane mr-3"></i>Send</button>
                             </div>
+                            <div class="email-ajax-response mt-4 ml-5 ml-md-0"></div>
                         </div>
 
                         
@@ -737,27 +736,6 @@
 
                     </form>
                 </div>
-
-                <!-- Modal -->    
-                <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="ContactUsModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content" id="contact-certified-insured-bonded-pet-advocate">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="ContactUsCenterTitle">Email Sent:</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Thank you very much for your email! One of our Friendly staff members will reach out to you shortly.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-gradient-danger text-light" data-dismiss="modal" id="modal-close-button">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <div class="col-md-6 col-xl-5 my-5 py-5" id="map-hours-col">

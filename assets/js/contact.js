@@ -18,10 +18,6 @@ $(document).ready(function() {
 
         event.preventDefault();
 
-        console.log("send button clicked");
-
-        // $("#contact-us-modal").modal("show");
-
         var c_firstname = $("#c_firstname").val();
         var c_lastname = $("#c_lastname").val();
         var c_email = $("#c_email").val();
@@ -29,9 +25,12 @@ $(document).ready(function() {
         var c_message = $("#c_message").val();
         var responseMessage = $("#contact-us-form .email-ajax-response");
 
+        var c_fullname = `Name: ${c_firstname} ${c_lastname}`
+        var c_emailreplyto = `Customer's Email Address: ${c_email}`
+
         if (( c_firstname === "" || c_lastname === "" || c_email === "" || c_subject === "" || c_message === "") || (!isValidEmailAddress(c_email) )) {
             responseMessage.fadeIn(500);
-            responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+            responseMessage.html('<i class="fa fa-warning"></i> An error has occured. Please check form fields and try again.');
         }
 
         else {
@@ -40,9 +39,8 @@ $(document).ready(function() {
                 url: "assets/php/contactUsEmail.php",
                 dataType: "json",
                 data: {
-                    c_email: c_email,
-                    c_firstname: c_firstname,
-                    c_lastname: c_lastname,
+                    c_emailreplyto: c_emailreplyto,
+                    c_fullname: c_fullname,
                     c_subject: c_subject,
                     c_message: c_message
                 },
@@ -52,8 +50,9 @@ $(document).ready(function() {
                 },
                 success: function(result) {
                     if(result.sendstatus == 1) {
-                        $("#contact-us-form .ajax-hidden").fadeOut(500);
-                        responseMessage.html(result.message).fadeIn(500);
+                        $("#contact-us-form .ajax-hidden").fadeOut(250);
+                        responseMessage.html(result.message).fadeIn(1000);
+                        $("#contact-us-form").trigger("reset");
                     } else {
                         $("#contact-us-form button").empty();
                         $("#contact-us-form button").append('<i class="fa fa-retweet"></i> Try again.');
