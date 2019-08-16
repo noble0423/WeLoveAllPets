@@ -692,44 +692,49 @@
                 <div class="shadow-sm text-light pt-4 wow fadeInUp" id="trustworthy-pet-care-houston-contact-info">
                     <h4 class="mb-3 ml-5 ml-md-3">Drop us a Line or Give Us a Call!</h4>
                     <form class="ml-md-3 mt-5" id="contact-us-form">
-                        <div class="form-group pb-lg-5 pb-2">
-                            <div class="form-row wow fadeIn delay-halfs">
-                                <div class="col-lg-4 mb-lg-0 mb-4 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                    <input type="text" class="form-control" id="c_firstname" name="c_firstname" placeholder="First Name" required>
+                        <div class="ajax-hidden">
+                            <div class="form-group">
+                                <div class="form-row wow fadeIn delay-halfs">
+                                    <div class="col-lg-4 mb-lg-0 mb-4 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                        <input type="text" class="form-control" id="c_firstname" name="c_firstname" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-lg-4 mb-lg-0 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                        <input type="text" class="form-control" id="c_lastname" name="c_lastname" placeholder="Last Name">
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 mb-lg-0 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                    <input type="text" class="form-control" id="c_lastname" name="c_lastname" placeholder="Last Name">
+                                <br>
+                                <div class="form-row wow fadeIn delay-sixtieths">
+                                    <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                        <input type="email" class="form-control" id="c_email" name="c_email" placeholder="Email Address" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="form-row wow fadeIn delay-sixtieths">
-                                <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="Email Address" required>
+                                <br>
+                                <div class="form-row wow fadeIn delay-eigthieths">
+                                    <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                        <input type="text" class="form-control" id="c_subject" name="c_subject" placeholder="Email Subject" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="form-row wow fadeIn delay-eigthieths">
-                                <div class="col-lg-8 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                    <input type="text" class="form-control" id="c_subject" name="c_subject" placeholder="Email Subject" required>
+                                <br>
+                                <div class="form-row wow fadeIn delay-1s">
+                                    <div class="col-lg-11 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
+                                        <textarea name="FormControlTextArea" rows="10" class="form-control" id="c_message" name="c_message" placeholder="Enter Message" required></textarea>
+                                    </div>
                                 </div>
+    
+                                <!-- Button trigger modal -->
+                                <!-- <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-3 ml-5 px-5 ml-md-0 wow fadeIn delay-1-twentieths" data-toggle="modal" data-target="#contact-us-modal" id="contact-send-button"><i class="fas fa-paper-plane mr-3"></i>Send</button> -->
+                                <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-3 ml-5 px-5 ml-md-0 wow fadeIn delay-1-twentieths" id="contact-send-button"><i class="fas fa-paper-plane mr-3"></i>Send</button>
                             </div>
-                            <br>
-                            <div class="form-row wow fadeIn delay-1s">
-                                <div class="col-lg-11 ml-5 ml-md-0 mr-5 mr-md-3 mr-lg-0">
-                                    <textarea name="FormControlTextArea" rows="10" class="form-control" id="c_message" name="c_message" placeholder="Enter Message" required></textarea>
-                                </div>
-                            </div>
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-gradient-danger text-light btn-lg mt-3 ml-5 px-5 ml-md-0 wow fadeIn delay-1-twentieths" data-toggle="modal" data-target="#contact-us-modal" id="contact-send-button"><i class="fas fa-paper-plane mr-3"></i>Send</button>
-                            <div class="contact-info mt-5 ml-5 ml-md-0 wow fadeIn delay-1-twentieths" id="email-section-contact-info">
-                                <h6 class="contact-sm-screens"><i class="fas fa-phone mr-4"></i>Office Phone:<span class="ml-3">(832) 844-0017</span></h6>
-                                <h6 class="contact-sm-screens"><i class="far fa-envelope mr-4"></i>Email:
-                                    <span class="ml-3 email-span"><a class="text-white we-Love-All-Pets-Email-Address email-addy" href="mailto:admin@weloveallpets.com">admin@weloveallpets.com</a></span>
-                                </h6>
-                            </div>
-
                         </div>
+
+                        
+                        <div class="contact-info mt-5 ml-5 ml-md-0 pb-lg-5 pb-2 wow fadeIn delay-1-twentieths" id="email-section-contact-info">
+                            <h6 class="contact-sm-screens"><i class="fas fa-phone mr-4"></i>Office Phone:<span class="ml-3">(832) 844-0017</span></h6>
+                            <h6 class="contact-sm-screens"><i class="far fa-envelope mr-4"></i>Email:
+                                <span class="ml-3 email-span"><a class="text-white we-Love-All-Pets-Email-Address email-addy" href="mailto:admin@weloveallpets.com">admin@weloveallpets.com</a></span>
+                            </h6>
+                        </div>
+
                     </form>
                 </div>
 
@@ -879,7 +884,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Extra Bootstrap JavaScript Page -->
+    <!-- Navbar -->
     <script type="text/javascript" src="./assets/js/navbar.js"></script>
 
     <!-- jQuery Core 3.4 - Uncompressed -->

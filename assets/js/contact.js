@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     $(document).on("click", "#modal-close-button", function(event) {
-        console.log("clicked");
+        console.log("clicked modal close");
         // event.preventDefault();
         
         $("#contact-us-form").trigger("reset");
@@ -14,11 +14,13 @@ $(document).ready(function() {
     };
 
     // Contact form ajax
-    $("#contact-us-form-submit").click(function(event) {
+    $("#contact-send-button").click(function(event) {
 
         event.preventDefault();
 
-        console.log("clicked");
+        console.log("send button clicked");
+
+        // $("#contact-us-modal").modal("show");
 
         var c_firstname = $("#c_firstname").val();
         var c_lastname = $("#c_lastname").val();
@@ -62,6 +64,7 @@ $(document).ready(function() {
         }
 
         return false;
+        
 
     });
 });

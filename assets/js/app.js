@@ -79,7 +79,7 @@ const reviewsRotation = {
 
     countdown: function() {
         reviewsRotation.counter--;
-        console.log(`time remaining ${reviewsRotation.counter}`);
+        // console.log(`time remaining ${reviewsRotation.counter}`);
 
         if (reviewsRotation.counter === 1) {
             reviewsRotation.fadeOutText();

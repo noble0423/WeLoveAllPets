@@ -13,7 +13,7 @@
 
 		if (mail($to, $firstname, $lastname, $subject, $message, $from)) {
 			$result = array(
-				"message" => "Thanks for contacting me!",
+				"message" => "Thank you very much for your email! One of our Friendly staff members will reach out to you shortly.",
 				"sendstatus" => 1
 				);
 			echo json_encode($result);

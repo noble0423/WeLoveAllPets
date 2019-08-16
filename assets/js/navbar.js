@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     const height = $(window).scrollTop(); 
     
-    console.log(height);
+    // console.log(height);
 
     if (height > 450) {
         $("nav").toggleClass("scrolled");
