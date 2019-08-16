@@ -37,7 +37,7 @@ $(document).ready(function() {
         else {
             $.ajax({
                 type: "POST",
-                url: "assets/php/contactForm.php",
+                url: "assets/php/contactUsEmail.php",
                 dataType: "json",
                 data: {
                     c_email: c_email,
