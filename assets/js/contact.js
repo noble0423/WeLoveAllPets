@@ -18,15 +18,17 @@ $(document).ready(function() {
 
         event.preventDefault();
 
-        var c_firstname = $("#c_firstname").val();
-        var c_lastname = $("#c_lastname").val();
-        var c_email = $("#c_email").val();
-        var c_subject = $("#c_subject").val();
-        var c_message = $("#c_message").val();
+        var c_firstname = $("#c_firstname").val().trim();
+        var c_lastname = $("#c_lastname").val().trim();
+        var c_email = $("#c_email").val().trim();
+        var c_subject = $("#c_subject").val().trim();
+        var c_message = $("#c_message").val().trim();
         var responseMessage = $("#contact-us-form .email-ajax-response");
 
-        var c_fullname = `Name: ${c_firstname} ${c_lastname}`
-        var c_emailreplyto = `Customer's Email Address: ${c_email}`
+        var c_fullname = `From: ${c_firstname} ${c_lastname}`;
+        var c_emailreplyto = `Email: < ${c_email} >`;
+
+        // var c_emailreplyto = `From: ${c_firstname} ${c_lastname} <${c_email}>`;
 
         if (( c_firstname === "" || c_lastname === "" || c_email === "" || c_subject === "" || c_message === "") || (!isValidEmailAddress(c_email) )) {
             responseMessage.fadeIn(500);
@@ -39,6 +41,9 @@ $(document).ready(function() {
                 url: "assets/php/contactUsEmail.php",
                 dataType: "json",
                 data: {
+                    c_firstname: c_firstname,
+                    c_lastname: c_lastname,
+                    c_email: c_email,
                     c_emailreplyto: c_emailreplyto,
                     c_fullname: c_fullname,
                     c_subject: c_subject,
