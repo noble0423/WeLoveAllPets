@@ -388,6 +388,7 @@ a.dropdown-item {
     box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important;
     min-height: 500px;
     min-width: 450px;
+    overflow-y: auto;
 }
 
 /* Book Now Stylings */
