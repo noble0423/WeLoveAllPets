@@ -11,11 +11,10 @@
 		$subject    = $_POST["c_subject"];
 		$message    = $_POST["c_message"];
 		$headers	= array(
-			"topper" => ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",
+			"topper" => "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
 			"fullname" => $fullname,
 			"email" => $from,
-			// "foo" => "bar"
-			"bottom" => ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",
+			"bottom" => "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
 		);
 		$headers = implode("\r\n", $headers);
 

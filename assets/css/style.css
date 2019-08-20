@@ -379,6 +379,7 @@ a.dropdown-item {
     min-height: 250px;
     min-width: 225px;
     transition: min-width 1s, min-height 1s;
+    -webkit-overflow-scrolling: touch;
 }
 
 .square-widget-visible {
