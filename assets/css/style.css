@@ -379,7 +379,6 @@ a.dropdown-item {
     min-height: 250px;
     min-width: 225px;
     transition: min-width 1s, min-height 1s;
-    overflow-y: scroll;
 }
 
 .square-widget-visible {
@@ -389,6 +388,7 @@ a.dropdown-item {
     box-shadow: 0 .75rem 2rem rgba(0, 0, 0, 0.95) !important;
     min-height: 500px;
     min-width: 450px;
+    overflow-y: scroll;
 }
 
 /* Book Now Stylings */
