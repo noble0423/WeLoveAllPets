@@ -374,6 +374,11 @@ a.dropdown-item {
     text-shadow: 2px 2px 3px #343a40;
 }
 
+.scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
+}
+
 .square-widget {
     visibility: hidden;
     min-height: 250px;
