@@ -1,7 +1,7 @@
 <?php
     // header("Access-Control-Allow-Origin: *");
 	// Contact
-	$to = "ryan.noble82@gmail.com";
+	$to = "admin@weloveallpets.com";
 
 	if(isset($_POST["c_firstname"]) && isset($_POST["c_lastname"]) && isset($_POST["c_email"]) && isset($_POST["c_subject"]) && isset($_POST["c_message"])){
 		$firstname  = $_POST["c_firstname"];
