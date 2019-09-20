@@ -1,9 +1,6 @@
 $(document).ready(function() {
     
-    $(document).on("click", "#modal-close-button", function(event) {
-        console.log("clicked modal close");
-        // event.preventDefault();
-        
+    $(document).on("click", "#modal-close-button", function(event) {        
         $("#contact-us-form").trigger("reset");
     });
     
@@ -14,7 +11,7 @@ $(document).ready(function() {
     };
 
     // Contact form ajax
-    $("#contact-send-button").click(function(event) {
+    $("#contact-send-button").on("click", function(event) {
 
         event.preventDefault();
 
@@ -25,10 +22,7 @@ $(document).ready(function() {
         var c_message = $("#c_message").val().trim();
         var responseMessage = $("#contact-us-form .email-ajax-response");
 
-        var c_fullname = `From: ${c_firstname} ${c_lastname}`;
-        var c_emailreplyto = `Email: < ${c_email} >`;
-
-        // var c_emailreplyto = `From: ${c_firstname} ${c_lastname} <${c_email}>`;
+        var c_fullname = `${c_firstname} ${c_lastname}`;
 
         if (( c_firstname === "" || c_lastname === "" || c_email === "" || c_subject === "" || c_message === "") || (!isValidEmailAddress(c_email) )) {
             responseMessage.fadeIn(500);
@@ -41,10 +35,7 @@ $(document).ready(function() {
                 url: "assets/php/contactUsEmail.php",
                 dataType: "json",
                 data: {
-                    c_firstname: c_firstname,
-                    c_lastname: c_lastname,
                     c_email: c_email,
-                    c_emailreplyto: c_emailreplyto,
                     c_fullname: c_fullname,
                     c_subject: c_subject,
                     c_message: c_message
