@@ -2,10 +2,11 @@
 // =================================================================================================
 
 const customerReviewCard = $("#customer-review-one");
-let countStartNum = 10;
+let countStartNum = 2;
 
 
-const reviewsArray = [{
+const reviewsArray = [
+{
     review: 'Gabe and his team at We Love All Pets are the best pet sitters you could ask for. They are reliable and trustworthy and they truly care for animals (and their owners).',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
     name: 'Catherine W.',
@@ -21,7 +22,8 @@ const reviewsArray = [{
     name: 'John K.',
     area: ' from The Heights'
 }, {
-    review: 'After our former dog sitter moved away we were at a loss for someone to tend to our 17-year-old dog who is on meds and a finicky eater. At the suggestion of our vet we tried We Love All Pets. Gabriel and his crew are kind and patient with our pup and they assure that she has all of her meds and eats while we are away. We are so thankful for our vet’s recommendation.',
+    // review: 'After our former dog sitter moved away we were at a loss for someone to tend to our 17-year-old dog who is on meds and a finicky eater. At the suggestion of our vet we tried We Love All Pets. Gabriel and his crew are kind and patient with our pup and they assure that she has all of her meds and eats while we are away. We are so thankful for our vet’s recommendation.',
+    review: 'At the suggestion of our vet we tried We Love All Pets. Gabriel and his crew are kind and patient with our pup and they assure that she has all of her meds and eats while we are away. We are so thankful for our vet’s recommendation.',
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Woman 1.png',
     name: 'Diane E.',
     area: ' from Museum District'
@@ -60,7 +62,8 @@ const reviewsArray = [{
     icon: './assets/images/Updated Logo and Thumbnail Icons/Icons copy/png/Man 1.png',
     name: 'Marc E.',
     area: ' from Museum District'
-}];
+}
+];
 
 
 

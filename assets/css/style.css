@@ -225,7 +225,8 @@ a.dropdown-item {
 }
 
 /* Hero Images */
-#hero-img-container {
+#hero-img-container,
+#customer-reviews-hero-img-container {
     position: relative;;
 }
 
@@ -290,6 +291,11 @@ a.dropdown-item {
 #reptile-icon:hover,
 #PSI-Logo:hover {
     transform: scale(1.1); 
+}
+
+/* Customer Reviews Divs */
+.customer-review-div-height {
+    height: 300px;
 }
 
 /* Core Values */
@@ -516,11 +522,35 @@ a.dropdown-item {
 }
 
 /* Both Carousels */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 299px) {
+    .carousel-title-sm-screens {
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 353px) {
+    .carousel-title-sm-screens {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 354px) and (max-width: 413px) {
+    .carousel-title-sm-screens {
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 600px) {
     .carousel-title-sm-screens {
         font-size: 3rem !important;
         margin-bottom: 1rem !important;
     }
+}
+
+@media only screen and (max-width: 600px) {
     .carousel-subtitle-sm-screens {
         margin-bottom: 3rem !important;
     }
@@ -733,6 +763,37 @@ a.dropdown-item {
     }
 }
 
+/* Customer Reviews Div */
+@media only screen and (min-width: 475px) and (max-width: 545px) {
+    .customer-review-div-height {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 474px) {
+    .customer-review-div-height {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+    .customer-review-div-height {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width: 374px) {
+    .customer-review-div-height {
+        height: 525px;
+    }
+}
+
+@media only screen and (max-width: 344px) {
+    .customer-review-div-height {
+        height: 700px;
+    }
+}
+
 /* Core Values Section */
 @media only screen and (max-width: 1515px) {
     .core-value-card-body {
@@ -874,7 +935,7 @@ a.dropdown-item {
     }
 }
 
-/* About Us Section (XS - MD Scrren Sizes only) */
+/* About Us Section (XS - MD Screen Sizes only) */
 @media only screen and (max-width: 1044px) {
     #about-us-title {
         font-size: 3.5rem !important;
