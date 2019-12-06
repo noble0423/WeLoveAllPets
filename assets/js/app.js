@@ -2,7 +2,7 @@
 // =================================================================================================
 
 const customerReviewCard = $("#customer-review-one");
-let countStartNum = 2;
+let countStartNum = 10;
 
 
 const reviewsArray = [
